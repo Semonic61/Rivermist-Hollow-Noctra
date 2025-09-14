@@ -6,9 +6,11 @@ Small-scale and even more explicit Noctra/Vanderlin fork
 
 | Website                   | Link                                           |
 |---------------------------|------------------------------------------------|
-| Discord | [https://discord.monkestation.com](https://discord.monkestation.com) |
-| Code    | [https://github.com/Monkestation/Vanderlin](https://github.com/Monkestation/Vanderlin)    |
-| Wiki    | N/A |
+| Discord    | [https://discord.gg/99tqMbqfDt](https://discord.gg/99tqMbqfDt) |
+| Code    | [https://github.com/Monkestation/Noctra/](https://github.com/Monkestation/Noctra/) |
+| Website    | [https://noctragame.com](https://noctragame.com) |
+| Vanderlin Discord | [https://discord.monkestation.com](https://discord.monkestation.com) |
+| Vanderlin Code    | [https://github.com/Monkestation/Vanderlin](https://github.com/Monkestation/Vanderlin)    |
 
 ## LICENSE
 Original Fork Originates from [commit c28b351807bad950d2b323ada048190844bbda32](https://github.com/tgstation/tgstation/commit/c28b351807bad950d2b323ada048190844bbda32).
