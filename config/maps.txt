@@ -37,3 +37,6 @@ map hsector
 	default
 	votable
 endmap
+
+map roguetest
+endmap

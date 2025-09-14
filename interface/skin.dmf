@@ -66,11 +66,11 @@ window "mapwindow"
 		size = 640x480
 		anchor1 = 0,0
 		anchor2 = 100,100
-		font-family = "Pterra"
+		font-family = "Mookmania"
 		font-size = 8pt
 		is-default = true
 		saved-params = "icon-size;zoom-mode"
-		style = ".center { text-align: center; } .maptext { font-family: 'Pterra'; font-size: 8pt; -dm-text-outline: 1px black; color: white; line-height: 1.0; } .small { font-size: 6pt; } .big { font-size: 8pt; } .reallybig { font-size: 8pt; } .extremelybig { font-size: 8pt; } .greentext { color: #00FF00; font-size: 6pt; } .redtext { color: #FF0000; font-size: 6pt; } .yell { font-weight: bold; } .italics { font-size: 6pt }"
+		style = ".center { text-align: center; } .maptext { font-family: 'Mookmania'; font-size: 8pt; -dm-text-outline: 1px black; color: white; line-height: 1.0; } .small { font-size: 6pt; } .big { font-size: 8pt; } .reallybig { font-size: 8pt; } .extremelybig { font-size: 8pt; } .greentext { color: #00FF00; font-size: 6pt; } .redtext { color: #FF0000; font-size: 6pt; } .yell { font-weight: bold; } .italics { font-size: 6pt }"
 
 window "infowindow"
 	elem "infowindow"
@@ -167,7 +167,7 @@ window "statwindow"
 		size = 640x480
 		anchor1 = 0,0
 		anchor2 = 100,100
-		font-family = "Pterra"
+		font-family = "Mookmania"
 		font-size = 12
 		font-style = "6"
 		text-color = #d6dbd5
