@@ -234,7 +234,7 @@ SUBSYSTEM_DEF(ticker)
 			check_queue()
 			check_maprotate()
 
-			check_for_lord()
+			//check_for_lord()
 			if(!roundend_check_paused && SSgamemode.check_finished(force_ending) || force_ending)
 				SSgamemode.refresh_alive_stats()
 				current_state = GAME_STATE_FINISHED
@@ -244,7 +244,7 @@ SUBSYSTEM_DEF(ticker)
 				Master.SetRunLevel(RUNLEVEL_POSTGAME)
 			if(SSgamemode.roundvoteend)
 				return
-			if(firstvote)
+			/*if(firstvote)
 				if(world.time > round_start_time + time_until_vote)
 					SSvote.initiate_vote("endround", "The Gods")
 					time_until_vote = 40 MINUTES
@@ -252,15 +252,15 @@ SUBSYSTEM_DEF(ticker)
 					firstvote = FALSE
 				return
 			if(world.time > last_vote_time + time_until_vote)
-				SSvote.initiate_vote("endround", "The Gods")
+				SSvote.initiate_vote("endround", "The Gods")*/
 
 /datum/controller/subsystem/ticker/proc/checkreqroles()
 	var/list/readied_jobs = list()
-	var/list/required_jobs = list("Monarch")
-#ifdef TESTING
+	var/list/required_jobs = list()//list("Monarch")
+/*#ifdef TESTING
 	required_jobs = list()
 	readied_jobs = list("Monarch")
-#endif
+#endif*/
 	for(var/V in required_jobs)
 		for(var/mob/dead/new_player/player in GLOB.player_list)
 			if(!player || !player.client)
@@ -274,9 +274,9 @@ SUBSYSTEM_DEF(ticker)
 							continue
 					readied_jobs.Add(V)
 
-	if(!(("Monarch" in readied_jobs) || (start_immediately == TRUE))) //start_immediately triggers when the world is doing a test run or an admin hits start now, we don't need to check for king
-		to_chat(world, span_purple("[pick(no_ruler_lines)]"))
-		return FALSE
+	//if(!(("Monarch" in readied_jobs) || (start_immediately == TRUE))) //start_immediately triggers when the world is doing a test run or an admin hits start now, we don't need to check for king
+	//	to_chat(world, span_purple("[pick(no_ruler_lines)]"))
+	//	return FALSE
 
 	job_change_locked = TRUE
 	return TRUE
