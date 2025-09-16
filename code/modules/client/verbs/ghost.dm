@@ -20,11 +20,29 @@
 	set name = "Journey to the Underworld"
 	set category = "Spirit"
 
-	switch(alert("Begin the long walk in the Underworld to your judgement?",,"Yes","No"))
+	switch(alert("Descend to the Underworld? (Return to Lobby)",,"Yes","No"))
 		if("No")
 			to_chat(usr, span_warning("You have second thoughts."))
 		if("Yes")
-			if(isroguespirit(mob)) //HONEYPOT CODE, REMOVE LATER
+			if(istype(mob, /mob/living/carbon/spirit))
+				return
+
+			if(istype(mob, /mob/living/carbon/human))
+				var/mob/living/carbon/human/D = mob
+				if(D.buried && D.funeral)
+					D.returntolobby()
+					return
+
+				var/datum/job/target_job = SSjob.GetJob(D.mind.assigned_role)
+				if(target_job)
+					if(target_job.job_reopens_slots_on_death)
+						target_job.current_positions = max(0, target_job.current_positions - 1)
+					//if(target_job.same_job_respawn_delay)
+						// Store the current time for the player
+						//GLOB.job_respawn_delays[src.ckey] = world.time + target_job.same_job_respawn_delay
+			verbs -= GLOB.ghost_verbs
+			mob.returntolobby()
+			/*if(isroguespirit(mob)) //HONEYPOT CODE, REMOVE LATER
 				message_admins("[key] IS TRYING TO CRASH THE SERVER BY SPAWNING SPIRITS AS A SPIRIT!")
 				return
 			if((mob.has_flaw(/datum/charflaw/hunted) || HAS_TRAIT(mob, TRAIT_ZIZOID_HUNTED)) && !MOBTIMER_FINISHED(mob, MT_LASTDIED, 60 SECONDS))
@@ -61,4 +79,4 @@
 
 			var/area/rogue/underworld/underworld = get_area(spawn_loc)
 			underworld.Entered(O, null)
-			verbs -= /client/proc/descend
+			verbs -= /client/proc/descend*/
