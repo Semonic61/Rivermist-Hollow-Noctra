@@ -329,7 +329,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	dat += "</td>"
 
 	dat += "<td style='width:33%;text-align:center'>"
-	dat += "<a href='?_src_=prefs;preference=antag;task=menu'>Special Roles</a>"
+	//dat += "<a href='?_src_=prefs;preference=antag;task=menu'>Special Roles</a>"
 	dat += "</td>"
 
 	dat += "<td style='width:33%;text-align:right'>"
