@@ -308,6 +308,8 @@
 #define OFFSET_BREASTS "breasts"
 #define OFFSET_TESTICLES "testicles"
 #define OFFSET_VAGINA "vagina"
+#define OFFSET_BELLY "belly"
+#define OFFSET_BUTT "butt"
 /* Noctra edit END */
 
 #define HUNGER_FACTOR		0.15	//factor at which mob nutrition decreases

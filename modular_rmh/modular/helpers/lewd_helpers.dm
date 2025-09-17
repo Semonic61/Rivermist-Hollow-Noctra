@@ -7,7 +7,7 @@
 				//if(equipped_item.is_bra && location == BODY_ZONE_PRECISE_GROIN)
 				//	continue
 				return equipped_item
-#define MAX_RANGE_FIND 32
+/*#define MAX_RANGE_FIND 32
 
 // blocks
 // taken from /mob/living/carbon/human/interactive/
@@ -54,4 +54,14 @@
 
 	return 0
 
-#undef MAX_RANGE_FIND
+#undef MAX_RANGE_FIND*/
+
+
+/obj/item/clothing/armor
+	flags_inv = HIDEBOOB|HIDEBELLY|HIDEUNDIESTOP
+
+/obj/item/clothing/pants
+	flags_inv = HIDEBUTT|HIDECROTCH|HIDEUNDIESBOT
+
+/obj/item/clothing/shirt
+	flags_inv = HIDEBOOB|HIDEBELLY|HIDEUNDIESTOP

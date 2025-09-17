@@ -1,8 +1,8 @@
 /datum/sprite_accessory/genitals/penis
-	icon = 'icons/mob/sprite_accessory/genitals/pintle.dmi'
+	icon = 'modular_rmh/icons/mob/sprite_accessory/genitals/pintle.dmi'
 	color_keys = 2
 	color_key_names = list("Member", "Skin")
-	relevant_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
+	relevant_layers = list(BODY_BEHIND_LAYER, BODY_ADJ_LAYER)
 	abstract_type = /datum/sprite_accessory/genitals/penis
 
 /datum/sprite_accessory/genitals/penis/adjust_appearance_list(list/appearance_list, obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)

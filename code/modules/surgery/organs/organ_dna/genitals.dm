@@ -36,3 +36,19 @@
 	..()
 	var/obj/item/organ/genitals/vagina/vagina_organ = organ
 	vagina_organ.fertility = fertility
+
+/datum/organ_dna/butt
+	var/butt_size = DEFAULT_BUTT_SIZE
+
+/datum/organ_dna/butt/imprint_organ(obj/item/organ/organ, datum/species/species)
+	..()
+	var/obj/item/organ/genitals/butt/butt_organ = organ
+	butt_organ.butt_size = butt_size
+
+/datum/organ_dna/belly
+	var/belly_size = DEFAULT_BELLY_SIZE
+
+/datum/organ_dna/belly/imprint_organ(obj/item/organ/organ, datum/species/species)
+	..()
+	var/obj/item/organ/genitals/belly/belly_organ = organ
+	belly_organ.belly_size = belly_size

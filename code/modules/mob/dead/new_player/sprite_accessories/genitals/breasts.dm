@@ -1,7 +1,7 @@
 /datum/sprite_accessory/genitals/breasts
-	icon = 'icons/mob/sprite_accessory/genitals/breasts.dmi'
+	icon = 'modular_rmh/icons/mob/sprite_accessory/genitals/breasts.dmi'
 	color_key_name = "Breasts"
-	relevant_layers = list(BODY_ADJ_LAYER)
+	relevant_layers = list(BODY_BEHIND_LAYER, BODY_ADJ_UPPER_LAYER)
 
 /datum/sprite_accessory/genitals/breasts/get_icon_state(obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
 	var/obj/item/organ/genitals/breasts/breasts = organ
