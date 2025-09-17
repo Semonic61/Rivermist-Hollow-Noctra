@@ -23,28 +23,28 @@
 /mob/living/carbon/proc/set_milk(milk)
 	breast_milk = milk
 	if(getorganslot(ORGAN_SLOT_BREASTS))
-		var/obj/item/organ/filling_organ/breasts/breasties = getorganslot(ORGAN_SLOT_BREASTS)
+		var/obj/item/organ/genitals/filling_organ/breasts/breasties = getorganslot(ORGAN_SLOT_BREASTS)
 		breasties.reagent_to_make = breast_milk
 		breasties.reagents.clear_reagents()
 		breasties.create_reagents(breasties.max_reagents/2)
 
 /datum/reagent/consumable/milk/elf
 	description = "An opaque white liquid produced by the mammary glands of mammals. It seeems tinted a little green..."
-	color = "#d0f3de" 
+	color = "#d0f3de"
 	taste_description = "mint and cream"
 	glass_desc = "It smells faintly like mint."
 
 /datum/reagent/consumable/milk/tiefling
 	description = "An opaque white liquid produced by the mammary glands of mammals. It seeems tinted a little red..."
-	color = "#f1d4c0" 
+	color = "#f1d4c0"
 	taste_description = "creamy butterscotch and cinnamon"
 
 /datum/reagent/consumable/milk/darkelf
 	description = "An opaque white liquid produced by the mammary glands of mammals. It seeems tinted a little grey..."
-	color = "#c2cbec" 
+	color = "#c2cbec"
 	taste_description = "tartness and mushrooms"
 
 /datum/reagent/consumable/milk/dwarf
 	description = "An opaque white liquid produced by the mammary glands of mammals. It seeems tinted a little yellow..."
-	color = "#ece4bd" 
+	color = "#ece4bd"
 	taste_description = "hops, cream and barley"

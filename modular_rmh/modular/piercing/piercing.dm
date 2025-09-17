@@ -8,7 +8,7 @@
 
 /datum/sprite_accessory/piercing/get_icon_state(obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
 	if(owner.getorganslot(ORGAN_SLOT_BREASTS))
-		var/obj/item/organ/filling_organ/breasts/breasts = owner.getorganslot(ORGAN_SLOT_BREASTS)
+		var/obj/item/organ/genitals/filling_organ/breasts/breasts = owner.getorganslot(ORGAN_SLOT_BREASTS)
 		var/tag = icon_state
 		if((breasts.organ_size == 0) || (breasts.organ_size == 1))
 			tag = tag + "-1"
@@ -23,13 +23,13 @@
 		return tag
 	else
 		var/tag = icon_state + "-1"
-		return tag 
+		return tag
 
 /datum/sprite_accessory/piercing/adjust_appearance_list(list/appearance_list, obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
 	generic_gender_feature_adjust(appearance_list, organ, bodypart, owner, OFFSET_SUIT, OFFSET_SUIT)
 
 /datum/sprite_accessory/piercing/is_visible(obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
-	var/obj/item/organ/filling_organ/breasts/breasts = owner.getorganslot(ORGAN_SLOT_BREASTS)
+	var/obj/item/organ/genitals/filling_organ/breasts/breasts = owner.getorganslot(ORGAN_SLOT_BREASTS)
 	if(breasts)
 		if(breasts.visible_through_clothes)
 			return TRUE

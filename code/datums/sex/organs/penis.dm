@@ -8,7 +8,7 @@
 	var/sheath_type = SHEATH_TYPE_NONE
 	var/erect_state = ERECT_STATE_NONE
 	var/penis_type = PENIS_TYPE_PLAIN
-	var/penis_size = DEFAULT_PENIS_SIZE
+	organ_size = DEFAULT_PENIS_SIZE
 	var/functional = TRUE
 
 /obj/item/organ/genitals/penis/Initialize()
@@ -61,7 +61,7 @@
 	sheath_type = source.sheath_type
 	erect_state = source.erect_state
 	penis_type = source.penis_type
-	penis_size = source.penis_size
+	penis_size = source.organ_size
 	grid_height = 32 * penis_size
 	grid_width = 32
 	name = "[source.name]"
@@ -83,7 +83,7 @@
 	sheath_type = SHEATH_TYPE_NORMAL
 
 /obj/item/organ/genitals/penis/knotted/big
-	penis_size = 3
+	organ_size = 3
 
 /obj/item/organ/genitals/penis/equine
 	name = "equine penis"

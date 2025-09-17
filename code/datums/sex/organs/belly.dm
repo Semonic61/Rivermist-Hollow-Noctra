@@ -6,7 +6,7 @@
 	zone = BODY_ZONE_PRECISE_STOMACH
 	slot = ORGAN_SLOT_BELLY
 	accessory_type = /datum/sprite_accessory/genitals/belly
-	var/belly_size = DEFAULT_BELLY_SIZE
+	organ_size = DEFAULT_BELLY_SIZE
 
 /obj/item/organ/genitals/belly/internal
 	name = "internal belly"

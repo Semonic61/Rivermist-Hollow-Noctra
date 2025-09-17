@@ -12,7 +12,7 @@
 
 /datum/sprite_accessory/genitals/butt/get_icon_state(obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
 	var/obj/item/organ/genitals/butt/buttie = organ
-	return "[icon_state]_[buttie.butt_size]"
+	return "[icon_state]_[buttie.organ_size]"
 
 /datum/sprite_accessory/genitals/butt/is_visible(obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
 	//if(organ.visible_through_clothes)
