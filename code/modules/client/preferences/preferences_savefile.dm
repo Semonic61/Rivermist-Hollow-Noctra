@@ -344,6 +344,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//Load prefs
 	S["job_preferences"] >> job_preferences
 
+	//Quirks
+	S["all_quirks"] >> all_quirks
+
 	//Load headshot link
 	S["headshot_link"]			>> headshot_link
 	if(!is_valid_headshot_link(null, headshot_link, TRUE))
@@ -405,6 +408,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		if(job_preferences[j] != JP_LOW && job_preferences[j] != JP_MEDIUM && job_preferences[j] != JP_HIGH)
 			job_preferences -= j
 
+	all_quirks = SANITIZE_LIST(all_quirks)
+
 	S["customizer_entries"] >> customizer_entries
 	validate_customizer_entries()
 
@@ -458,6 +463,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["joblessrole"]		, joblessrole)
 	//Write prefs
 	WRITE_FILE(S["job_preferences"] , job_preferences)
+
+	//Quirks
+	WRITE_FILE(S["all_quirks"]			, all_quirks)
 
 	//Patron
 	WRITE_FILE(S["selected_patron"]		, selected_patron.type)

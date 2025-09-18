@@ -30,6 +30,7 @@
 		ADD_TRAIT(character, TRAIT_FOREIGNER, TRAIT_GENERIC)
 	if(is_recognized)
 		ADD_TRAIT(character, TRAIT_RECOGNIZED, TRAIT_GENERIC)
+	SSquirks.AssignQuirks(character, character.client, TRUE)
 	return
 
 /datum/migrant_role/pilgrim

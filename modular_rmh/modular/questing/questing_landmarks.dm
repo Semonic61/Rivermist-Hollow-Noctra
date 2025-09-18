@@ -5,8 +5,8 @@
 	var/quest_difficulty = list(QUEST_DIFFICULTY_EASY, QUEST_DIFFICULTY_MEDIUM, QUEST_DIFFICULTY_HARD)
 	var/quest_type = list(QUEST_RETRIEVAL, QUEST_COURIER, QUEST_CLEAR_OUT, QUEST_KILL, QUEST_BEACON, QUEST_OUTLAW)
 	var/list/fetch_items = list(
-		/obj/item/rogueweapon/huntingknife/throwingknife/steel,
-		/obj/item/rogueweapon/huntingknife,
+		/obj/item/weapon/huntingknife/throwingknife/steel,
+		/obj/item/weapon/huntingknife,
 		/obj/item/reagent_containers/glass/bottle/rogue/whitewine
 	)
 	var/list/kill_mobs = list(
@@ -207,7 +207,7 @@
 		),
 		/area/rogue/indoors/town/rmh/miner = list(
 			/obj/item/flashlight/flare/torch/lantern,
-			/obj/item/rogueweapon/pick/steel,
+			/obj/item/weapon/pick/steel,
 			/obj/item/ration,
 		),
 		/area/rogue/indoors/town/rmh/witch = list(

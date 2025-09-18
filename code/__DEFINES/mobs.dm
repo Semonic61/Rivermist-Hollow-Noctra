@@ -330,6 +330,10 @@
 #define PULL_PRONE_SLOWDOWN 2
 #define HUMAN_CARRY_SLOWDOWN 0
 
+// Roundstart trait system
+
+#define MAX_QUIRKS 8 //The maximum amount of quirks one character can have at roundstart
+
 //Flags that control what things can spawn species (whitelist)
 //Wabbacjack staff projectiles
 #define WABBAJACK     (1<<0)
