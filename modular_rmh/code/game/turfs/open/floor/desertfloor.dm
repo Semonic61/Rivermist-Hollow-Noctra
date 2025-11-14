@@ -62,8 +62,3 @@
 	landsound = 'sound/foley/jumpland/grassland.ogg'
 	slowdown = 2
 
-/turf/open/floor/sand/desertsand/oasis/Initialize()
-	. = ..()
-	var/random_num = rand(1, 2)
-	icon_state = "oasissand-[random_num]"
-

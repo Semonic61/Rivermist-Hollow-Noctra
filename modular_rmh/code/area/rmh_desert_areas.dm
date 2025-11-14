@@ -91,7 +91,7 @@
 
 // ДАНЖ И ПЕЩЕРЫ - DUNGEON AND CAVES
 /area/rogue/under/rmh_desert/ziqurat
-	name = "ziqurat"
+	name = "Ziqurat"
 	icon = 'modular_rmh/icons/turf/areas.dmi'
 	icon_state = "ziqurat"
 	first_time_text = "ZIQURAT"
@@ -100,10 +100,9 @@
 	background_track_night = null
 	converted_type = /area/rogue/outdoors/rmh_desert/dungeon1
 	ceiling_protected = TRUE
-	//deathsight_message = "a dark cave where Abyssor's dream echoes"
 
 /area/rogue/outdoors/rmh_desert/dungeon1
-	name = "outdesertdungeon"
+	name = "Outdesertdungeon"
 	icon = 'modular_rmh/icons/turf/areas.dmi'
 	icon_state = "spidercave"
 	background_track = 'sound/music/area/dungeon.ogg'
@@ -117,7 +116,7 @@
 
 // ОАЗИС - OASIS
 /area/rogue/outdoors/rmh_desert/oasis
-	name = "oasis"
+	name = "Oasis"
 	icon = 'modular_rmh/icons/turf/areas.dmi'
 	icon_state = "oasis"
 	ambientsounds = 'modular_rmh/sound/music/area/oasis_day.ogg'
@@ -128,3 +127,73 @@
 	background_track_dusk = null
 	background_track_night = null
 	converted_type = /area/rogue/indoors/shelter/rmh_desert
+
+// ДВОРЦОВЫЙ ПОГРЕБ - PALACE CELLAR
+/area/rogue/under/rmh_desert/palacecellar
+	name = "Palace Cellar"
+	icon_state = "under"
+	first_time_text = "PALACE CELLAR"
+	background_track = 'sound/music/area/dungeon2.ogg'
+	background_track_dusk = null
+	background_track_night = null
+	ceiling_protected = TRUE
+
+// ДВОРЦОВЫЕ КАЗЕМАТЫ - PALACE CASEMATES
+/area/rogue/under/rmh_desert/palacecasemates
+	name = "Palace Casemates"
+	icon_state = "under"
+	first_time_text = "PALACE CASEMATES"
+	background_track = 'sound/music/area/dungeon2.ogg'
+	background_track_dusk = null
+	background_track_night = null
+	ceiling_protected = TRUE
+
+// ГАРЕМ - HAREM
+/area/rogue/under/rmh_desert/harem
+	name = "Harem"
+	icon_state = "under"
+	first_time_text = "HAREM"
+	droning_index = DRONING_BASEMENT
+	droning_index_night = DRONING_BASEMENT
+	ambient_index = AMBIENCE_DUNGEON
+	ambient_index_night = AMBIENCE_DUNGEON
+	background_track = 'sound/music/area/catacombs.ogg'
+	background_track_dusk = null
+	background_track_night = null
+	ceiling_protected = TRUE
+
+// ГАРЕМ НИЖНИЙ УРОВЕНЬ - LOWER HAREM
+/area/rogue/under/rmh_desert/hareml
+	name = "Lower Harem"
+	icon_state = "under"
+	first_time_text = "LOWER HAREM"
+	droning_index = DRONING_BASEMENT
+	droning_index_night = DRONING_BASEMENT
+	ambient_index = AMBIENCE_DUNGEON
+	ambient_index_night = AMBIENCE_DUNGEON
+	background_track = 'sound/music/area/catacombs.ogg'
+	background_track_dusk = null
+	background_track_night = null
+	ceiling_protected = TRUE
+
+// PYRAMID DUNGEON
+/area/rogue/under/rmh_desert/pyramid
+	name = "Pyramid"
+	icon_state = "under"
+	first_time_text = "PYRAMID"
+	background_track = 'sound/music/area/dungeon2.ogg'
+	background_track_dusk = null
+	background_track_night = null
+	ceiling_protected = TRUE
+
+// SPIDER DESERT CAVE
+/area/rogue/under/rmh_desert/spider
+	name = "Desert Spider Caves"
+	icon_state = "spider"
+	first_time_text = "DESERT CAVES"
+	ambush_mobs = list(
+				/mob/living/simple_animal/hostile/retaliate/spider/mutated = 100)
+	background_track = 'sound/music/area/spidercave.ogg'
+	background_track_dusk = null
+	background_track_night = null
+	ceiling_protected = TRUE

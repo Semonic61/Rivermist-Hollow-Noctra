@@ -2505,7 +2505,7 @@
 /obj/structure/door/arcyne/bolt{
 	keylock = 1
 	},
-/obj/effect/mapping_helpers/access/keyset/town/tower,
+/obj/effect/mapping_helpers/access/keyset/manor/mage,
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/concrete,
 /area/rogue/indoors/town/rmh/magician/pass)
