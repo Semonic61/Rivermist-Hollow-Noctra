@@ -141,7 +141,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	/// The patron/god/diety this character worships
 	var/datum/patron/selected_patron
 	/// The default patron to use if none is selected
-	var/static/datum/patron/default_patron = /datum/patron/divine/astrata
+	var/static/datum/patron/default_patron = /datum/patron/faerun/neutral_gods/ao
 	var/list/features = MANDATORY_FEATURE_LIST
 	var/list/randomise = list(
 		(RANDOM_BODY) = FALSE,
@@ -413,7 +413,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 
 	dat += "<b>Flaw:</b> <a href='?_src_=prefs;preference=charflaw;task=input'>[charflaw]</a><BR>"
 	var/datum/faith/selected_faith = GLOB.faithlist[selected_patron?.associated_faith]
-	dat += "<b>Faith:</b> <a href='?_src_=prefs;preference=faith;task=input'>[selected_faith?.name || "FUCK!"]</a><BR>"
+	dat += "<b>Pantheon:</b> <a href='?_src_=prefs;preference=faith;task=input'>[selected_faith?.name || "FUCK!"]</a><BR>"
 	dat += "<b>Patron:</b> <a href='?_src_=prefs;preference=patron;task=input'>[selected_patron?.name || "FUCK!"]</a><BR>"
 	dat += "<b>Family:</b> <a href='?_src_=prefs;preference=family'>[family ? family : "None"]</a><BR>"
 	if(family == FAMILY_FULL || family == FAMILY_NEWLYWED)
@@ -1341,7 +1341,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 					var/faith_input = browser_input_list(user, "SELECT YOUR HERO'S BELIEF", "PUPPETS ON STRINGS", faiths_named, "\The [selected_patron.associated_faith::name]")
 					if(faith_input)
 						var/datum/faith/faith = faiths_named[faith_input]
-						to_chat(user, "<font color='purple'>Faith: [faith.name]</font>")
+						to_chat(user, "<font color='purple'>Pantheon: [faith.name]</font>")
 						to_chat(user, "<font color='purple'>Background: [faith.desc]</font>")
 						selected_patron = GLOB.preference_patrons[faith.godhead] || GLOB.preference_patrons[pick(GLOB.patrons_by_faith[faith_input])]
 

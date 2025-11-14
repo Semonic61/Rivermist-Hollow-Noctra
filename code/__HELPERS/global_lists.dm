@@ -49,6 +49,8 @@
 	// Faiths
 	for(var/path in subtypesof(/datum/faith))
 		var/datum/faith/faith = new path()
+		if(!istype(faith, /datum/faith/faerun) || isnull(faith.name))
+			continue
 		GLOB.faithlist[path] = faith
 		if(faith.preference_accessible)
 			GLOB.preference_faiths[path] = faith
@@ -56,6 +58,8 @@
 	// Patron Gods
 	for(var/path in subtypesof(/datum/patron))
 		var/datum/patron/patron = new path()
+		if(!istype(patron, /datum/patron/faerun))
+			continue
 		GLOB.patronlist[path] = patron
 		if(!patron.preference_accessible)
 			continue
