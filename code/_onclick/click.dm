@@ -17,10 +17,10 @@
 // eg: 10*0.5 = 5 deciseconds of delay
 // DOES NOT EFFECT THE BASE 1 DECISECOND DELAY OF NEXT_CLICK
 
-/mob/proc/changeNext_move(num, hand, override = FALSE)
+/mob/proc/changeNext_move(num, hand)
 	next_move = world.time + ((num+next_move_adjust)*next_move_modifier)
 
-/mob/living/changeNext_move(num, hand, override = FALSE)
+/mob/living/changeNext_move(num, hand)
 	var/mod = next_move_modifier
 	var/adj = next_move_adjust
 	for(var/i in status_effects)
@@ -28,9 +28,7 @@
 		mod *= S.nextmove_modifier()
 		adj += S.nextmove_adjust()
 	if(!hand)
-		var/check_move = world.time + ((num + adj)*mod * (InCritical()? 3 : 1))
-		if((check_move >= next_move) || override)
-			next_move = check_move
+		next_move = world.time + ((num + adj)*mod * (InCritical()? 3 : 1))
 		hud_used?.cdmid?.mark_dirty()
 		return
 	if(hand == 1)

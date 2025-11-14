@@ -2,7 +2,6 @@
 	name = "NPC Suck their cunt off"
 	stamina_cost = 0
 	check_same_tile = FALSE
-	hole_id = BODY_ZONE_PRECISE_MOUTH
 
 
 /datum/sex_action/npc/npc_cunnilingus/shows_on_menu(mob/living/user, mob/living/target)

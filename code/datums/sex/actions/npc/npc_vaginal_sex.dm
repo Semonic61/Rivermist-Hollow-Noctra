@@ -2,7 +2,6 @@
 	name = "Fuck their cunt"
 	stamina_cost = 0
 	check_same_tile = FALSE
-	hole_id = ORGAN_SLOT_VAGINA
 
 /datum/sex_action/npc/npc_vaginal_sex/shows_on_menu(mob/living/user, mob/living/target)
 	return FALSE

@@ -848,9 +848,7 @@
  */
 /atom/proc/setDir(newdir)
 	SEND_SIGNAL(src, COMSIG_ATOM_DIR_CHANGE, dir, newdir)
-	var/oldDir = dir
 	dir = newdir
-	SEND_SIGNAL(src, COMSIG_ATOM_POST_DIR_CHANGE, oldDir, newdir)
 
 /**
  * Wash this atom
