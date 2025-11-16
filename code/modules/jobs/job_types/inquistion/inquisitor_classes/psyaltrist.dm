@@ -5,10 +5,14 @@
 	outfit = /datum/outfit/psyaltrist
 
 	jobstats = list(
-		STATKEY_STR = 1,
 		STATKEY_END = 1,
 		STATKEY_SPD = 3,
+<<<<<<< HEAD
 	)
+=======
+	) //4 Statline
+
+>>>>>>> vanderlin/main
 	skills = list(
 		/datum/skill/misc/music = SKILL_LEVEL_MASTER,
 		/datum/skill/magic/holy = SKILL_LEVEL_EXPERT,
@@ -22,7 +26,12 @@
 		/datum/skill/misc/medicine = SKILL_LEVEL_APPRENTICE
 	)
 
-	traits = list(TRAIT_DODGEEXPERT, TRAIT_EMPATH)
+	traits = list(	TRAIT_DODGEEXPERT,
+		TRAIT_EMPATH,
+		TRAIT_INQUISITION,
+		TRAIT_SILVER_BLESSED,
+		TRAIT_PSYDONIAN_GRIT,
+		TRAIT_PSYDONITE,)
 
 	spells = list(/datum/action/cooldown/spell/vicious_mockery)
 
