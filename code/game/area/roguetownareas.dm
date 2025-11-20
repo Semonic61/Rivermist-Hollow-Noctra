@@ -1,7 +1,6 @@
 /area
 	name = "roguetown"
 	icon_state = "rogue"
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 
 <<<<<<< HEAD
 
