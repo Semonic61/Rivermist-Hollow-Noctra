@@ -578,7 +578,7 @@
 	if(title_override)
 		return title_override
 
-	if(mob.gender == FEMALE && f_title)
+	if(mob.pronouns == SHE_HER && f_title)
 		return f_title
 
 	return title
@@ -777,8 +777,11 @@
 			outfit = outfit_entry
 
 	return TRUE
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 	return TRUE
+=======
+>>>>>>> vanderlin/main
 =======
 >>>>>>> vanderlin/main
