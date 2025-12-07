@@ -158,8 +158,8 @@
 		return
 	else
 		if(stage == 3)
-			var/turf/under_turf = get_step_multiz(src, DOWN)
 			var/turf/our_turf = get_turf(src)
+			var/turf/under_turf = GET_TURF_BELOW(our_turf)
 			if(under_turf && our_turf && isopenturf(under_turf))
 				var/area/rogue/underA = under_turf.loc
 				if((underA && !underA.ceiling_protected) || !underA)
