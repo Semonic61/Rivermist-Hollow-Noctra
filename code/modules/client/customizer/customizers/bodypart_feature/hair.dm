@@ -308,6 +308,9 @@
 		/datum/sprite_accessory/hair/head/kusanagi_alt,
 		/datum/sprite_accessory/hair/head/shorthair6,
 		/datum/sprite_accessory/hair/head/helmet,
+		/datum/sprite_accessory/hair/head/rakshari/high_tail,
+		/datum/sprite_accessory/hair/head/rakshari/doubleknot,
+		/datum/sprite_accessory/hair/head/rakshari/fluffy_tail,
 
 		//RMH
 		/datum/sprite_accessory/hair/head/cowlick,
@@ -402,6 +405,10 @@
 		/datum/sprite_accessory/hair/facial/vandyke,
 		/datum/sprite_accessory/hair/facial/burns,
 		/datum/sprite_accessory/hair/facial/hermit,
+		/datum/sprite_accessory/hair/facial/rakshari/kesh,
+		/datum/sprite_accessory/hair/facial/rakshari/spry,
+		/datum/sprite_accessory/hair/facial/rakshari/whiskered,
+		/datum/sprite_accessory/hair/facial/rakshari/jinni,
 	)
 
 /datum/customizer/bodypart_feature/hair/facial/humanoid/rakshari
