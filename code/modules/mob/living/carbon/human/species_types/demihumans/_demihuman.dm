@@ -123,12 +123,12 @@
 		/datum/customizer/organ/ears/demihuman,
 		/datum/customizer/organ/horns/demihuman,
 		/datum/customizer/organ/tail/demihuman,
-		/datum/customizer/organ/genitals/penis/human,
-		/datum/customizer/organ/genitals/vagina/human,
-		/datum/customizer/organ/genitals/breasts/human,
-		/datum/customizer/organ/genitals/belly/human,
-		/datum/customizer/organ/genitals/butt/human,
-		/datum/customizer/organ/genitals/testicles/human,
+		/datum/customizer/organ/genitals/penis/anthro,
+		/datum/customizer/organ/genitals/vagina/anthro,
+		/datum/customizer/organ/genitals/breasts/animal,
+		/datum/customizer/organ/genitals/belly/animal,
+		/datum/customizer/organ/genitals/butt/animal,
+		/datum/customizer/organ/genitals/testicles/anthro,
 	)
 
 	descriptor_choices = list(
