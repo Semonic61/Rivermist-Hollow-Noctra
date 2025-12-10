@@ -2,7 +2,7 @@
 	name = "hedgehog"
 	desc = ""
 	icon_state = "egek_mob"
-	icon = 'icons/roguetown/mob/monster/rat.dmi'
+	icon = 'modular_rmh/icons/mob/monster/egiki.dmi'
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
 	foodtype = RAW
 	verb_say = "squeaks"
