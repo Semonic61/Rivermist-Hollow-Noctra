@@ -42,6 +42,19 @@
 /obj/effect/lily_petal/two,
 /turf/open/water/bath/pool/mid,
 /area/indoors/town/rmh/merchant)
+"aaJ" = (
+/obj/structure/curtain/dir{
+	dir = 4;
+	color = "#8a6b6b";
+	hover_color = "#8a6b6b"
+	},
+/obj/structure/window/openclose/reinforced{
+	dir = 4
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "aaR" = (
 /obj/structure/flora/grass/water/reeds,
 /turf/open/water/swamp/deep,
@@ -234,10 +247,10 @@
 	})
 "agA" = (
 /obj/structure/door/weak/bolt,
+/obj/structure/curtain/purple,
 /turf/open/floor/wood,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "agE" = (
 /obj/structure/bars,
@@ -338,6 +351,10 @@
 /obj/effect/landmark/quest_spawner/easy,
 /turf/open/floor/grass/cold,
 /area/outdoors/rmh_field/west)
+"ajK" = (
+/obj/structure/fluff/railing/border/north,
+/turf/open/floor/wood,
+/area/under/town/rmh/basement)
 "ako" = (
 /turf/open/floor/hexstone,
 /area/indoors/cave/rmh_cave/to_underdark)
@@ -457,6 +474,23 @@
 "anL" = (
 /turf/closed/wall/mineral/wooddark/vertical,
 /area/indoors/town/rmh/bath)
+"aob" = (
+/obj/structure/chair/stool/bar,
+/obj/effect/decal/cobbleedge{
+	dir = 2;
+	icon_state = "borderfall";
+	pixel_y = -8
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = -8
+	},
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "aom" = (
 /obj/effect/decal/cobble/mossy{
 	dir = 10;
@@ -511,6 +545,14 @@
 	},
 /turf/closed/wall/mineral/stone,
 /area/under/town/rmh/sewer)
+"apQ" = (
+/obj/machinery/tanningrack,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
+"apR" = (
+/obj/machinery/light/fueled/torchholder,
+/turf/closed/wall/mineral/stonebrick,
+/area/under/town/rmh/basement)
 "aqe" = (
 /obj/structure/fluff/walldeco/church/line,
 /turf/open/floor/churchmarble,
@@ -724,6 +766,10 @@
 /obj/item/natural/stone,
 /turf/open/floor/ruinedwood/spiral,
 /area/indoors/cave/underhamlet)
+"awP" = (
+/obj/structure/fluff/railing/corner/south_west,
+/turf/open/floor/blocks/stonered,
+/area/indoors/town/rmh/bank)
 "axC" = (
 /obj/structure/fluff/railing/border{
 	dir = 10
@@ -785,12 +831,12 @@
 	},
 /area/outdoors/rmh_field/north_mountain)
 "ayX" = (
-/obj/machinery/light/fueled/wallfire/candle,
-/turf/open/floor/carpet/stellar,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
-	})
+/obj/structure/door/green{
+	name = "Bank living chamber"
+	},
+/obj/effect/mapping_helpers/access/keyset/manor/steward,
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "azq" = (
 /turf/open/floor/cobblerock/snow,
 /area/indoors/town/rmh/magician/pass)
@@ -876,6 +922,15 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"aBD" = (
+/obj/effect/decal/edge_corner{
+	dir = 1;
+	color = "#3b3b3b"
+	},
+/turf/open/floor/tile/brownbrick,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "aBI" = (
 /obj/machinery/light/fueled/torchholder/r,
 /turf/open/floor/concrete,
@@ -885,7 +940,8 @@
 /area/indoors/cave/underhamlet)
 "aCn" = (
 /obj/structure/fluff/railing/border/west,
-/turf/open/floor/ruinedwood/herringbone_clear,
+/obj/structure/fermentation_keg/water,
+/turf/open/floor/ruinedwood/spiral,
 /area/indoors/town/rmh/merchant)
 "aCo" = (
 /turf/closed/wall/mineral/decostone/moss/cand,
@@ -1280,6 +1336,10 @@
 	icon_state = "weird1"
 	},
 /area/indoors/town/rmh/town_hall)
+"aRo" = (
+/obj/structure/door/iron/bars,
+/turf/open/floor/greenstone,
+/area/under/town/rmh/sewer)
 "aRp" = (
 /obj/structure/bars/pipe{
 	dir = 1;
@@ -1340,6 +1400,13 @@
 	},
 /turf/open/floor/ruinedwood/turned,
 /area/indoors/town/rmh/sawmill)
+"aTe" = (
+/obj/structure/fluff/railing/corner{
+	dir = 9
+	},
+/obj/structure/curtain/purple,
+/turf/open/floor/carpet/purple,
+/area/indoors/town/rmh/bank)
 "aTf" = (
 /obj/structure/flora/tree/pine{
 	icon_state = "pine3"
@@ -1364,13 +1431,9 @@
 /turf/open/floor/metal,
 /area/indoors/town/apothecary)
 "aTJ" = (
-/obj/structure/door/weak/bolt{
-	dir = 8
-	},
-/turf/open/floor/wood,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/turf/closed/wall/mineral/wooddark/horizontal,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "aUi" = (
 /obj/structure/stairs{
@@ -1466,10 +1529,16 @@
 /turf/open/floor/cobble/snow,
 /area/indoors/town/rmh/magician)
 "aWZ" = (
-/turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/obj/structure/fluff/railing/border/west,
+/obj/effect/decal/cobbleedge{
+	dir = 4;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = 8
+	},
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "aXd" = (
 /obj/structure/chair/bench/coucha/redleft,
@@ -1589,9 +1658,8 @@
 /obj/effect/mapping_helpers/access/keyset/town/mercenary,
 /obj/structure/door/red,
 /turf/open/floor/woodturned,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "bak" = (
 /turf/closed/wall/mineral/stone,
@@ -1639,6 +1707,10 @@
 /obj/structure/flora/grass/bush/wall,
 /turf/open/floor/grass/yel,
 /area/outdoors/rmh_field/druid)
+"bcg" = (
+/obj/machinery/light/fueled/torchholder/r,
+/turf/open/floor/wood,
+/area/under/town/rmh/basement)
 "bcp" = (
 /obj/structure/flora/grass/tundra,
 /obj/structure/flora/newtree/snow,
@@ -1746,15 +1818,15 @@
 	first_time_text = "RIVERMIST HOLLOW"
 	})
 "bfv" = (
-/obj/structure/table/wood{
-	dir = 2;
-	icon_state = "longtable";
-	layer = 2.82
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = -8
 	},
 /turf/open/floor/woodturned,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "bfC" = (
 /obj/effect/decal/wood/herringbone{
@@ -1953,10 +2025,15 @@
 	})
 "bjR" = (
 /obj/machinery/light/fueled/wallfire/candle/r,
+/obj/effect/decal/cobbleedge{
+	dir = 4;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = 8
+	},
 /turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "bkn" = (
 /turf/open/floor/dirt/road{
@@ -1993,6 +2070,18 @@
 /obj/item/natural/stone,
 /turf/open/floor/naturalstone,
 /area/indoors/town/rmh/magician/pass)
+"bma" = (
+/obj/machinery/light/fueled/oven/south,
+/obj/effect/decal/edge{
+	dir = 2;
+	color = "#522f26"
+	},
+/obj/machinery/light/fueled/hearth{
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/glass/bucket/pot,
+/turf/open/floor/blocks/stonered/tiny,
+/area/indoors/town/rmh/bank)
 "bmd" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet,
@@ -2081,6 +2170,11 @@
 	},
 /turf/open/floor/greenstone,
 /area/under/town/rmh/sewer)
+"boM" = (
+/obj/structure/fluff/railing/border/east,
+/obj/structure/handcart,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "boR" = (
 /obj/effect/decal/cobbleedge/alt{
 	dir = 6
@@ -2220,6 +2314,16 @@
 /obj/structure/fermentation_keg/random,
 /turf/open/floor/wood,
 /area/indoors/town/rmh/farm)
+"btr" = (
+/obj/structure/fake_machine/hailer/r,
+/obj/effect/decal/edge_corner{
+	dir = 4;
+	color = "#3b3b3b"
+	},
+/turf/open/floor/tile/diamond/blue,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "btw" = (
 /turf/closed/wall/mineral/decostone/cand,
 /area/indoors/cave/rmh_cave/minotaur)
@@ -2389,6 +2493,14 @@
 /obj/item/natural/stoneblock,
 /turf/open/floor/naturalstone,
 /area/indoors/cave/rmh_cave/minotaur)
+"byD" = (
+/obj/effect/decal/carpet/kover_purple{
+	dir = 4;
+	pixel_x = -13;
+	pixel_y = 16
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "byP" = (
 /obj/structure/hotspring,
 /obj/effect/lily_petal/two,
@@ -2422,6 +2534,15 @@
 	},
 /turf/open/floor/church,
 /area/indoors/town/rmh/merchant)
+"bzv" = (
+/obj/effect/decal/edge{
+	dir = 2;
+	color = "#3b3b3b"
+	},
+/turf/open/floor/tile/diamond/blue,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "bzG" = (
 /turf/open/floor/churchrough,
 /area/indoors/town/rmh/magician)
@@ -2473,6 +2594,19 @@
 /obj/structure/fluff/walldeco/vinez/red,
 /turf/closed/wall/mineral/stone/moss/red,
 /area/indoors/cave/rmh_cave/mine)
+"bBP" = (
+/obj/structure/window/openclose/reinforced{
+	dir = 1
+	},
+/obj/structure/curtain/dir{
+	dir = 1;
+	color = "#8a6b6b";
+	hover_color = "#8a6b6b"
+	},
+/turf/open/floor/concrete,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "bBV" = (
 /obj/structure/flora/grass/tundra,
 /obj/structure/chair/bench/ancientlog,
@@ -3375,6 +3509,28 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"cby" = (
+/obj/structure/fluff/railing/border/east,
+/obj/structure/closet/crate/chest/wicker,
+/obj/machinery/light/fueled/wallfire/candle/l,
+/obj/item/cooking/pan{
+	pixel_x = 2;
+	pixel_y = -1
+	},
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/plate/clay,
+/obj/item/plate/clay,
+/obj/item/plate/tray,
+/obj/item/kitchen/fork/pewter,
+/obj/item/kitchen/fork/pewter,
+/obj/item/kitchen/fork/pewter,
+/obj/item/kitchen/spoon/pewter,
+/obj/item/kitchen/spoon/pewter,
+/obj/item/kitchen/spoon/pewter,
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "cbG" = (
 /obj/structure/flora/grass/tundra,
 /turf/open/floor/grass/yel,
@@ -3522,15 +3678,14 @@
 /turf/closed/wall/mineral/roofwall/outercorner,
 /area/indoors/town/rmh)
 "cfj" = (
+/obj/item/natural/feather,
 /obj/structure/table/wood{
 	dir = 1;
-	icon_state = "longtable"
+	icon_state = "longtable_mid"
 	},
-/obj/item/natural/feather,
 /turf/open/floor/woodturned,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "cfl" = (
 /obj/structure/closet/crate/chest/wicker,
@@ -3631,9 +3786,8 @@
 /area/under/cavewet)
 "chv" = (
 /turf/closed/wall/mineral/wood,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "chB" = (
 /obj/structure/flora/grass/water/reeds,
@@ -3727,7 +3881,8 @@
 /obj/structure/stairs{
 	dir = 1
 	},
-/turf/open/floor/ruinedwood/turned,
+/obj/machinery/light/fueled/wallfire/candle,
+/turf/open/floor/tile/brownbrick,
 /area/indoors/town/rmh/bank)
 "ckU" = (
 /obj/structure/flora/grass/bush/wall/tall/tundra,
@@ -3755,9 +3910,8 @@
 /obj/structure/bed/inn,
 /obj/item/bedsheet/pelt,
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "cls" = (
 /turf/open/water/river{
@@ -3784,10 +3938,10 @@
 /obj/structure/door/weak/bolt{
 	dir = 4
 	},
+/obj/structure/curtain/purple,
 /turf/open/floor/concrete,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "cmc" = (
 /obj/structure/bed/inn{
@@ -3827,10 +3981,9 @@
 /area/indoors/town/rmh/merchant)
 "cna" = (
 /obj/structure/stairs{
-	dir = 1;
-	name = "benches"
+	dir = 8
 	},
-/turf/open/floor/cobble/alt,
+/turf/open/floor/ruinedwood/chevron,
 /area/under/town/rmh/basement)
 "cnd" = (
 /obj/effect/decal/cobbleedge{
@@ -4323,6 +4476,10 @@
 "cBT" = (
 /turf/closed/wall/mineral/stone/moss,
 /area/indoors/town/rmh/garrison/wall)
+"cCd" = (
+/obj/item/natural/rock,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "cCn" = (
 /obj/effect/spawner/map_spawner/loot/weapon,
 /turf/open/floor/naturalstone,
@@ -4359,6 +4516,13 @@
 "cDr" = (
 /turf/open/floor/naturalstone,
 /area/indoors/cave/west)
+"cEa" = (
+/obj/structure/bed/inn/double,
+/obj/item/bedsheet/fabric_double,
+/obj/structure/carpet/purple,
+/obj/structure/fluff/walldeco/bigpainting,
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "cEe" = (
 /obj/structure/flora/grass/tundra,
 /obj/structure/flora/grass/tundra,
@@ -4374,6 +4538,12 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"cEg" = (
+/obj/structure/fluff/railing/border/east,
+/obj/structure/fluff/railing/border,
+/obj/structure/fluff/railing/corner/south_east,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "cEp" = (
 /obj/structure/fluff/railing/border{
 	dir = 4;
@@ -4425,9 +4595,8 @@
 /obj/effect/mapping_helpers/access/keyset/town/mercenary,
 /obj/effect/mapping_helpers/access/keyset/town/mercenary,
 /turf/open/floor/concrete,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "cGI" = (
 /obj/structure/window/openclose/reinforced{
@@ -4683,6 +4852,15 @@
 /obj/machinery/light/fueled/wallfire/candle/blue/l,
 /turf/open/floor/hexstone,
 /area/under/town/rmh/basement)
+"cPk" = (
+/obj/effect/decal/carpet/square{
+	pixel_x = -6;
+	pixel_y = 23
+	},
+/turf/open/floor/carpet/stellar,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "cPq" = (
 /obj/structure/roguerock,
 /turf/open/floor/hexstone,
@@ -4710,6 +4888,10 @@
 /area/under/underdark/rmh{
 	name = "Caves & Mines"
 	})
+"cQw" = (
+/obj/machinery/light/fueled/smelter,
+/turf/open/floor/concrete,
+/area/under/town/rmh/basement)
 "cQx" = (
 /obj/machinery/essence/enchantment_altar,
 /turf/open/floor/cobble,
@@ -4946,6 +5128,36 @@
 /obj/effect/decal/remains/human,
 /turf/open/floor/naturalstone,
 /area/outdoors/rmh_air)
+"cZB" = (
+/obj/effect/decal/edge_corner{
+	dir = 2;
+	color = "#522f26";
+	pixel_y = 0
+	},
+/obj/structure/table/wood/reinforced_alter{
+	pixel_y = 5
+	},
+/obj/item/kitchen/rollingpin{
+	pixel_y = 7;
+	pixel_x = 4
+	},
+/obj/item/weapon/knife/villager{
+	pixel_x = -5;
+	pixel_y = 11
+	},
+/obj/structure/rack/shelf{
+	pixel_y = 28
+	},
+/obj/item/reagent_containers/glass/cup/amber{
+	pixel_y = 31;
+	pixel_x = -7
+	},
+/obj/item/reagent_containers/glass/cup/amber{
+	pixel_y = 31;
+	pixel_x = 4
+	},
+/turf/open/floor/blocks/stonered/tiny,
+/area/indoors/town/rmh/bank)
 "cZD" = (
 /obj/structure/bed/wool,
 /obj/item/bedsheet/pelt,
@@ -4958,6 +5170,10 @@
 /obj/machinery/light/fueled/torchholder/c,
 /turf/open/floor/blocks,
 /area/indoors/town/rmh/garrison)
+"cZQ" = (
+/obj/machinery/light/fueled/wallfire/candle,
+/turf/open/floor/sandstone,
+/area/under/town/rmh/basement)
 "cZS" = (
 /obj/structure/closet/crate/drawer,
 /obj/item/rope/chain,
@@ -5123,18 +5339,15 @@
 	layer = 2.79;
 	pixel_x = 3
 	},
-/obj/structure/noticeboard{
-	pixel_y = 32
-	},
 /obj/effect/decal/cobbleedge{
 	dir = 1;
 	icon_state = "borderfall";
 	pixel_y = 8
 	},
+/obj/structure/fake_machine/hailerboard,
 /turf/open/floor/wood,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "dgs" = (
 /obj/machinery/light/fueled/wallfire/candle,
@@ -5431,10 +5644,13 @@
 	icon_state = "borderfall";
 	pixel_y = 8
 	},
+/obj/item/candle/skull/darkskull/lit{
+	pixel_y = 14;
+	pixel_x = 2
+	},
 /turf/open/floor/wood,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "dlI" = (
 /obj/structure/bed/sleepingbag{
@@ -5461,9 +5677,8 @@
 	dir = 8
 	},
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "dmf" = (
 /turf/open/transparent/openspace,
@@ -5563,6 +5778,10 @@
 /obj/structure/chair/stool/bar,
 /turf/open/floor/herringbone,
 /area/indoors/cave/underhamlet)
+"dnO" = (
+/obj/structure/chair/stool/bar,
+/turf/open/floor/ruinedwood/spiralfade,
+/area/outdoors/town/rmh/roofs)
 "dnQ" = (
 /obj/structure/flora/grass/tundra,
 /turf/open/floor/dirt/road{
@@ -5698,10 +5917,15 @@
 /area/indoors/town)
 "dpB" = (
 /obj/machinery/light/fueled/wallfire/candle/r,
+/obj/effect/decal/cobbleedge{
+	dir = 4;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = 8
+	},
 /turf/open/floor/carpet/inn,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "dpN" = (
 /obj/structure/fluff/walldeco/vinez/offset,
@@ -5792,6 +6016,14 @@
 	dir = 8
 	},
 /area/indoors/cave/rmh_cave)
+"drS" = (
+/obj/structure/table/wood/reinf_long{
+	dir = 8
+	},
+/obj/item/weapon/hammer/iron,
+/obj/item/weapon/tongs/stone,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "dsP" = (
 /obj/structure/fluff/railing/border{
 	dir = 5
@@ -5843,6 +6075,11 @@
 /obj/structure/chair/stool/bar,
 /turf/open/floor/cobble,
 /area/indoors/town/rmh/farm)
+"duQ" = (
+/turf/open/floor/ruinedwood/spiralfade,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "dvf" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 1
@@ -6129,6 +6366,11 @@
 	icon_state = "snow"
 	},
 /area/outdoors/bog)
+"dBT" = (
+/turf/closed/wall/mineral/roofwall/outercorner{
+	dir = 8
+	},
+/area/indoors/town/rmh/bank)
 "dBV" = (
 /obj/structure/fluff/railing/border/east,
 /obj/structure/closet/crate/chest/crate,
@@ -6207,10 +6449,15 @@
 /area/under/rmh_bedrock)
 "dEK" = (
 /obj/machinery/light/fueled/wallfire/candle/l,
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = -8
+	},
 /turf/open/floor/woodturned,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "dEM" = (
 /obj/structure/table/wood{
@@ -6309,10 +6556,14 @@
 	})
 "dHR" = (
 /obj/machinery/light/fueled/wallfire/candle,
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 8
+	},
 /turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "dIa" = (
 /obj/machinery/light/fueled/wallfire/candle/blue{
@@ -6373,9 +6624,8 @@
 	})
 "dIM" = (
 /turf/closed/wall/mineral/craftstone,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "dIW" = (
 /obj/effect/decal/cobble/mossy{
@@ -6985,10 +7235,27 @@
 /turf/open/floor/blocks/stonered/tiny,
 /area/indoors/town/rmh/garrison)
 "eaS" = (
-/turf/closed/wall/mineral/wooddark/horizontal,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/obj/structure/curtain/dir{
+	dir = 4;
+	color = "#8a6b6b";
+	hover_color = "#8a6b6b"
+	},
+/obj/structure/window/harem3{
+	name = "tall window"
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
+"eaY" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 8
+	},
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "ebj" = (
 /obj/structure/fluff/walldeco/vinez,
@@ -7059,6 +7326,10 @@
 	icon_state = "snow"
 	},
 /area/outdoors/rmh_field/camp)
+"edY" = (
+/obj/structure/rack/shelf/biggest,
+/turf/open/floor/ruinedwood/spiral,
+/area/indoors/town/rmh/merchant)
 "eef" = (
 /obj/effect/mapping_helpers/secret_door_creator{
 	name = "Merchant Secret Door";
@@ -7100,6 +7371,10 @@
 	},
 /turf/open/floor/woodturned,
 /area/indoors/town/rmh/magician)
+"eeQ" = (
+/obj/structure/closet/crate/chest/wicker,
+/turf/open/floor/ruinedwood/spiral,
+/area/indoors/town/rmh/merchant)
 "efi" = (
 /turf/closed/mineral/random,
 /area/indoors/cave/rmh_cave/mine)
@@ -7274,6 +7549,15 @@
 /obj/effect/spawner/map_spawner/loot/dungeon/tools,
 /turf/open/floor/cobble/snow,
 /area/outdoors/town/rmh/roofs)
+"elK" = (
+/obj/effect/decal/edge_corner{
+	dir = 4;
+	color = "#3b3b3b"
+	},
+/turf/open/floor/tile/brownbrick,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "elL" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -7394,6 +7678,18 @@
 "eqD" = (
 /turf/open/floor/hay,
 /area/indoors/town/rmh)
+"eqH" = (
+/obj/structure/chair/stool/bar,
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = -8
+	},
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "eqI" = (
 /obj/structure/chair/wood/alt/fancy,
 /obj/effect/landmark/start/priest,
@@ -7611,6 +7907,11 @@
 /obj/structure/fluff/walldeco/vinez/red,
 /turf/open/floor/cobblerock,
 /area/indoors/town/rmh/chapel/basement)
+"evV" = (
+/turf/open/floor/rooftop/green/corner1{
+	dir = 10
+	},
+/area/outdoors/town/rmh/roofs)
 "ewg" = (
 /obj/structure/roguerock,
 /turf/open/floor/cobblerock/snow,
@@ -7637,6 +7938,15 @@
 	},
 /turf/open/floor/cobblerock/snow,
 /area/indoors/cave/rmh_cave/minotaur)
+"exi" = (
+/obj/structure/door/weak/bolt{
+	dir = 1
+	},
+/obj/structure/curtain/purple,
+/turf/open/floor/wood,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "exk" = (
 /obj/item/natural/rock/random_ore,
 /obj/effect/decal/cobble/mossy{
@@ -7703,6 +8013,18 @@
 	icon_state = "snowpatchy_grass"
 	},
 /area/outdoors/rmh_field)
+"eyL" = (
+/obj/machinery/light/fueled/wallfire/candle/r,
+/obj/effect/decal/cobbleedge{
+	dir = 2;
+	icon_state = "borderfall";
+	pixel_y = -8
+	},
+/obj/structure/fluff/railing/corner/south_west,
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "eyR" = (
 /obj/effect/decal/cleanable/debris/stone,
 /obj/structure/spider/stickyweb,
@@ -7751,6 +8073,13 @@
 /obj/structure/fluff/walldeco/vinez/red,
 /turf/closed/wall/mineral/decostone/center,
 /area/indoors/town/rmh/chapel/basement)
+"eBE" = (
+/obj/structure/fluff/railing/corner/south_west,
+/obj/structure/fluff/railing/corner/south_east,
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "eBF" = (
 /obj/structure/flora/grass/tundra,
 /turf/open/floor/cobble/mossy,
@@ -7769,6 +8098,24 @@
 /obj/structure/stairs/stone,
 /turf/open/floor/herringbone,
 /area/outdoors/mountains/rmh_mountains)
+"eCA" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 8
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 2;
+	icon_state = "borderfall";
+	pixel_y = -8
+	},
+/obj/structure/fluff/railing/corner{
+	dir = 9
+	},
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "eCJ" = (
 /obj/structure/door/stone{
 	name = "Priest's Chamber"
@@ -7846,6 +8193,13 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"eFJ" = (
+/obj/structure/fluff/walldeco/bath/wallrope{
+	pixel_y = 32
+	},
+/obj/structure/fake_machine/scomm,
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "eFL" = (
 /mob/living/simple_animal/hostile/retaliate/troll/cave,
 /turf/open/floor/cobblerock/alt,
@@ -8286,6 +8640,10 @@
 /obj/structure/window/openclose/reinforced{
 	dir = 1
 	},
+/obj/structure/curtain/dir{
+	dir = 1;
+	color = "#63115b"
+	},
 /turf/open/floor/ruinedwood,
 /area/indoors/town/rmh/bank)
 "eTs" = (
@@ -8424,6 +8782,12 @@
 /obj/item/natural/stoneblock,
 /turf/open/floor/cobblerock/snow,
 /area/outdoors/rmh_field)
+"eXi" = (
+/obj/structure/fluff/railing/wood/east,
+/turf/open/floor/ruinedwood/spiralfade,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "eXk" = (
 /obj/effect/decal/cobblerockedge/alt{
 	dir = 4
@@ -8555,6 +8919,7 @@
 /turf/open/floor/grass/eora,
 /area/under/cavewet)
 "fcj" = (
+/obj/structure/fluff/clock,
 /obj/machinery/light/fueled/wallfire/candle/l,
 /turf/open/floor/woodturned,
 /area/indoors/town/rmh/bank)
@@ -8584,6 +8949,13 @@
 	icon_state = "roofg"
 	},
 /area/outdoors/town/rmh/roofs)
+"fdg" = (
+/obj/effect/decal/edge{
+	dir = 8;
+	color = "#522f26"
+	},
+/turf/open/floor/blocks/stonered,
+/area/indoors/town/rmh/bank)
 "fdr" = (
 /obj/structure/stairs/stone,
 /turf/open/floor/cobble/alt,
@@ -8699,12 +9071,9 @@
 /turf/closed/wall/mineral/stonebrick,
 /area/indoors/town/rmh/crafters_guild)
 "fhN" = (
-/obj/structure/closet/crate/crafted_closet/inn/south,
-/turf/open/floor/carpet/stellar,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
-	})
+/obj/machinery/light/fueled/wallfire/candle/r,
+/turf/open/floor/blocks/stonered,
+/area/indoors/town/rmh/bank)
 "fib" = (
 /mob/living/simple_animal/pet/cat/black{
 	dir = 4
@@ -8759,6 +9128,9 @@
 	},
 /turf/open/floor/ruinedwood,
 /area/indoors/town/rmh/town_hall)
+"fjo" = (
+/turf/open/floor/carpet/purple,
+/area/indoors/town/rmh/bank)
 "fjB" = (
 /obj/structure/fluff/nest{
 	name = "patch of straw"
@@ -8866,10 +9238,12 @@
 	first_time_text = "RIVERMIST HOLLOW"
 	})
 "fna" = (
+/obj/effect/decal/carpet/kover_darkred{
+	pixel_y = -20
+	},
 /turf/open/floor/carpet/stellar,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "fnb" = (
 /obj/structure/fermentation_keg/random,
@@ -9151,6 +9525,17 @@
 /obj/structure/roguerock,
 /turf/open/floor/naturalstone,
 /area/indoors/cave/rmh_cave/to_underdark)
+"fzK" = (
+/obj/structure/window/openclose/reinforced{
+	dir = 1
+	},
+/obj/structure/curtain/dir{
+	dir = 1;
+	color = "#8a6b6b";
+	hover_color = "#8a6b6b"
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "fzM" = (
 /obj/structure/flora/hotspring_rocks/grassy,
 /turf/open/floor/dirt{
@@ -9369,9 +9754,8 @@
 /obj/effect/mapping_helpers/access/locker,
 /obj/effect/mapping_helpers/access/keyset/town/merchant,
 /turf/open/floor/wood,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "fHU" = (
 /obj/effect/decal/edge{
@@ -9520,9 +9904,8 @@
 	pixel_y = 8
 	},
 /turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "fNo" = (
 /turf/closed/wall/mineral/wooddark/horizontal,
@@ -9655,11 +10038,8 @@
 /turf/open/floor/grass/cold,
 /area/outdoors/exposed/magiciantower)
 "fQA" = (
-/obj/structure/fluff/customsign{
-	desc = "Дом казначея и местный 'банк'.";
-	name = "BANK";
-	icon = 'icons/roguetown/misc/signs.dmi';
-	icon_state = "signexclamationmark";
+/obj/structure/fluff/walldeco/steward{
+	name = "bank";
 	pixel_y = 32
 	},
 /turf/open/floor/cobble/snow,
@@ -9842,6 +10222,13 @@
 	},
 /turf/open/water/cleanshallow/dirt,
 /area/outdoors/river)
+"fUt" = (
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_y = -32
+	},
+/obj/structure/carpet/purple,
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "fUB" = (
 /obj/structure/fluff/statue/small,
 /turf/closed/wall/mineral/decostone/cand,
@@ -9945,6 +10332,15 @@
 	},
 /turf/open/floor/blocks,
 /area/indoors/town/rmh/garrison)
+"fXr" = (
+/obj/item/natural/rock/iron,
+/obj/item/natural/rock/iron,
+/obj/item/natural/rock/iron,
+/obj/item/natural/rock/iron,
+/obj/item/natural/rock/iron,
+/obj/machinery/light/fueled/torchholder/l,
+/turf/open/floor/concrete,
+/area/under/town/rmh/basement)
 "fXK" = (
 /obj/effect/decal/mossy{
 	dir = 8
@@ -10147,13 +10543,10 @@
 /turf/closed/wall/mineral/roofwall/middle,
 /area/indoors/town/rmh/bath)
 "gdo" = (
-/obj/structure/bed/inn,
-/obj/item/bedsheet/pelt,
-/turf/open/floor/carpet/stellar,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
-	})
+/turf/closed/wall/mineral/roofwall/middle{
+	dir = 4
+	},
+/area/indoors/town/rmh/bank)
 "gdq" = (
 /obj/structure/fluff/walldeco/chains,
 /turf/open/floor/cobble/alt,
@@ -10196,6 +10589,11 @@
 	},
 /turf/open/floor/naturalstone,
 /area/outdoors/rmh_field/tavel/mountain)
+"gee" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/grass/cold,
+/area/outdoors/town/rmh/roofs)
 "geh" = (
 /obj/effect/mapping_helpers/secret_door_creator{
 	name = "Merchant Secret Door";
@@ -10218,6 +10616,9 @@
 	},
 /turf/open/floor/blocks,
 /area/indoors/cave/underhamlet)
+"geA" = (
+/turf/closed/wall/mineral/wooddark/horizontal,
+/area/indoors/town/rmh/bank)
 "geE" = (
 /obj/machinery/light/fueled/hearth,
 /obj/item/reagent_containers/glass/bucket/pot,
@@ -10754,6 +11155,12 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"gtB" = (
+/obj/structure/chair/bench/couch/right,
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "gtL" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -11241,6 +11648,12 @@
 /obj/structure/flora/grass/mushroom,
 /turf/open/floor/mushroom,
 /area/indoors/cave/rmh_cave/mine)
+"gGd" = (
+/obj/structure/fluff/railing/wood,
+/obj/structure/flora/grass/tundra,
+/obj/structure/flora/grass/herb/random,
+/turf/open/floor/grass/cold,
+/area/outdoors/town/rmh/roofs)
 "gGp" = (
 /obj/structure/rack,
 /obj/effect/spawner/map_spawner/loot/armor{
@@ -11406,6 +11819,14 @@
 	},
 /turf/open/floor/woodturned,
 /area/indoors/town/rmh/merchant)
+"gMh" = (
+/obj/effect/decal/edge{
+	dir = 8;
+	color = "#522f26"
+	},
+/obj/machinery/light/fueled/wallfire/candle,
+/turf/open/floor/blocks/stonered,
+/area/indoors/town/rmh/bank)
 "gMo" = (
 /turf/closed/wall/mineral/stone/moss,
 /area/indoors/town/rmh/farm)
@@ -11777,9 +12198,35 @@
 	},
 /turf/open/floor/ruinedwood/herringbone_clear,
 /area/indoors/town/rmh/town_hall)
+"gWW" = (
+/obj/effect/decal/cobbleedge{
+	dir = 2;
+	icon_state = "borderfall";
+	pixel_y = -8
+	},
+/obj/structure/fluff/railing/corner/south_east,
+/obj/structure/fluff/railing/corner{
+	dir = 9
+	},
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "gXa" = (
 /turf/open/floor/ruinedwood/herringbone_clear,
 /area/indoors/town/rmh/magician)
+"gXg" = (
+/obj/structure/fluff/railing/border,
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 8
+	},
+/obj/structure/fluff/railing/corner/north_east,
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "gXG" = (
 /turf/closed/wall/mineral/roofwall/middle{
 	dir = 4
@@ -12301,9 +12748,8 @@
 /obj/effect/decal/wood/herringbone,
 /obj/structure/closet/crate/chest/crate,
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "hia" = (
 /obj/item/weapon/pick,
@@ -12447,6 +12893,7 @@
 	},
 /area/under/rmh_bedrock)
 "hmA" = (
+/obj/structure/door/iron/bars,
 /turf/open/floor/metal,
 /area/under/town/rmh/sewer)
 "hmC" = (
@@ -12725,6 +13172,12 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"hvu" = (
+/obj/structure/fluff/railing/corner/south_west,
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "hvz" = (
 /obj/machinery/light/fueled/wallfire/candle/blue{
 	pixel_y = -32;
@@ -12885,6 +13338,13 @@
 /area/under/underdark/rmh{
 	name = "Caves & Mines"
 	})
+"hAB" = (
+/turf/closed/wall/mineral/roofwall/middle{
+	dir = 4
+	},
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "hAK" = (
 /obj/structure/vine{
 	icon_state = "Light2d"
@@ -13042,6 +13502,15 @@
 /area/outdoors/town{
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
+	})
+"hEY" = (
+/obj/effect/decal/edge{
+	dir = 8;
+	color = "#3b3b3b"
+	},
+/turf/open/floor/tile/diamond/blue,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "hFf" = (
 /obj/structure/fake_machine/stockpile{
@@ -13206,6 +13675,22 @@
 /obj/effect/decal/cleanable/debris/stone,
 /turf/open/floor/ruinedwood/herringbone_clear,
 /area/under/town/basement)
+"hKv" = (
+/obj/effect/decal/edge{
+	dir = 1;
+	color = "#3b3b3b"
+	},
+/obj/structure/chair/wood/alt{
+	dir = 1
+	},
+/obj/effect/decal/carpet/kover_purple{
+	pixel_x = 16;
+	pixel_y = -9
+	},
+/turf/open/floor/tile/diamond/blue,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "hKO" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -13255,6 +13740,15 @@
 	},
 /turf/open/floor/ruinedwood,
 /area/indoors/town/rmh/tavern)
+"hLM" = (
+/obj/structure/fluff/railing/corner/south_west,
+/obj/structure/bookcase/random/eoratica{
+	density = 0;
+	opacity = 0;
+	pixel_y = 32
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "hMd" = (
 /obj/structure/leyline,
 /turf/open/floor/dirt{
@@ -13351,6 +13845,11 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"hPy" = (
+/obj/structure/closet/crate/drawer/random,
+/obj/machinery/light/fueled/wallfire/candle/blue,
+/turf/open/floor/ruinedwood/herringbone_clear,
+/area/under/town/rmh/basement)
 "hQm" = (
 /obj/structure/window,
 /turf/open/floor/ruinedwood/turned,
@@ -13464,6 +13963,7 @@
 /obj/structure/door/weak/bolt{
 	dir = 4
 	},
+/obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/concrete,
 /area/indoors/town/rmh/merchant)
 "hSt" = (
@@ -13622,6 +14122,14 @@
 	},
 /turf/open/floor/ruinedwood/spiral,
 /area/indoors/town/rmh/crafters_guild/under)
+"hWX" = (
+/obj/item/natural/rock{
+	pixel_y = 6;
+	pixel_x = 9
+	},
+/obj/item/natural/rock,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "hXj" = (
 /obj/effect/decal/edge_corner{
 	dir = 4;
@@ -13720,10 +14228,10 @@
 /obj/machinery/light/fueled/wallfire/candle{
 	pixel_y = -32
 	},
+/obj/structure/chair/stool/bar,
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "hZi" = (
 /obj/structure/fluff/railing/border{
@@ -14064,6 +14572,30 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"ile" = (
+/obj/effect/decal/edge_corner{
+	dir = 4;
+	color = "#522f26"
+	},
+/obj/structure/table/wood/cooling{
+	pixel_y = 5
+	},
+/obj/structure/fluff/millstone{
+	pixel_y = 21;
+	pixel_x = 7
+	},
+/obj/item/storage/sack{
+	pixel_x = 4;
+	pixel_y = -7;
+	populate_contents = list(/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat,/obj/item/reagent_containers/food/snacks/produce/grain/wheat)
+	},
+/obj/machinery/light/fueled/wallfire/candle/r,
+/obj/item/reagent_containers/peppermill{
+	pixel_x = -5;
+	pixel_y = 6
+	},
+/turf/open/floor/blocks/stonered/tiny,
+/area/indoors/town/rmh/bank)
 "ili" = (
 /obj/structure/flora/grass/tundra,
 /obj/structure/flora/grass/bush_meagre/tundra,
@@ -14436,6 +14968,13 @@
 	},
 /turf/open/floor/ruinedwood/herringbone,
 /area/indoors/town/rmh/merchant)
+"iso" = (
+/turf/closed/wall/mineral/roofwall/outercorner{
+	dir = 1
+	},
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "isp" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -14554,6 +15093,14 @@
 /obj/structure/chair/bench/ancientlog,
 /turf/open/floor/grass/yel,
 /area/outdoors/rmh_field/east)
+"iwx" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 15
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "iwz" = (
 /obj/structure/door/viewport{
 	desc = "a large door. It seems big enough to fit a mount.";
@@ -15156,6 +15703,10 @@
 	},
 /turf/open/floor/carpet/purple,
 /area/indoors/town/rmh/magician)
+"iPK" = (
+/obj/structure/curtain/purple,
+/turf/open/floor/carpet/purple,
+/area/indoors/town/rmh/bank)
 "iPM" = (
 /obj/structure/flora/hotspring_rocks/grassy,
 /turf/open/floor/grass/yel,
@@ -15250,6 +15801,17 @@
 /obj/item/fertilizer/ash,
 /turf/open/floor/cobblerock,
 /area/indoors/town/rmh/magician)
+"iRB" = (
+/obj/effect/decal/cobbleedge{
+	dir = 2;
+	icon_state = "borderfall";
+	pixel_y = -8
+	},
+/obj/structure/fluff/railing/corner/south_east,
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "iRG" = (
 /obj/structure/closet/crate/crafted_closet/steward,
 /obj/effect/spawner/guaranteed_map_spawner/listed/steward_keys,
@@ -15593,6 +16155,12 @@
 "iZI" = (
 /turf/closed/wall/mineral/decostone/moss/cand,
 /area/indoors/town/rmh/library)
+"iZN" = (
+/obj/structure/closet/crate/crafted_closet/inn/south,
+/turf/open/floor/carpet/stellar,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "iZT" = (
 /turf/open/floor/cobble/snow,
 /area/outdoors/rmh_field/north)
@@ -15698,9 +16266,8 @@
 "jeM" = (
 /obj/structure/closet/crate/chest/crate,
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "jeZ" = (
 /obj/effect/wisp/prestidigitation{
@@ -15774,6 +16341,10 @@
 	},
 /turf/open/floor/ruinedwood/spiral,
 /area/indoors/town/rmh)
+"jig" = (
+/obj/structure/fluff/railing/border,
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "jio" = (
 /turf/closed/mineral/bedrock{
 	name = "solid rock"
@@ -15917,6 +16488,10 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"jnb" = (
+/obj/structure/carpet/purple,
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "jnl" = (
 /obj/structure/fluff/railing/wood/west{
 	plane = -6
@@ -16083,6 +16658,18 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"jpT" = (
+/obj/effect/decal/cobbleedge{
+	dir = 4;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = 8
+	},
+/obj/structure/fluff/railing/corner/south_east,
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "jqt" = (
 /obj/structure/fluff/railing/wood/north{
 	layer = 2.7;
@@ -16117,6 +16704,9 @@
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/concrete,
 /area/indoors/town/rmh/town_hall)
+"jrx" = (
+/turf/open/floor/ruinedwood/spiral,
+/area/indoors/town/rmh/merchant)
 "jsa" = (
 /obj/effect/decal/cleanable/debris/stone,
 /turf/open/floor/naturalstone,
@@ -16196,7 +16786,7 @@
 /area/indoors/town/rmh)
 "juw" = (
 /obj/structure/fluff/railing/corner/south_west,
-/turf/open/floor/ruinedwood/herringbone_clear,
+/turf/open/floor/ruinedwood/spiral,
 /area/indoors/town/rmh/merchant)
 "jux" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -16206,9 +16796,8 @@
 /area/indoors/cave/underhamlet)
 "juz" = (
 /turf/closed/wall/mineral/wooddark/end,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "juO" = (
 /obj/structure/stairs/stone{
@@ -16266,6 +16855,14 @@
 	},
 /turf/open/floor/ruinedwood/spiral,
 /area/indoors/town/rmh/miner)
+"jwi" = (
+/obj/structure/door/viewport{
+	dir = 2;
+	name = "Storage"
+	},
+/obj/effect/mapping_helpers/access/keyset/town/mercenary,
+/turf/open/floor/concrete,
+/area/under/town/rmh/basement)
 "jwD" = (
 /obj/machinery/light/fueled/torchholder/l,
 /turf/open/floor/naturalstone,
@@ -16487,6 +17084,17 @@
 	},
 /turf/open/floor/wood,
 /area/indoors/town/rmh/merchant)
+"jFd" = (
+/obj/effect/decal/cobbleedge{
+	dir = 2;
+	icon_state = "borderfall";
+	pixel_y = -8
+	},
+/obj/structure/fluff/railing/corner/south_east,
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "jFM" = (
 /turf/open/floor/churchmarble,
 /area/outdoors/rmh_air)
@@ -16676,6 +17284,17 @@
 	},
 /turf/open/floor/tile/harem,
 /area/indoors/town/rmh/tavern)
+"jLp" = (
+/obj/structure/fluff/railing/border,
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 8
+	},
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "jLv" = (
 /obj/structure/fluff/railing/border/east,
 /obj/effect/decal/edge_corner{
@@ -16758,9 +17377,8 @@
 	},
 /obj/machinery/light/fueled/wallfire/candle/blue,
 /turf/open/floor/woodturned,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "jMV" = (
 /obj/structure/stairs{
@@ -17209,6 +17827,13 @@
 /obj/machinery/light/fueled/wallfire/candle/r,
 /turf/open/floor/wood,
 /area/indoors/town/apothecary)
+"kat" = (
+/turf/closed/wall/mineral/roofwall/innercorner{
+	dir = 4
+	},
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "kaw" = (
 /obj/structure/closet/crate/chest/wicker,
 /obj/effect/spawner/map_spawner/loot/dungeon/food,
@@ -17394,9 +18019,28 @@
 /obj/structure/fluff/railing/corner/south_west,
 /turf/open/floor/herringbone,
 /area/indoors/cave/underhamlet)
+"kfH" = (
+/obj/structure/fluff/railing/border/west,
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = 8
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "kfU" = (
 /turf/open/floor/blocks/stonered/tiny,
 /area/indoors/town/rmh/crafters_guild/under)
+"kgi" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 8
+	},
+/obj/structure/rack/shelf,
+/obj/structure/rack/shelf/biggest,
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "kgC" = (
 /obj/structure/chair/stool/bar,
 /turf/open/floor/woodturned,
@@ -17609,6 +18253,17 @@
 /obj/item/natural/stone,
 /turf/open/floor/cobble,
 /area/indoors/town/rmh/magician)
+"klZ" = (
+/obj/structure/fluff/railing/wood{
+	alpha = 5
+	},
+/obj/structure/bookcase/random/eoratica{
+	density = 0;
+	opacity = 0;
+	pixel_x = 32
+	},
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "kme" = (
 /obj/effect/decal/cobble/mossy{
 	dir = 10
@@ -17617,6 +18272,24 @@
 	icon_state = "snowpatchy_grass"
 	},
 /area/outdoors/river)
+"kmp" = (
+/obj/effect/decal/cobbleedge{
+	dir = 4;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = 8
+	},
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable"
+	},
+/obj/structure/noticeboard{
+	pixel_x = 32
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "kmu" = (
 /obj/effect/decal/cobbleedge/alt{
 	dir = 4
@@ -17713,6 +18386,11 @@
 /obj/structure/mirror,
 /turf/open/floor/wood,
 /area/indoors/town/rmh/crafters_guild/under)
+"koN" = (
+/turf/closed/wall/mineral/roofwall/outercorner,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "koR" = (
 /turf/closed/wall/mineral/wooddark,
 /area/indoors/town/rmh/merchant)
@@ -17812,6 +18490,10 @@
 	icon_state = "snow"
 	},
 /area/outdoors/rmh_field/west)
+"krc" = (
+/obj/structure/fluff/railing/border/east,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "krg" = (
 /turf/closed/wall/mineral/wooddark/vertical,
 /area/indoors)
@@ -18036,9 +18718,8 @@
 	dir = 4
 	},
 /turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "kyS" = (
 /obj/structure/bookcase/random_recipes,
@@ -18379,6 +19060,11 @@
 	},
 /turf/open/floor/carpet/red,
 /area/indoors)
+"kIg" = (
+/turf/closed/wall/mineral/roofwall/outercorner{
+	dir = 4
+	},
+/area/indoors/town/rmh/bank)
 "kIv" = (
 /obj/machinery/light/fueled/firebowl/standing{
 	pixel_y = 13
@@ -18423,12 +19109,10 @@
 /turf/open/floor/carpet/stellar,
 /area/indoors/town/rmh/chapel/basement)
 "kKE" = (
-/obj/structure/fluff/railing/wood,
-/turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
-	})
+/turf/closed/wall/mineral/roofwall/middle{
+	dir = 8
+	},
+/area/indoors/town/rmh/bank)
 "kKK" = (
 /turf/open/water/swamp/deep,
 /area/outdoors/rmh_field/north)
@@ -18466,6 +19150,15 @@
 "kMm" = (
 /turf/closed/wall/mineral/stone,
 /area/indoors/town/rmh/magician)
+"kMn" = (
+/obj/structure/stairs{
+	dir = 8
+	},
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/ruinedwood,
+/area/indoors/town/rmh/bank)
 "kMt" = (
 /obj/structure/fluff/railing/border/east,
 /turf/open/water/cleanshallow/dirt,
@@ -18841,6 +19534,14 @@
 	},
 /turf/open/floor/herringbone,
 /area/indoors/town/rmh/chapel/basement)
+"lbf" = (
+/obj/structure/window/openclose/reinforced{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "lbh" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -18902,6 +19603,13 @@
 	name = "solid rock"
 	},
 /area/under/rmh_bedrock)
+"lbI" = (
+/turf/closed/wall/mineral/roofwall/innercorner{
+	dir = 1
+	},
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "lbO" = (
 /obj/machinery/light/fueled/torchholder/c,
 /obj/effect/decal/cobbleedge{
@@ -18921,6 +19629,10 @@
 /obj/structure/flora/grass/herb/random,
 /turf/open/floor/grass/cold,
 /area/outdoors/rmh_field/west)
+"lcr" = (
+/obj/structure/closet/crate/coffin/vampire,
+/turf/open/floor/herringbone,
+/area/under/town/rmh/basement)
 "lcv" = (
 /obj/structure/table/wood/large/corner_new{
 	dir = 10
@@ -18965,6 +19677,10 @@
 /obj/machinery/light/fueled/wallfire/candle/blue,
 /turf/open/floor/hexstone,
 /area/indoors/town/rmh/magician/pass)
+"lel" = (
+/obj/machinery/light/fueled/wallfire/candle/l,
+/turf/open/floor/herringbone,
+/area/under/town/rmh/basement)
 "lep" = (
 /turf/closed/wall/mineral/decowood/vert,
 /area/indoors/town/rmh/farm)
@@ -19170,6 +19886,17 @@
 	},
 /turf/open/floor/ruinedwood,
 /area/indoors/town/rmh/merchant)
+"lkg" = (
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = -8
+	},
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "lkG" = (
 /turf/open/floor/cobble,
 /area/indoors/town/rmh/crafters_guild)
@@ -19242,6 +19969,19 @@
 	},
 /turf/open/floor/churchmarble,
 /area/indoors/town/rmh/chapel)
+"lng" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 8
+	},
+/obj/structure/fluff/railing/corner{
+	dir = 9
+	},
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "lnm" = (
 /obj/machinery/light/fueled/wallfire{
 	pixel_y = -12
@@ -19287,10 +20027,10 @@
 	icon_state = "borderfall";
 	pixel_y = 8
 	},
+/obj/structure/fake_machine/hailerboard,
 /turf/open/floor/woodturned,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "lor" = (
 /obj/structure/flora/grass/bush/wall,
@@ -19403,10 +20143,14 @@
 /area/indoors/town/rmh/farm)
 "lrm" = (
 /obj/structure/fluff/wallclock,
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 8
+	},
 /turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "lrV" = (
 /obj/structure/closet/crate/crafted_closet/dark,
@@ -19563,6 +20307,9 @@
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/metal,
 /area/indoors/town/rmh/crafters_guild)
+"ltW" = (
+/turf/closed/wall/mineral/wood,
+/area/under/town/rmh/basement)
 "luk" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -19606,6 +20353,10 @@
 	},
 /turf/open/floor/ruinedwood/herringbone_clear,
 /area/under/town/rmh/basement)
+"lwA" = (
+/obj/structure/carpet/purple,
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "lwT" = (
 /obj/structure/lever/wall{
 	pixel_y = 0;
@@ -19630,6 +20381,9 @@
 	},
 /turf/open/floor/churchrough,
 /area/indoors/town/rmh/chapel/basement)
+"lxq" = (
+/turf/open/floor/blocks/stonered,
+/area/indoors/town/rmh/bank)
 "lxw" = (
 /obj/structure/bridge_stakes{
 	dir = 4;
@@ -19794,6 +20548,12 @@
 	},
 /turf/open/floor/blocks/newstone/alt,
 /area/indoors/town/rmh/crafters_guild)
+"lDl" = (
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "lDn" = (
 /obj/structure/stairs,
 /obj/structure/fluff/railing/border/west{
@@ -19897,6 +20657,12 @@
 /obj/item/candle/silver/lit,
 /turf/open/floor/ruinedwood/chevron,
 /area/indoors/town/rmh/tavern)
+"lGW" = (
+/obj/structure/fluff/railing/border/north,
+/obj/structure/fluff/railing/border/east,
+/obj/structure/fluff/railing/corner/north_east,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "lHC" = (
 /obj/structure/fluff/railing/border{
 	dir = 5;
@@ -20097,6 +20863,36 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"lNz" = (
+/obj/structure/table/wood{
+	dir = 2;
+	icon_state = "longtable"
+	},
+/obj/item/candle/candlestick/gold/lit{
+	pixel_y = 22;
+	pixel_x = -5
+	},
+/obj/effect/decal/edge{
+	dir = 2;
+	color = "#3b3b3b"
+	},
+/obj/item/reagent_containers/glass/carafe/water{
+	pixel_y = 12;
+	pixel_x = 4
+	},
+/obj/item/reagent_containers/glass/cup/glassware/shotglass{
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/glass/cup/glassware/shotglass{
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/cup/glassware/shotglass{
+	pixel_y = 5;
+	pixel_x = 9
+	},
+/turf/open/floor/carpet/purple,
+/area/indoors/town/rmh/bank)
 "lND" = (
 /obj/effect/decal/cobble/mossy{
 	dir = 4
@@ -20310,6 +21106,11 @@
 	},
 /turf/open/floor/AzureSand,
 /area/outdoors/river)
+"lUq" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass/cold,
+/area/outdoors/town/rmh/roofs)
 "lUu" = (
 /obj/effect/decal/carpet/square/black{
 	pixel_y = 16;
@@ -20532,13 +21333,9 @@
 /turf/open/floor/grass/cold,
 /area/outdoors/town/rmh/roofs)
 "mbv" = (
-/obj/structure/door/weak/bolt{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/turf/open/floor/carpet/stellar,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "mbJ" = (
 /obj/structure/bookcase/random_recipes,
@@ -20753,6 +21550,19 @@
 	},
 /turf/open/floor/grass/yel,
 /area/outdoors/rmh_field/druid)
+"mhw" = (
+/obj/structure/door/weak,
+/turf/open/floor/wood,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
+"mhz" = (
+/obj/structure/fluff/railing/wood/east,
+/obj/structure/fluff/railing/wood,
+/obj/structure/flora/grass/tundra,
+/obj/structure/flora/grass/herb/random,
+/turf/open/floor/grass/cold,
+/area/outdoors/town/rmh/roofs)
 "mhJ" = (
 /obj/structure/window/harem3,
 /obj/structure/curtain/dir{
@@ -20912,9 +21722,8 @@
 	dir = 9
 	},
 /turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "mmh" = (
 /turf/open/floor/cobblerock/snow,
@@ -20926,6 +21735,7 @@
 /area/indoors)
 "mmG" = (
 /obj/structure/fluff/wallclock/r,
+/obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/tile/brownbrick,
 /area/indoors/town/rmh/bank)
 "mmJ" = (
@@ -21057,6 +21867,11 @@
 /obj/structure/flora/grass/tundra,
 /turf/open/floor/grass/yel,
 /area/outdoors/rmh_field/north_mountain)
+"mqy" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/open/floor/grass/cold,
+/area/outdoors/town/rmh/roofs)
 "mqz" = (
 /obj/structure/window/harem3{
 	name = "tall window"
@@ -21153,6 +21968,8 @@
 	pixel_y = -32
 	},
 /obj/structure/fluff/clockwork/alloy_shards,
+/obj/machinery/essence/harvester,
+/obj/structure/table/wood/plain_alt,
 /turf/open/floor/cobble,
 /area/indoors/town/rmh/magician)
 "muK" = (
@@ -21391,6 +22208,13 @@
 /obj/item/natural/stone,
 /turf/open/floor/grass/red,
 /area/indoors/town/church)
+"mAE" = (
+/obj/structure/table/wood/reinf_long{
+	dir = 4
+	},
+/obj/item/weapon/pick/paxe,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "mAF" = (
 /obj/effect/decal/cobbleedge{
 	icon = 'icons/obj/rune.dmi';
@@ -21594,6 +22418,12 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"mHR" = (
+/obj/structure/stairs,
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "mHW" = (
 /obj/structure/table/wood/large/corner/middle_east,
 /obj/structure/bars/passage/shutter{
@@ -21602,14 +22432,10 @@
 /turf/open/floor/concrete,
 /area/indoors/town/rmh/library)
 "mIq" = (
-/obj/effect/decal/carpet/square{
-	pixel_x = -6;
-	pixel_y = 23
-	},
+/obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/carpet/stellar,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "mIs" = (
 /obj/structure/bed/hay,
@@ -21659,9 +22485,8 @@
 	})
 "mJd" = (
 /turf/closed/wall/mineral/stonebrick,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "mJj" = (
 /turf/closed/wall/mineral/decostone/long,
@@ -21846,6 +22671,12 @@
 "mOv" = (
 /obj/structure/chair/bench/ancientlog,
 /turf/open/floor/grass/yel,
+/area/outdoors/town{
+	name = "Rivermist Hollow";
+	first_time_text = "RIVERMIST HOLLOW"
+	})
+"mOG" = (
+/turf/open/floor/cobblerock,
 /area/outdoors/town{
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
@@ -22131,7 +22962,7 @@
 	})
 "mXz" = (
 /obj/structure/fluff/railing/corner,
-/turf/open/floor/ruinedwood/herringbone_clear,
+/turf/open/floor/ruinedwood/spiral,
 /area/indoors/town/rmh/merchant)
 "mXP" = (
 /turf/open/water/swamp,
@@ -22143,6 +22974,15 @@
 /area/outdoors/town{
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
+	})
+"mYv" = (
+/obj/structure/fluff/railing/wood/north{
+	layer = 2.7;
+	pixel_y = 7
+	},
+/turf/open/floor/ruinedwood/spiralfade,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "mYz" = (
 /obj/structure/fluff/walldeco/church/line,
@@ -22314,6 +23154,10 @@
 	},
 /turf/open/floor/blocks,
 /area/indoors/cave/underhamlet)
+"nbx" = (
+/obj/structure/flora/newleaf/snow,
+/turf/open/floor/ruinedwood/spiralfade,
+/area/outdoors/town/rmh/roofs)
 "nbR" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1";
@@ -22398,9 +23242,8 @@
 "nfM" = (
 /obj/machinery/light/fueled/wallfire/candle/r,
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "nfP" = (
 /obj/structure/flora/newleaf/snow,
@@ -22741,6 +23584,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/blocks,
 /area/under/town/rmh/basement)
+"nos" = (
+/obj/effect/decal/edge_corner{
+	dir = 4;
+	color = "#3b3b3b"
+	},
+/turf/open/floor/tile/diamond/blue,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "npa" = (
 /obj/item/kitchen/spoon,
 /obj/item/kitchen/spoon,
@@ -22799,6 +23651,7 @@
 /turf/open/transparent/openspace,
 /area/under/rmh_bedrock)
 "npU" = (
+/obj/structure/door/iron/bars,
 /turf/open/floor/metal/alt,
 /area/under/town/rmh/sewer)
 "npX" = (
@@ -23101,6 +23954,17 @@
 "nzM" = (
 /turf/open/transparent/openspace,
 /area/indoors/town/rmh/library)
+"nAj" = (
+/obj/structure/fluff/railing/border,
+/obj/structure/closet/crate/chest/wicker,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/pie/cooked/apple/good,
+/obj/item/reagent_containers/food/snacks/pie/cooked/meat/fish/good,
+/turf/open/floor/blocks/stonered,
+/area/indoors/town/rmh/bank)
 "nAu" = (
 /turf/open/floor/wood,
 /area/outdoors/rmh_field/west)
@@ -23134,6 +23998,21 @@
 /obj/structure/fluff/railing/wood/west,
 /turf/open/floor/woodturned,
 /area/indoors/town/rmh/bath)
+"nBO" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 8
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 2;
+	icon_state = "borderfall";
+	pixel_y = -8
+	},
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "nCb" = (
 /turf/open/water/swamp/deep,
 /area/outdoors/rmh_field/north_mountain)
@@ -23143,9 +24022,8 @@
 	pixel_y = 7
 	},
 /turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "nCq" = (
 /obj/structure/flora/grass/tundra,
@@ -23245,6 +24123,15 @@
 	icon_state = "roofg"
 	},
 /area/outdoors/town/rmh/roofs)
+"nFz" = (
+/obj/effect/mapping_helpers/access/locker,
+/obj/structure/door/weak/bolt{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "nFO" = (
 /obj/structure/stairs/stone{
 	dir = 8;
@@ -23340,6 +24227,15 @@
 	icon_state = "snowpatchy_grass"
 	},
 /area/outdoors/rmh_field)
+"nIG" = (
+/obj/effect/decal/edge{
+	dir = 2;
+	color = "#3b3b3b"
+	},
+/turf/open/floor/tile/brownbrick,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "nII" = (
 /obj/effect/decal/cobblerockedge/alt{
 	dir = 10
@@ -23349,6 +24245,12 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"nIY" = (
+/obj/effect/decal/carpet/kover_darkred{
+	pixel_y = -20
+	},
+/turf/open/floor/ruinedwood/herringbone_clear,
+/area/under/town/rmh/basement)
 "nJk" = (
 /turf/closed/wall/mineral/decostone/cand,
 /area/under/town/basement)
@@ -23381,9 +24283,8 @@
 /area/outdoors/town/rmh/roofs)
 "nKd" = (
 /turf/open/floor/woodturned,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "nKj" = (
 /obj/structure/stairs,
@@ -23496,6 +24397,10 @@
 /obj/machinery/light/fueled/firebowl/standing/blue,
 /turf/open/floor/cobble,
 /area/indoors/town/apothecary)
+"nMF" = (
+/obj/structure/fluff/railing/border/north,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "nMY" = (
 /obj/structure/fluff/railing/border/west{
 	plane = -6
@@ -23531,6 +24436,40 @@
 	},
 /turf/open/floor/carpet,
 /area/indoors/town/rmh/town_hall)
+"nNG" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable"
+	},
+/obj/item/paper/scroll{
+	pixel_y = 7;
+	pixel_x = -2
+	},
+/obj/item/paper/scroll{
+	pixel_y = 7;
+	pixel_x = -2
+	},
+/obj/item/paper/scroll{
+	pixel_y = 7;
+	pixel_x = -2
+	},
+/obj/item/paper/scroll{
+	pixel_y = 7;
+	pixel_x = -2
+	},
+/obj/item/paper/scroll{
+	pixel_y = 7;
+	pixel_x = -2
+	},
+/obj/item/natural/feather{
+	pixel_y = 9
+	},
+/obj/effect/decal/edge{
+	dir = 2;
+	color = "#3b3b3b"
+	},
+/turf/open/floor/carpet/purple,
+/area/indoors/town/rmh/bank)
 "nNQ" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/cobblerock/snow,
@@ -23608,6 +24547,12 @@
 	},
 /turf/open/floor/tile/brownbrick,
 /area/indoors/town/rmh/town_hall)
+"nRJ" = (
+/obj/structure/flora/grass/tundra,
+/obj/structure/flora/grass/herb/random,
+/obj/structure/fluff/railing/wood,
+/turf/open/floor/grass/cold,
+/area/outdoors/town/rmh/roofs)
 "nRY" = (
 /obj/effect/decal/wood/herringbone2{
 	dir = 10
@@ -23636,6 +24581,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/woodturned,
 /area/under/town/rmh/basement)
+"nSI" = (
+/obj/machinery/light/fueled/firebowl/standing,
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "nSX" = (
 /turf/closed/wall/mineral/wooddark/horizontal,
 /area/indoors/town/rmh/crafters_guild/under)
@@ -23979,11 +24928,10 @@
 /turf/open/floor/grass/red,
 /area/outdoors/rmh_field/north)
 "ocX" = (
-/obj/structure/fluff/railing/border/east,
-/turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/obj/structure/fluff/railing/corner/south_east,
+/turf/open/floor/wood,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "odb" = (
 /obj/effect/decal/cobble/mossy{
@@ -23996,6 +24944,18 @@
 /area/outdoors/town{
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
+	})
+"odc" = (
+/obj/machinery/light/fueled/wallfire/candle,
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = -8
+	},
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "odm" = (
 /obj/structure/spider/stickyweb,
@@ -24012,6 +24972,17 @@
 /obj/structure/stockpile_storage,
 /turf/open/floor/metal/barograte,
 /area/under/town/rmh/basement)
+"odF" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable_mid"
+	},
+/obj/effect/decal/edge{
+	dir = 2;
+	color = "#3b3b3b"
+	},
+/turf/open/floor/carpet/purple,
+/area/indoors/town/rmh/bank)
 "odY" = (
 /obj/structure/closet/crate/drawer,
 /obj/structure/fluff/wallclock/r,
@@ -24076,12 +25047,18 @@
 /turf/open/floor/blocks,
 /area/under/town/rmh/basement)
 "ohi" = (
-/obj/machinery/light/fueled/firebowl/standing,
 /obj/structure/fluff/statue/small,
+/obj/machinery/light/fueled/firebowl/standing/blue,
 /turf/open/floor/concrete,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
+"ohn" = (
+/obj/structure/fluff/railing/border,
+/obj/structure/fluff/globe,
+/turf/open/floor/wood,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "ohv" = (
 /obj/structure/spider/stickyweb,
@@ -24135,10 +25112,10 @@
 /obj/effect/decal/wood/herringbone{
 	dir = 4
 	},
+/obj/structure/table/wood/plain/alto,
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "ojl" = (
 /obj/structure/fluff/railing/wood{
@@ -24325,7 +25302,7 @@
 "onE" = (
 /obj/structure/door/green,
 /obj/effect/mapping_helpers/access/keyset/manor/steward,
-/turf/open/floor/wood,
+/turf/open/floor/concrete,
 /area/indoors/town/rmh/bank)
 "ooa" = (
 /obj/effect/decal/wood/herringbone2{
@@ -24393,6 +25370,12 @@
 /obj/machinery/light/fueled/torchholder/c,
 /turf/open/floor/woodturned,
 /area/indoors/town/rmh/garrison)
+"ope" = (
+/obj/structure/fluff/railing/corner{
+	dir = 9
+	},
+/turf/open/floor/wood,
+/area/under/town/rmh/basement)
 "opf" = (
 /obj/structure/fluff/railing/border{
 	plane = -6
@@ -24417,6 +25400,17 @@
 	name = "solid rock"
 	},
 /area/indoors/cave/underhamlet)
+"opA" = (
+/obj/effect/decal/cobbleedge{
+	dir = 2;
+	icon_state = "borderfall";
+	pixel_y = -8
+	},
+/obj/structure/fluff/railing/corner/south_west,
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "opB" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/flora/grass/tundra,
@@ -24480,6 +25474,14 @@
 /obj/item/natural/rock,
 /turf/open/floor/cobble/snow,
 /area/outdoors/rmh_field)
+"orp" = (
+/obj/structure/door/fancy{
+	name = "Gaffer Living Chamber"
+	},
+/obj/effect/mapping_helpers/access/keyset/town/gaffer,
+/obj/structure/curtain/purple,
+/turf/open/floor/woodturned,
+/area/under/town/rmh/basement)
 "oru" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -24679,10 +25681,18 @@
 	})
 "ovV" = (
 /obj/machinery/light/fueled/wallfire/candle/l,
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = -8
+	},
+/obj/structure/fluff/railing/corner{
+	dir = 9
+	},
 /turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "ovY" = (
 /obj/machinery/light/fueled/campfire/longlived,
@@ -24727,10 +25737,14 @@
 /area/outdoors/town/rmh/roofs)
 "oxm" = (
 /obj/machinery/light/fueled/wallfire/candle/l,
+/obj/effect/decal/edge_corner{
+	dir = 2;
+	color = "#3b3b3b"
+	},
+/obj/structure/rack/shelf/biggest,
 /turf/open/floor/tile/diamond/blue,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "oxU" = (
 /obj/structure/closet/crate/drawer,
@@ -24796,9 +25810,8 @@
 "oyY" = (
 /obj/structure/bookcase,
 /turf/open/floor/tile/brownbrick,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "oza" = (
 /obj/structure/fluff/steamvent,
@@ -24839,10 +25852,10 @@
 	first_time_text = "RIVERMIST HOLLOW"
 	})
 "ozL" = (
-/turf/open/floor/tile/brownbrick,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/obj/structure/mannequin,
+/turf/open/floor/woodturned,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "ozS" = (
 /turf/open/floor/blocks/newstone,
@@ -24892,9 +25905,8 @@
 /obj/structure/door/red,
 /obj/effect/mapping_helpers/access/keyset/town/mercenary,
 /turf/open/floor/woodturned,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "oBG" = (
 /obj/effect/decal/carpet,
@@ -25008,6 +26020,12 @@
 	icon_state = "snow"
 	},
 /area/outdoors/rmh_air)
+"oFG" = (
+/obj/structure/stairs{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/under/town/rmh/basement)
 "oFP" = (
 /obj/structure/closet/crate/crafted_closet/lord{
 	pixel_x = -16
@@ -25034,12 +26052,9 @@
 /turf/open/floor/cobblerock/snow,
 /area/under/town/basement)
 "oFX" = (
-/obj/machinery/light/fueled/firebowl/standing,
-/turf/open/floor/concrete,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
-	})
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/grass/cold,
+/area/outdoors/town/rmh/roofs)
 "oGe" = (
 /obj/structure/flora/grass/bush/wall/tall/tundra,
 /turf/open/floor/naturalstone,
@@ -25149,6 +26164,16 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"oIA" = (
+/obj/structure/fluff/railing/corner/south_east,
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
+"oIH" = (
+/obj/structure/fluff/railing/corner/north_east,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "oJf" = (
 /obj/structure/door{
 	name = "Apothecary"
@@ -25329,6 +26354,11 @@
 /obj/structure/table/vtable,
 /turf/open/floor/carpet,
 /area/indoors/town/rmh/town_hall)
+"oOk" = (
+/obj/structure/bed/inn/double,
+/obj/item/bedsheet/double_pelt,
+/turf/open/floor/ruinedwood/herringbone_clear,
+/area/under/town/rmh/basement)
 "oOl" = (
 /turf/closed/wall/mineral/roofwall/outercorner{
 	dir = 8
@@ -25584,11 +26614,25 @@
 	},
 /area/outdoors/rmh_field/druid)
 "oVC" = (
-/obj/structure/fluff/railing/wood/west,
-/turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/obj/structure/fluff/railing/corner{
+	dir = 9
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 4;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = 8
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 2;
+	icon_state = "borderfall";
+	pixel_y = -8
+	},
+/obj/structure/fluff/railing/corner/south_east,
+/obj/structure/fluff/railing/corner/south_west,
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "oVK" = (
 /obj/machinery/light/fueled/torchholder/r,
@@ -26381,7 +27425,8 @@
 /area/indoors/town/rmh/magician)
 "psL" = (
 /obj/machinery/light/fueled/wallfire/candle,
-/turf/open/floor/ruinedwood/herringbone_clear,
+/obj/structure/rack,
+/turf/open/floor/ruinedwood/spiral,
 /area/indoors/town/rmh/merchant)
 "ptm" = (
 /obj/machinery/light/fueled/wallfire/candle/r,
@@ -26635,6 +27680,10 @@
 /obj/structure/closet/crate/chest/old_crate,
 /turf/open/floor/cobble/snow,
 /area/indoors/cave/rmh_cave/greenskins)
+"pAD" = (
+/obj/structure/fluff/railing/corner/south_east,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "pAW" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -26701,9 +27750,8 @@
 	name = "tall window"
 	},
 /turf/open/floor/ruinedwood,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "pDI" = (
 /obj/structure/fluff/railing/border{
@@ -27097,9 +28145,8 @@
 	},
 /obj/item/bedsheet/pelt,
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "pQT" = (
 /obj/effect/decal/cobbleedge{
@@ -27124,11 +28171,9 @@
 /turf/open/floor/ruinedwood,
 /area/indoors/town/apothecary)
 "pRH" = (
-/obj/effect/decal/carpet/kover_purple,
 /turf/open/floor/tile/diamond/blue,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "pRI" = (
 /obj/structure/flora/grass/bush/wall,
@@ -27191,9 +28236,8 @@
 /area/indoors/town/rmh/chapel)
 "pTO" = (
 /turf/open/transparent/openspace,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "pTW" = (
 /turf/open/floor/tile/tilerg,
@@ -27552,6 +28596,10 @@
 "qfE" = (
 /turf/closed/wall/mineral/decostone/moss/long,
 /area/indoors/town/rmh/chapel/basement)
+"qfK" = (
+/obj/structure/bars,
+/turf/open/water/sewer,
+/area/under/town/rmh/sewer)
 "qfL" = (
 /obj/machinery/anvil,
 /obj/structure/fluff/railing/wood/east{
@@ -27649,13 +28697,16 @@
 	first_time_text = "RIVERMIST HOLLOW"
 	})
 "qjK" = (
-/obj/structure/chair/wood/alt{
+/obj/structure/chair/wood/alt/fancy{
 	dir = 1
 	},
+/obj/effect/decal/edge{
+	dir = 1;
+	color = "#3b3b3b"
+	},
 /turf/open/floor/tile/brownbrick,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "qjO" = (
 /obj/structure/fluff/railing/wood/west,
@@ -28254,6 +29305,10 @@
 /obj/structure/flora/grass/thorn_bush,
 /turf/open/floor/grass/cold,
 /area/indoors/town/church)
+"qCx" = (
+/obj/machinery/light/fueled/wallfire/candle/r,
+/turf/open/floor/herringbone,
+/area/under/town/rmh/basement)
 "qCG" = (
 /obj/structure/chair/wood/alt/chair3{
 	dir = 4
@@ -28349,6 +29404,10 @@
 /obj/machinery/light/fueled/wallfire/candle/l,
 /turf/open/floor/concrete,
 /area/indoors/town/rmh/cell)
+"qEk" = (
+/obj/machinery/light/fueled/torchholder/l,
+/turf/open/floor/cobble/alt,
+/area/under/town/rmh/basement)
 "qEr" = (
 /turf/open/water/swamp/deep,
 /area/under/town/rmh/sewer)
@@ -28487,6 +29546,14 @@
 	},
 /turf/open/floor/blocks,
 /area/under/town/rmh/sewer)
+"qII" = (
+/obj/structure/window/harem1{
+	density = 0;
+	pixel_y = 32
+	},
+/obj/machinery/light/fueled/firebowl/standing,
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "qIM" = (
 /obj/structure/rack/shelf/biggest,
 /obj/effect/spawner/map_spawner/loot/potion_ingredient/herb,
@@ -28758,6 +29825,13 @@
 	},
 /turf/open/floor/naturalstone,
 /area/indoors/cave/rmh_cave/mine)
+"qQH" = (
+/turf/closed/wall/mineral/roofwall/outercorner{
+	dir = 8
+	},
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "qQI" = (
 /obj/effect/decal/cobblerockedge/alt{
 	dir = 6
@@ -28771,6 +29845,11 @@
 	},
 /turf/open/floor/grass/cold,
 /area/outdoors/rmh_field/east)
+"qRk" = (
+/turf/closed/wall/mineral/roofwall/middle,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "qRr" = (
 /turf/open/floor/grass/cold,
 /area/outdoors/rmh_field/west)
@@ -28800,6 +29879,12 @@
 	},
 /turf/open/transparent/openspace,
 /area/outdoors/river)
+"qRU" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/ruinedwood,
+/area/indoors/town/rmh/bank)
 "qSd" = (
 /obj/machinery/light/fueled/hearth,
 /turf/open/floor/cobblerock/snow,
@@ -28869,6 +29954,13 @@
 	},
 /turf/open/floor/ruinedwood/herringbone,
 /area/indoors/town/rmh/tavern)
+"qUQ" = (
+/obj/item/natural/rock{
+	pixel_y = 11
+	},
+/obj/item/natural/rock,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "qUW" = (
 /obj/structure/flora/newleaf/snow,
 /obj/effect/wisp/prestidigitation{
@@ -29194,6 +30286,17 @@
 /obj/structure/fluff/railing/border,
 /turf/open/transparent/openspace,
 /area/outdoors/town/rmh/roofs)
+"ray" = (
+/obj/structure/fluff/railing/wood/north{
+	layer = 2.7;
+	pixel_y = 7
+	},
+/obj/structure/fluff/walldeco/sign/merchantsign,
+/turf/open/floor/ruinedwood,
+/area/outdoors/town{
+	name = "Rivermist Hollow";
+	first_time_text = "RIVERMIST HOLLOW"
+	})
 "raD" = (
 /obj/effect/decal/mossy{
 	dir = 8
@@ -29726,6 +30829,29 @@
 	},
 /turf/open/floor/blocks/newstone,
 /area/indoors/town/rmh/crafters_guild/under)
+"rnx" = (
+/obj/structure/fluff/railing/wood/west,
+/obj/structure/flora/newleaf/snow,
+/turf/open/floor/ruinedwood/spiralfade,
+/area/outdoors/town/rmh/roofs)
+"rnC" = (
+/obj/item/grown/log/tree,
+/obj/item/grown/log/tree{
+	pixel_x = 10
+	},
+/obj/item/grown/log/tree{
+	pixel_x = 4;
+	pixel_y = 5
+	},
+/obj/item/grown/log/tree{
+	pixel_x = 19
+	},
+/obj/item/grown/log/tree{
+	pixel_x = 14;
+	pixel_y = 5
+	},
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "rnE" = (
 /turf/open/floor/rooftop/green/north,
 /area/outdoors/rmh_air)
@@ -29764,6 +30890,9 @@
 	name = "rubble rock"
 	},
 /area/indoors/cave/rmh_cave/minotaur)
+"rps" = (
+/turf/closed/wall/mineral/roofwall/outercorner,
+/area/indoors/town/rmh/bank)
 "rpw" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -29901,6 +31030,12 @@
 /obj/effect/landmark/start/manorguardsman,
 /turf/open/floor/wood,
 /area/indoors/town/rmh/town_hall)
+"rsZ" = (
+/obj/structure/fluff/walldeco/psybanner{
+	pixel_y = 32
+	},
+/turf/open/floor/carpet/purple,
+/area/indoors/town/rmh/bank)
 "rtn" = (
 /obj/structure/fluff/railing/wood/west,
 /obj/structure/fluff/railing/wood/north{
@@ -30017,9 +31152,8 @@
 	pixel_y = -17
 	},
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "rvE" = (
 /obj/structure/carpet/cyan,
@@ -30052,6 +31186,12 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"rwU" = (
+/obj/structure/chair/wood/alt/chair_noble/red{
+	dir = 8
+	},
+/turf/open/floor/carpet/purple,
+/area/indoors/town/rmh/bank)
 "rxg" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/naturalstone,
@@ -30077,9 +31217,8 @@
 	dir = 4
 	},
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "ryN" = (
 /turf/open/floor/cobblerock/snow,
@@ -30141,7 +31280,16 @@
 /obj/structure/lever{
 	redstone_id = "stewardshutter"
 	},
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_y = -32
+	},
 /turf/open/floor/tile/brownbrick,
+/area/indoors/town/rmh/bank)
+"rAL" = (
+/obj/structure/stairs{
+	dir = 8
+	},
+/turf/open/floor/ruinedwood,
 /area/indoors/town/rmh/bank)
 "rAW" = (
 /turf/closed/wall/mineral/craftstone,
@@ -30170,17 +31318,21 @@
 	},
 /area/outdoors/rmh_field/camp)
 "rBC" = (
-/turf/closed/wall/mineral/wooddark/vertical,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
-	})
+/turf/open/floor/rooftop/green/corner1{
+	dir = 8
+	},
+/area/outdoors/town/rmh/roofs)
 "rBS" = (
 /obj/structure/window/harem3{
 	name = "tall window"
 	},
 /turf/open/floor/woodturned,
 /area/indoors/town/rmh/bath)
+"rBX" = (
+/obj/structure/fluff/railing/border/west,
+/obj/structure/fermentation_keg/water,
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "rCb" = (
 /obj/item/candle/yellow/lit,
 /turf/open/floor/cobble/alt,
@@ -30209,11 +31361,9 @@
 /turf/open/floor/grass/cold,
 /area/outdoors/rmh_field/west)
 "rCA" = (
-/obj/structure/fluff/railing/corner/south_east,
 /turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "rCE" = (
 /turf/closed/wall/mineral/wooddark,
@@ -30301,9 +31451,8 @@
 /obj/structure/bookcase,
 /obj/machinery/light/fueled/wallfire/candle/blue/l,
 /turf/open/floor/tile/brownbrick,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "rEB" = (
 /obj/effect/decal/cobbleedge{
@@ -30348,6 +31497,10 @@
 /obj/machinery/light/fueled/wallfire/candle/r,
 /turf/open/floor/wood,
 /area/indoors/town/rmh)
+"rGh" = (
+/obj/structure/flora/grass/herb/random,
+/turf/open/floor/grass/cold,
+/area/outdoors/town/rmh/roofs)
 "rGn" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1;
@@ -30397,6 +31550,12 @@
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/twig,
 /area/indoors/shelter/woods)
+"rHm" = (
+/obj/structure/chair/wood/alt/chair_noble{
+	dir = 8
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "rHy" = (
 /obj/structure/fluff/walldeco/church/line,
 /obj/structure/fluff/walldeco/church/line{
@@ -31334,11 +32493,9 @@
 /turf/open/floor/woodturned,
 /area/indoors/town/rmh/tavern)
 "sjv" = (
-/obj/structure/stairs,
-/turf/open/floor/carpet/inn,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/turf/closed/wall/mineral/wooddark/vertical,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "sjM" = (
 /obj/effect/decal/cobbleedge/alt{
@@ -31440,6 +32597,16 @@
 	},
 /area/under/underdark/rmh{
 	name = "Caves & Mines"
+	})
+"snv" = (
+/obj/structure/fluff/walldeco/sparrowflag{
+	pixel_y = -32;
+	name = "adventure's guild flag"
+	},
+/turf/open/floor/cobblerock/snow,
+/area/outdoors/town{
+	name = "Rivermist Hollow";
+	first_time_text = "RIVERMIST HOLLOW"
 	})
 "sny" = (
 /obj/machinery/light/fueled/firebowl/stump,
@@ -31587,18 +32754,16 @@
 "sqL" = (
 /obj/structure/fluff/railing/border/west,
 /turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "sqS" = (
 /obj/effect/decal/wood/herringbone{
 	dir = 1
 	},
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "src" = (
 /obj/structure/fluff/railing/wood/west{
@@ -31609,6 +32774,13 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"srf" = (
+/obj/structure/fluff/railing/wood/north{
+	layer = 2.7;
+	pixel_y = 7
+	},
+/turf/open/floor/ruinedwood/spiralfade,
+/area/outdoors/town/rmh/roofs)
 "sro" = (
 /obj/structure/flora/grass/herb/random,
 /obj/structure/fluff/walldeco/vinez/r,
@@ -31694,9 +32866,8 @@
 /obj/structure/rack/shelf/biggest,
 /obj/machinery/light/fueled/wallfire/candle/blue/r,
 /turf/open/floor/tile/brownbrick,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "stn" = (
 /obj/structure/chair/wood/alt/fancy/chair5{
@@ -31772,10 +32943,10 @@
 /obj/structure/table/wood/reinf_long{
 	dir = 8
 	},
+/obj/item/natural/feather,
 /turf/open/floor/woodturned,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "swL" = (
 /obj/effect/spawner/map_spawner/loot/rare,
@@ -31857,6 +33028,11 @@
 /obj/structure/flora/tree/burnt,
 /turf/open/floor/grass/yel,
 /area/outdoors/rmh_field/east)
+"sAv" = (
+/obj/structure/closet/crate/drawer/random,
+/obj/structure/carpet/purple,
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "sAN" = (
 /obj/structure/meathook,
 /obj/effect/decal/cobbleedge{
@@ -31926,11 +33102,17 @@
 /turf/closed/wall/mineral/decostone/cand,
 /area/indoors/cave/rmh_cave/wet/lake)
 "sCe" = (
-/obj/structure/closet/crate/chest/crate,
-/turf/open/floor/carpet/stellar,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/obj/structure/window/openclose/reinforced{
+	dir = 2
+	},
+/obj/structure/curtain/dir{
+	dir = 2;
+	color = "#8a6b6b";
+	hover_color = "#8a6b6b"
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "sCg" = (
 /obj/machinery/light/fueled/firebowl/church,
@@ -31956,6 +33138,12 @@
 /obj/item/natural/rock,
 /turf/open/floor/naturalstone,
 /area/indoors/town/church)
+"sCN" = (
+/obj/structure/stairs{
+	dir = 4
+	},
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "sCS" = (
 /obj/structure/fluff/railing/wood/east,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -31968,6 +33156,13 @@
 /area/outdoors/town{
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
+	})
+"sDa" = (
+/turf/closed/wall/mineral/roofwall/middle{
+	dir = 8
+	},
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "sDq" = (
 /obj/structure/water_pipe,
@@ -32037,9 +33232,8 @@
 	dir = 4
 	},
 /turf/open/floor/woodturned,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "sEi" = (
 /obj/item/storage/sack,
@@ -32161,11 +33355,28 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/grass/cold,
 /area/outdoors/town/rmh/roofs)
+"sIR" = (
+/obj/effect/decal/edge_corner{
+	dir = 8;
+	color = "#3b3b3b"
+	},
+/obj/structure/curtain/purple,
+/turf/open/floor/tile/diamond/blue,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "sJc" = (
 /obj/structure/flora/grass/tundra,
 /obj/effect/spawner/map_spawner/treeorbush,
 /turf/open/floor/grass/cold,
 /area/outdoors/rmh_field)
+"sJh" = (
+/obj/structure/bed/inn,
+/obj/item/bedsheet/pelt,
+/turf/open/floor/carpet/stellar,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "sJr" = (
 /obj/effect/decal/wood/herringbone2{
 	dir = 4
@@ -32182,6 +33393,28 @@
 	icon_state = "snow"
 	},
 /area/outdoors/rmh_field/east)
+"sJF" = (
+/obj/structure/chair/bench/couch/corner{
+	layer = 3.1
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 8
+	},
+/obj/structure/fluff/railing/corner/north_east{
+	layer = 3
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = -8
+	},
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "sJN" = (
 /obj/structure/chair/bench/ancientlog,
 /turf/open/floor/dirt{
@@ -32290,6 +33523,13 @@
 	},
 /turf/open/transparent/openspace,
 /area/indoors/town/rmh/chapel)
+"sMN" = (
+/obj/structure/chair/wood/alt/chair_noble/purple,
+/obj/structure/fluff/walldeco/painting/crown{
+	pixel_y = 32
+	},
+/turf/open/floor/carpet/purple,
+/area/indoors/town/rmh/bank)
 "sMU" = (
 /obj/item/natural/stone,
 /turf/open/floor/naturalstone,
@@ -32377,6 +33617,20 @@
 /area/outdoors/town{
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
+	})
+"sPx" = (
+/obj/structure/chair/bench/couch/left{
+	dir = 4
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = -8
+	},
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "sPy" = (
 /obj/structure/chair/wood/alt/fancy{
@@ -32538,9 +33792,8 @@
 "sTz" = (
 /obj/structure/table/wood/plain/alto,
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "sTB" = (
 /obj/structure/closet/crate/crafted_closet/inn/south,
@@ -33049,9 +34302,8 @@
 /area/indoors/town/rmh/farm)
 "thd" = (
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "thr" = (
 /obj/structure/water_pipe,
@@ -33087,9 +34339,8 @@
 	layer = 2
 	},
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "tiC" = (
 /obj/effect/decal/cleanable/debris/stone,
@@ -33453,6 +34704,12 @@
 	icon_state = "snow"
 	},
 /area/outdoors/town/rmh/roofs)
+"tsC" = (
+/obj/structure/fluff/walldeco/bath/wallrope{
+	pixel_y = 32
+	},
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "tsD" = (
 /obj/structure/bars/grille{
 	max_integrity = 1500
@@ -33582,6 +34839,11 @@
 	},
 /turf/open/floor/cobblerock/snow,
 /area/indoors/cave/underhamlet)
+"tvU" = (
+/obj/structure/mannequin,
+/obj/structure/carpet/purple,
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "tvZ" = (
 /obj/structure/chair/wood/alt/fancy{
 	dir = 8
@@ -33670,9 +34932,8 @@
 /turf/closed/wall/mineral/wooddark/end{
 	dir = 8
 	},
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "txY" = (
 /turf/open/floor/ruinedwood/herringbone_clear,
@@ -33684,14 +34945,10 @@
 /turf/open/floor/cobble/snow,
 /area/under/town/rmh/basement)
 "tyg" = (
-/obj/structure/stairs{
-	dir = 1;
-	name = "benches"
-	},
-/turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/obj/structure/fluff/railing/border,
+/turf/open/floor/wood,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "tyv" = (
 /obj/structure/chair/wood/alt/fancy/chair4{
@@ -33949,6 +35206,13 @@
 /obj/machinery/light/fueled/torchholder/c,
 /turf/open/floor/blocks,
 /area/indoors/town/rmh/garrison/wall)
+"tJb" = (
+/obj/machinery/light/fueled/wallfire/candle/r,
+/turf/open/floor/rooftop{
+	dir = 4;
+	icon_state = "roofg"
+	},
+/area/outdoors/town/rmh/roofs)
 "tJr" = (
 /obj/structure/stairs/stone,
 /obj/structure/fluff/traveltile{
@@ -34115,13 +35379,17 @@
 	first_time_text = "RIVERMIST HOLLOW"
 	})
 "tMT" = (
-/obj/effect/decal/carpet/kover_darkred{
-	pixel_y = -20
-	},
+/obj/structure/closet/crate/chest/crate,
 /turf/open/floor/carpet/stellar,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
+"tMW" = (
+/turf/closed/wall/mineral/roofwall/middle{
+	dir = 1
+	},
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "tMY" = (
 /turf/open/floor/twig,
@@ -34231,10 +35499,13 @@
 	first_time_text = "RIVERMIST HOLLOW"
 	})
 "tPl" = (
+/obj/effect/decal/edge{
+	dir = 6;
+	color = "#3b3b3b"
+	},
 /turf/open/floor/tile/diamond/blue,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "tPr" = (
 /turf/closed/wall/mineral/decostone/moss,
@@ -34255,7 +35526,16 @@
 /turf/closed/wall/mineral/craftstone,
 /area/indoors/town/rmh/crafters_guild)
 "tQz" = (
-/obj/machinery/light/fueled/wallfire/candle/r,
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 15
+	},
+/obj/structure/bookcase/random/eoratica{
+	density = 0;
+	opacity = 0;
+	pixel_x = 32
+	},
 /turf/open/floor/woodturned,
 /area/indoors/town/rmh/bank)
 "tRg" = (
@@ -34358,13 +35638,25 @@
 /turf/open/floor/wood,
 /area/indoors/town/rmh/crafters_guild)
 "tUJ" = (
-/obj/structure/chair/wood/alt{
-	dir = 1
+/obj/effect/decal/edge{
+	dir = 1;
+	color = "#3b3b3b"
+	},
+/obj/structure/table/wood{
+	dir = 2;
+	icon_state = "longtable";
+	pixel_y = -10;
+	layer = 2.831
+	},
+/obj/structure/table/wood{
+	dir = 2;
+	icon_state = "longtable";
+	pixel_y = 11;
+	layer = 2.83
 	},
 /turf/open/floor/tile/diamond/blue,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "tUN" = (
 /obj/structure/door{
@@ -34530,6 +35822,13 @@
 	icon_state = "snow"
 	},
 /area/outdoors/town/rmh/roofs)
+"tYw" = (
+/obj/machinery/light/fueled/firebowl/stump,
+/turf/open/floor/cobblerock,
+/area/outdoors/town{
+	name = "Rivermist Hollow";
+	first_time_text = "RIVERMIST HOLLOW"
+	})
 "tYL" = (
 /turf/open/floor/tile/bath,
 /area/indoors/town/rmh/magician)
@@ -34669,6 +35968,11 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"udF" = (
+/obj/structure/fluff/railing/wood/east,
+/obj/structure/flora/newleaf/snow,
+/turf/open/floor/ruinedwood/spiralfade,
+/area/outdoors/town/rmh/roofs)
 "udP" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/natural/rock,
@@ -35106,9 +36410,8 @@
 /area/indoors/town/rmh/magician)
 "usa" = (
 /turf/open/floor/carpet/inn,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "usk" = (
 /obj/structure/flora/grass/tundra,
@@ -35421,6 +36724,13 @@
 	},
 /turf/open/floor/cobble/snow,
 /area/indoors/town/rmh/bank)
+"uzD" = (
+/turf/closed/wall/mineral/roofwall/outercorner{
+	dir = 4
+	},
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "uAk" = (
 /obj/effect/decal/cleanable/debris/glass,
 /turf/open/floor/dirt/road{
@@ -35654,10 +36964,26 @@
 	},
 /turf/open/floor/tile/bath,
 /area/indoors/town/rmh/magician)
+"uGE" = (
+/obj/structure/fluff/railing/wood,
+/turf/open/floor/ruinedwood/spiralfade,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "uGH" = (
 /obj/structure/ladder/earth,
 /turf/open/floor/cobblerock/snow,
 /area/under/town/rmh/sewer)
+"uGK" = (
+/obj/effect/decal/cobbleedge{
+	dir = 2;
+	icon_state = "borderfall";
+	pixel_y = -8
+	},
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "uGP" = (
 /turf/open/floor/grass/cold,
 /area/outdoors/bog)
@@ -35665,9 +36991,8 @@
 /turf/closed/wall/mineral/wooddark/end{
 	dir = 4
 	},
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "uGR" = (
 /obj/structure/roguerock,
@@ -35698,6 +37023,11 @@
 /area/under/underdark/rmh{
 	name = "Caves & Mines"
 	})
+"uHT" = (
+/turf/closed/wall/mineral/roofwall/outercorner{
+	dir = 1
+	},
+/area/indoors/town/rmh/bank)
 "uIe" = (
 /obj/effect/decal/cobbleedge{
 	icon = 'icons/obj/rune.dmi';
@@ -35770,6 +37100,16 @@
 	},
 /turf/open/floor/grass/cold,
 /area/outdoors/exposed/magiciantower)
+"uJq" = (
+/obj/effect/decal/cobbleedge{
+	dir = 2;
+	icon_state = "borderfall";
+	pixel_y = -8
+	},
+/turf/open/floor/wood,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "uJL" = (
 /turf/open/floor/twig/platform,
 /area/outdoors/exposed/magiciantower)
@@ -35791,9 +37131,8 @@
 	},
 /obj/structure/closet/crate/chest/crate,
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "uKf" = (
 /turf/open/floor/grass/yel,
@@ -36138,6 +37477,10 @@
 /obj/structure/flora/newtree/snow,
 /turf/open/floor/grass/cold,
 /area/outdoors/rmh_field/camp)
+"uTD" = (
+/obj/structure/curtain/red,
+/turf/open/floor/woodturned,
+/area/under/town/rmh/basement)
 "uTO" = (
 /obj/effect/decal/mossy{
 	dir = 8;
@@ -36165,6 +37508,14 @@
 "uUw" = (
 /turf/open/floor/woodturned,
 /area/indoors/town/rmh/chapel)
+"uUz" = (
+/obj/structure/stairs{
+	dir = 8
+	},
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "uVw" = (
 /obj/structure/ladder/hatch,
 /turf/open/floor/naturalstone,
@@ -36343,6 +37694,13 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"vat" = (
+/obj/machinery/light/fueled/wallfire/candle/l,
+/obj/structure/chair/wood/alt/chair_noble{
+	dir = 4
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "vaA" = (
 /obj/structure/mannequin/male/female,
 /turf/open/floor/tile/masonic/single,
@@ -36378,6 +37736,14 @@
 /obj/item/weapon/pick/copper,
 /turf/open/floor/naturalstone,
 /area/indoors/cave/underhamlet)
+"vbk" = (
+/obj/structure/window/openclose/reinforced{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "vcb" = (
 /obj/structure/fluff/railing/border/west{
 	dir = 4
@@ -36409,10 +37775,20 @@
 	icon_state = "borderfall";
 	pixel_y = 8
 	},
+/obj/structure/rack/shelf,
+/obj/structure/rack/shelf/big,
 /turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
+"vdh" = (
+/obj/effect/decal/edge_corner{
+	dir = 1;
+	color = "#3b3b3b"
+	},
+/turf/open/floor/tile/diamond/blue,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "vdj" = (
 /obj/effect/decal/cleanable/debris/wood,
@@ -36549,6 +37925,17 @@
 /obj/structure/fermentation_keg/water,
 /turf/open/floor/hexstone,
 /area/under/town/rmh/basement)
+"vit" = (
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = -8
+	},
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "viC" = (
 /obj/machinery/light/fueled/wallfire/candle,
 /obj/structure/door/window{
@@ -36638,6 +38025,9 @@
 	},
 /turf/open/transparent/openspace,
 /area/outdoors/rmh_field/druid)
+"vle" = (
+/turf/closed/wall/mineral/wooddark/vertical,
+/area/indoors/town/rmh/bank)
 "vlo" = (
 /obj/machinery/light/fueled/torchholder/hotspring,
 /turf/open/floor/carpet/red,
@@ -37063,9 +38453,8 @@
 	},
 /obj/structure/closet/crate/crafted_closet/inn/south,
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "vzS" = (
 /obj/machinery/light/fueled/firebowl/stump,
@@ -37131,6 +38520,10 @@
 	},
 /turf/open/floor/ruinedwood,
 /area/indoors/town/rmh/farm)
+"vCn" = (
+/obj/machinery/light/fueled/wallfire/candle/blue,
+/turf/open/floor/ruinedwood/herringbone_clear,
+/area/under/town/rmh/basement)
 "vDm" = (
 /obj/effect/decal/cobblerockedge/alt{
 	dir = 9
@@ -37200,6 +38593,10 @@
 /obj/structure/fluff/railing/wood/east,
 /turf/open/floor/cobble,
 /area/outdoors/town/rmh/roofs)
+"vGj" = (
+/obj/structure/dye_bin/luxury,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "vGk" = (
 /obj/structure/flora/hotspring_rocks/grassy,
 /turf/open/floor/cobblerock/snow,
@@ -37220,6 +38617,10 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"vIb" = (
+/obj/machinery/light/fueled/torchholder/r,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "vIc" = (
 /turf/closed/mineral/random/high,
 /area/indoors/cave/underhamlet{
@@ -37292,6 +38693,19 @@
 	},
 /turf/open/floor/cobble/snow,
 /area/indoors/town/rmh/sawmill)
+"vJB" = (
+/obj/machinery/light/fueled/wallfire/candle/l,
+/obj/structure/table/wood/plain/alto,
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = -8
+	},
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "vKb" = (
 /obj/structure/flora/grass/tundra,
 /obj/machinery/light/fueled/torchholder/c,
@@ -37403,9 +38817,8 @@
 /obj/effect/mapping_helpers/access/keyset/town/mercenary,
 /obj/effect/mapping_helpers/access/keyset/town/mercenary,
 /turf/open/floor/concrete,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "vOU" = (
 /obj/effect/decal/remains/human,
@@ -37483,6 +38896,12 @@
 	},
 /turf/open/floor/ruinedwood/turned,
 /area/indoors/town/rmh)
+"vRM" = (
+/obj/structure/fluff/railing/wood/west,
+/turf/open/floor/ruinedwood/spiralfade,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "vRP" = (
 /obj/structure/fluff/railing/border{
 	dir = 5
@@ -37712,6 +39131,17 @@
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/grass/cold,
 /area/outdoors/beach/rmh_beach)
+"vYS" = (
+/obj/effect/decal/cobbleedge{
+	dir = 4;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = 8
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "vZo" = (
 /turf/closed/wall/mineral/decostone/cand,
 /area/indoors/town/rmh/chapel)
@@ -37727,9 +39157,24 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"way" = (
+/obj/structure/fluff/railing/wood/north{
+	layer = 2.7;
+	pixel_y = 7
+	},
+/obj/structure/flora/newleaf/snow,
+/turf/open/floor/ruinedwood/spiralfade,
+/area/outdoors/town/rmh/roofs)
 "waE" = (
 /turf/closed/wall/mineral/wood,
 /area/indoors)
+"waO" = (
+/obj/item/natural/rock/coal,
+/obj/item/natural/rock/coal,
+/obj/item/natural/rock/coal,
+/obj/item/natural/rock/coal,
+/turf/open/floor/cobblerock,
+/area/under/town/rmh/basement)
 "wbc" = (
 /obj/effect/particle_effect/smoke{
 	lifetime = 14400
@@ -37861,6 +39306,11 @@
 	},
 /turf/open/floor/hay,
 /area/indoors/town/rmh)
+"wdj" = (
+/obj/machinery/light/fueled/wallfire/candle,
+/obj/structure/table/wood/plain/alto,
+/turf/open/floor/ruinedwood/spiralfade,
+/area/outdoors/town/rmh/roofs)
 "wdn" = (
 /turf/open/floor/tile/bfloorz,
 /area/indoors/town/rmh/town_hall)
@@ -37892,9 +39342,8 @@
 /area/indoors/town/rmh/bath)
 "wer" = (
 /turf/closed/wall/mineral/wooddark,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "wew" = (
 /obj/structure/bridge_stakes{
@@ -38285,13 +39734,19 @@
 /turf/open/floor/hexstone,
 /area/indoors/cave/rmh_cave/minotaur)
 "wqr" = (
-/obj/structure/fluff/railing/wood,
 /obj/machinery/light/fueled/wallfire/candle/l,
-/turf/open/floor/ruinedwood/chevron,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/turf/open/transparent/openspace,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
+"wqC" = (
+/obj/structure/table/wood/plain/alto,
+/obj/item/reagent_containers/glass/carafe/redwine{
+	pixel_y = 11;
+	pixel_x = 4
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "wqI" = (
 /obj/machinery/light/fueled/oven/south,
 /obj/machinery/light/fueled/hearth,
@@ -38500,9 +39955,8 @@
 	},
 /obj/item/bedsheet/pelt,
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "wvH" = (
 /obj/structure/stairs{
@@ -38641,7 +40095,7 @@
 /area/indoors/cave/rmh_cave/to_underdark)
 "wyv" = (
 /obj/structure/fluff/railing/corner/south_east,
-/turf/open/floor/ruinedwood/herringbone_clear,
+/turf/open/floor/ruinedwood/spiral,
 /area/indoors/town/rmh/merchant)
 "wyE" = (
 /obj/structure/fluff/railing/border{
@@ -38922,6 +40376,15 @@
 "wGX" = (
 /turf/open/floor/hexstone,
 /area/under/town/rmh/basement)
+"wGZ" = (
+/obj/structure/window/openclose/reinforced,
+/obj/structure/curtain/dir{
+	dir = 2;
+	color = "#8a6b6b";
+	hover_color = "#8a6b6b"
+	},
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "wHg" = (
 /obj/effect/decal/wood/herringbone{
 	dir = 8
@@ -38945,13 +40408,17 @@
 	})
 "wIi" = (
 /obj/structure/table/wood{
-	dir = 1;
-	icon_state = "longtable_mid"
+	dir = 2;
+	icon_state = "longtable";
+	layer = 2.82
+	},
+/obj/item/candle/skull/darkskull/lit{
+	pixel_y = 8;
+	pixel_x = -1
 	},
 /turf/open/floor/woodturned,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "wIH" = (
 /turf/open/floor/cobblerock,
@@ -38995,6 +40462,16 @@
 	},
 /turf/open/floor/tile/bath,
 /area/indoors/town/rmh/magician)
+"wJB" = (
+/obj/structure/fluff/globe,
+/obj/machinery/light/fueled/wallfire/candle/r,
+/obj/effect/decal/carpet/kover_purple{
+	dir = 4;
+	pixel_x = -13;
+	pixel_y = 16
+	},
+/turf/open/floor/woodturned,
+/area/indoors/town/rmh/bank)
 "wJF" = (
 /turf/closed/wall/mineral/pipe,
 /area/indoors/town/rmh/town_hall)
@@ -39098,6 +40575,12 @@
 	},
 /turf/open/floor/cobblerock,
 /area/under/town/rmh/basement)
+"wNq" = (
+/obj/machinery/light/fueled/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/transparent/openspace,
+/area/indoors/town/rmh/bank)
 "wNu" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/cobblerock/snow,
@@ -39168,6 +40651,15 @@
 /obj/machinery/light/fueled/torchholder/c,
 /turf/open/floor/cobblerock/alt,
 /area/under/town/rmh/sewer)
+"wQU" = (
+/obj/effect/decal/edge_corner{
+	dir = 8;
+	color = "#3b3b3b"
+	},
+/turf/open/floor/tile/brownbrick,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "wRm" = (
 /obj/effect/decal/herringbone{
 	dir = 1
@@ -39228,6 +40720,9 @@
 "wSC" = (
 /turf/closed/wall/mineral/decostone/moss/end,
 /area/indoors/cave/rmh_cave/wet/lake)
+"wSJ" = (
+/turf/closed/wall/mineral/wood,
+/area/indoors/town/rmh/bank)
 "wSW" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1;
@@ -39247,6 +40742,17 @@
 	},
 /turf/open/floor/woodturned,
 /area/indoors/town/rmh/town_hall)
+"wTG" = (
+/obj/effect/decal/cobbleedge{
+	dir = 4;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = 8
+	},
+/turf/open/floor/carpet/inn,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "wTH" = (
 /obj/structure/ladder,
 /turf/open/floor/woodturned,
@@ -39659,6 +41165,9 @@
 	},
 /turf/open/floor/ruinedwood,
 /area/indoors/town/rmh/tavern)
+"xak" = (
+/turf/open/floor/sandstone,
+/area/under/town/rmh/basement)
 "xao" = (
 /obj/item/bin/water,
 /obj/item/reagent_containers/glass/bucket/wooden,
@@ -39874,6 +41383,12 @@
 "xhT" = (
 /turf/open/floor/blocks,
 /area/under/town/rmh/sewer)
+"xhV" = (
+/obj/structure/chair/wood/alt/chair_noble/red{
+	dir = 4
+	},
+/turf/open/floor/carpet/purple,
+/area/indoors/town/rmh/bank)
 "xid" = (
 /turf/closed/wall/mineral/decowood,
 /area/indoors/town/rmh/crafters_guild/under)
@@ -40070,6 +41585,15 @@
 /obj/structure/flora/grass/bush/tundra,
 /turf/open/floor/grass/cold,
 /area/under/cavewet)
+"xnT" = (
+/obj/effect/decal/edge_corner{
+	dir = 2;
+	color = "#3b3b3b"
+	},
+/turf/open/floor/tile/brownbrick,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "xnW" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -40224,6 +41748,23 @@
 "xsI" = (
 /turf/open/floor/churchrough,
 /area/indoors/town/rmh/chapel)
+"xsJ" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall";
+	pixel_y = 8
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 4;
+	icon_state = "borderfall";
+	pixel_y = 0;
+	pixel_x = 8
+	},
+/obj/structure/fluff/railing/corner/north_east,
+/turf/open/floor/ruinedwood/chevron,
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
+	})
 "xte" = (
 /turf/open/water/swamp,
 /area/outdoors/rmh_field)
@@ -40264,9 +41805,8 @@
 	pixel_x = 32
 	},
 /turf/closed/wall/mineral/wooddark/vertical,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "xtS" = (
 /turf/open/water/river{
@@ -40310,9 +41850,8 @@
 	dir = 4
 	},
 /turf/open/floor/ruinedwood/herringbone_clear,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "xvw" = (
 /obj/machinery/light/fueled/wallfire{
@@ -40527,10 +42066,24 @@
 	pixel_y = 8
 	},
 /obj/structure/closet/crate/chest/neu_fancy,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper/natural,
+/obj/item/paper/natural,
+/obj/item/paper/natural,
+/obj/item/paper/natural,
+/obj/item/paper/natural,
+/obj/item/paper/natural,
+/obj/item/paper/natural,
+/obj/item/paper/natural,
 /turf/open/floor/woodturned,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "xDf" = (
 /obj/effect/decal/cleanable/dirt,
@@ -40640,15 +42193,28 @@
 /turf/open/floor/church,
 /area/indoors/town/rmh/library)
 "xFQ" = (
-/obj/structure/fluff/railing/border,
-/obj/structure/fluff/railing/border/east,
-/obj/structure/fluff/railing/border/west,
-/obj/structure/fluff/railing/corner/south_east,
-/obj/structure/fluff/railing/corner/south_west,
+/obj/structure/fluff/railing/border{
+	plane = -2
+	},
+/obj/structure/fluff/railing/border/east{
+	plane = -2
+	},
+/obj/structure/fluff/railing/border/west{
+	plane = -2
+	},
+/obj/structure/fluff/railing/corner/south_east{
+	plane = -2
+	},
+/obj/structure/fluff/railing/corner/south_west{
+	plane = -2
+	},
 /obj/structure/fluff/railing/border/north,
-/obj/structure/fluff/railing/corner/north_east,
+/obj/structure/fluff/railing/corner/north_east{
+	plane = -2
+	},
 /obj/structure/fluff/railing/corner{
-	dir = 9
+	dir = 9;
+	plane = -2
 	},
 /obj/structure/fluff/statue/aasimar{
 	pixel_y = 7
@@ -40995,6 +42561,8 @@
 	pixel_y = 0;
 	pixel_x = -32
 	},
+/obj/machinery/essence/infuser,
+/obj/structure/table/wood/plain_alt,
 /turf/open/floor/cobble,
 /area/indoors/town/rmh/magician)
 "xOw" = (
@@ -41076,6 +42644,11 @@
 /obj/structure/chair/bench/ancientlog,
 /turf/open/floor/grass/red,
 /area/outdoors/rmh_field/north)
+"xQg" = (
+/obj/structure/flora/ausbushes/brflowers,
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/grass/cold,
+/area/outdoors/town/rmh/roofs)
 "xQn" = (
 /obj/structure/flora/grass/tundra,
 /turf/open/floor/grass/cold,
@@ -41108,6 +42681,12 @@
 "xQD" = (
 /turf/closed/wall/mineral/roofwall/innercorner,
 /area/indoors/town/rmh/chapel)
+"xQQ" = (
+/obj/structure/fluff/railing/wood{
+	alpha = 5
+	},
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "xRg" = (
 /obj/effect/decal/edge{
 	dir = 2;
@@ -41354,11 +42933,13 @@
 	icon_state = "borderfall";
 	pixel_y = 8
 	},
-/obj/machinery/light/fueled/wallfire/candle,
+/obj/item/candle/skull/darkskull/lit{
+	pixel_y = 14;
+	pixel_x = -1
+	},
 /turf/open/floor/wood,
-/area/indoors/town/rmh/merchant{
-	name = "Adventure Guild";
-	first_time_text = "ADVENTURE GUILD"
+/area/indoors/town/merc_guild{
+	first_time_text = "Adventure's Guild"
 	})
 "xVy" = (
 /obj/structure/stairs{
@@ -41436,6 +43017,13 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"xXn" = (
+/obj/structure/door/green{
+	name = "Bank office"
+	},
+/obj/effect/mapping_helpers/access/keyset/manor/steward,
+/turf/open/floor/wood,
+/area/indoors/town/rmh/bank)
 "xXp" = (
 /turf/open/floor/cobblerock/snow,
 /area/outdoors/rmh_field/east)
@@ -41894,6 +43482,10 @@
 	name = "Rivermist Hollow";
 	first_time_text = "RIVERMIST HOLLOW"
 	})
+"yjD" = (
+/obj/structure/fluff/railing/corner/north_east,
+/turf/open/floor/wood,
+/area/under/town/rmh/basement)
 "yjE" = (
 /turf/open/floor/twig,
 /area/indoors/town/rmh/garrison)
@@ -41927,6 +43519,11 @@
 "yka" = (
 /obj/structure/window/openclose/reinforced{
 	dir = 2
+	},
+/obj/structure/curtain/dir{
+	dir = 2;
+	color = "#8a6b6b";
+	hover_color = "#8a6b6b"
 	},
 /turf/open/floor/ruinedwood,
 /area/indoors/town/rmh/bank)
@@ -78173,8 +79770,8 @@ snm
 snm
 snm
 jzy
-gSo
-mGQ
+qfK
+aRo
 eTt
 tez
 myB
@@ -78418,17 +80015,17 @@ igw
 snm
 snm
 snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
+tgg
+tgg
+tgg
+tgg
+tgg
+tgg
+tgg
+tgg
+tgg
+tgg
+tgg
 eTt
 gSo
 mGQ
@@ -78675,17 +80272,17 @@ igw
 igw
 snm
 snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
+tgg
+cQw
+fXr
+bhI
+apQ
+vGj
+bhI
+bhI
+cOJ
+bhI
+tgg
 eTt
 gSo
 mGQ
@@ -78932,17 +80529,17 @@ icT
 igw
 xxC
 snm
-igw
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
+tgg
+fTM
+fTM
+bhI
+bhI
+bhI
+bhI
+rnC
+hWX
+bhI
+tgg
 eTt
 gSo
 mGQ
@@ -79189,17 +80786,17 @@ icT
 oSK
 sZr
 tOn
-igw
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
+jwi
+bhI
+bhI
+bhI
+bhI
+drS
+bhI
+bhI
+qUQ
+bhI
+tgg
 eTt
 gSo
 mGQ
@@ -79446,17 +81043,17 @@ icT
 icT
 srY
 tOn
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
-snm
+tgg
+bhI
+bhI
+bhI
+bhI
+mAE
+waO
+bhI
+cCd
+bhI
+tgg
 jzy
 gSo
 mGQ
@@ -79704,16 +81301,16 @@ icT
 tdR
 tOn
 tgg
+bhI
+bhI
+oIH
+bhI
+apR
+bhI
+bhI
+bhI
+bhI
 tgg
-tgg
-tgg
-tgg
-tgg
-tgg
-snm
-snm
-snm
-snm
 eTt
 gSo
 mGQ
@@ -79961,16 +81558,16 @@ icT
 tdR
 tgg
 tgg
-cJa
-cJa
-cJa
-cJa
-cJa
+oFG
+oFG
+nMF
+bhI
+bhI
+bhI
+pAD
+bhI
+bhI
 tgg
-snm
-snm
-snm
-snm
 eTt
 gSo
 mGQ
@@ -80217,17 +81814,17 @@ uAU
 icT
 tOn
 tgg
-cna
-cJa
-cJa
-cJa
-cJa
-cJa
 tgg
-snm
-snm
-snm
-snm
+yjD
+tpj
+lGW
+boM
+krc
+krc
+cEg
+sCN
+sCN
+tgg
 jzy
 gSo
 mGQ
@@ -80475,26 +82072,26 @@ tOn
 tOn
 tgg
 cna
-cJa
-cJa
-cJa
-cJa
-cJa
+ajK
+tpj
+tpj
+jMV
+tpj
+tpj
+tpj
+tpj
+tpj
 tgg
-snm
-snm
-snm
-snm
 jzy
 gSo
-mGQ
-eTt
-snm
-snm
-snm
-snm
-snm
-snm
+gSo
+gSo
+gSo
+gSo
+gSo
+gSo
+gSo
+jzy
 snm
 jzy
 jzy
@@ -80731,27 +82328,27 @@ tOn
 tOn
 tOn
 tgg
+bcg
+ope
+tpj
+tpj
+jMV
+tpj
+tpj
+tpj
+tpj
+bcg
 tgg
-cJa
-cJa
-cJa
-cJa
-cJa
-tgg
-snm
-snm
-snm
-snm
 jzy
-gSo
 mGQ
-eTt
-snm
-snm
-snm
-snm
-snm
-snm
+mGQ
+mGQ
+mGQ
+mGQ
+mGQ
+mGQ
+gSo
+jzy
 snm
 snm
 snm
@@ -80995,20 +82592,20 @@ mvY
 tgg
 tgg
 tgg
-snm
-snm
-snm
-snm
+tgg
+orp
+tgg
+tgg
 jzy
-gSo
+jzy
+jzy
+jzy
+jzy
+jzy
+jzy
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -81250,22 +82847,22 @@ dLd
 mGb
 bhI
 wic
-cJa
+qEk
+tgg
+cZQ
+xak
+xak
+tgg
+tgg
+tgg
 tgg
 snm
 snm
 snm
-snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -81509,20 +83106,20 @@ cJa
 cJa
 cJa
 tgg
-snm
+xak
+xak
+xak
+uTD
+fsU
+lel
+tgg
 snm
 snm
 snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -81766,20 +83363,20 @@ bhI
 vsl
 tgg
 tgg
-snm
+ltW
+ltW
+ltW
+ltW
+fsU
+lcr
+tgg
 snm
 snm
 snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -82023,20 +83620,20 @@ xUJ
 cJa
 nKj
 tgg
-snm
+vCn
+fOY
+ltW
+fsU
+fsU
+fsU
+tgg
 snm
 snm
 snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -82280,20 +83877,20 @@ cJa
 cJa
 nlC
 tgg
-snm
+nIY
+fOY
+uTD
+fsU
+fsU
+fsU
+tgg
 snm
 snm
 snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -82531,26 +84128,26 @@ tFt
 bhI
 tgg
 tgg
-bhI
+vIb
 bhI
 cJa
 bhI
-bhI
+vIb
+tgg
+fOY
+fOY
+ltW
+fsU
+fsU
+fsU
 tgg
 snm
 snm
 snm
-snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -82794,20 +84391,20 @@ geh
 prC
 tgg
 tgg
-snm
+hPy
+oOk
+ltW
+qCx
+fsU
+qCx
+tgg
 snm
 snm
 snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -83050,21 +84647,21 @@ oqp
 idz
 oYU
 nwp
-snm
-snm
+tgg
+tgg
+tgg
+tgg
+tgg
+tgg
+tgg
+tgg
 snm
 snm
 snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -83312,16 +84909,16 @@ snm
 snm
 snm
 snm
+snm
+snm
+snm
+snm
+snm
+snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -83569,16 +85166,16 @@ snm
 snm
 snm
 snm
+snm
+snm
+snm
+snm
+snm
+snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -83826,16 +85423,16 @@ snm
 snm
 snm
 snm
+snm
+snm
+snm
+snm
+snm
+snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -84083,16 +85680,16 @@ snm
 snm
 snm
 snm
+snm
+snm
+snm
+snm
+snm
+snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -84340,16 +85937,16 @@ snm
 snm
 snm
 snm
+snm
+snm
+snm
+snm
+snm
+snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -84597,16 +86194,16 @@ snm
 snm
 snm
 snm
+snm
+snm
+snm
+snm
+snm
+snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -84854,16 +86451,16 @@ snm
 snm
 snm
 snm
+snm
+snm
+snm
+snm
+snm
+snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -85111,16 +86708,16 @@ snm
 snm
 snm
 snm
+snm
+snm
+snm
+snm
+snm
+snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -85368,16 +86965,16 @@ snm
 snm
 snm
 snm
+snm
+snm
+snm
+snm
+snm
+snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -85625,16 +87222,16 @@ snm
 snm
 snm
 snm
+snm
+snm
+snm
+snm
+snm
+snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -85882,16 +87479,16 @@ snm
 snm
 snm
 snm
+snm
+snm
+snm
+snm
+snm
+snm
 jzy
-gSo
 mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -86140,15 +87737,15 @@ snm
 snm
 snm
 jzy
-gSo
-mGQ
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
+jzy
+jzy
+jzy
+jzy
+jzy
+mGQ
+gSo
+jzy
 snm
 snm
 snm
@@ -86397,15 +87994,15 @@ snm
 snm
 snm
 jzy
-gSo
 mGQ
+mGQ
+mGQ
+mGQ
+mGQ
+mGQ
+mGQ
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -86655,14 +88252,14 @@ snm
 snm
 jzy
 gSo
-mGQ
+gSo
+gSo
+gSo
+gSo
+gSo
+gSo
+gSo
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
 snm
 snm
 snm
@@ -86914,12 +88511,12 @@ jzy
 gSo
 mGQ
 jzy
-snm
-snm
-snm
-snm
-snm
-snm
+jzy
+jzy
+jzy
+jzy
+jzy
+jzy
 snm
 snm
 snm
@@ -142921,7 +144518,7 @@ eUx
 eUx
 ezt
 dId
-dId
+snv
 qpk
 skC
 skC
@@ -143182,10 +144779,10 @@ dId
 dHL
 cnh
 pDt
-aWZ
-ovV
-aWZ
-rBC
+eqH
+vJB
+aob
+sjv
 swN
 eFU
 cnh
@@ -143439,9 +145036,9 @@ dId
 xFQ
 cnh
 cGw
-aWZ
-aWZ
-aWZ
+rCA
+rCA
+rCA
 vOD
 swN
 swN
@@ -143696,10 +145293,10 @@ dId
 dHL
 cnh
 pDt
-aWZ
-aWZ
-aWZ
-rBC
+rCA
+rCA
+uGK
+sjv
 swN
 eFU
 cnh
@@ -143949,14 +145546,14 @@ eUx
 eUx
 ezt
 dId
-dId
-wer
-eaS
+snv
+mJd
+aTJ
 wer
 lrm
-aWZ
-aWZ
-eaS
+rCA
+uGK
+aTJ
 wer
 dIM
 dIM
@@ -144208,15 +145805,15 @@ dId
 dId
 dId
 txT
-dHR
-aWZ
-aWZ
-aWZ
-aWZ
+odc
+lkg
+mlY
+rCA
+hvu
 dEK
 bfv
-tPl
-tPl
+sIR
+hEY
 oxm
 dIM
 fTw
@@ -144464,17 +146061,17 @@ lff
 dId
 dId
 qKb
-wer
+mJd
 kyK
 kyK
-aWZ
-aWZ
-aWZ
+rCA
+rCA
+rCA
 nKd
 wIi
 tUJ
 pRH
-tPl
+bzv
 dIM
 tcV
 lyL
@@ -144725,13 +146322,13 @@ uGQ
 fNk
 sqL
 mlY
-aWZ
-aWZ
+rCA
+rCA
 nKd
 cfj
+hKv
 tPl
-tPl
-tPl
+btr
 dIM
 myx
 iCR
@@ -144978,16 +146575,16 @@ qVK
 eUR
 eUR
 lff
-wer
+pDt
 xVu
-aWZ
-aWZ
-aWZ
-aWZ
-nKd
-nKd
-tPl
-tPl
+rCA
+rCA
+oIA
+bjR
+vYS
+kmp
+vdh
+nos
 dIM
 wer
 fex
@@ -145235,16 +146832,16 @@ cnh
 oqW
 uTd
 lff
-uGQ
+sjv
 dfW
-aWZ
-aWZ
-oFX
+rCA
+rCA
+uGK
 wer
-eaS
-eaS
+aTJ
+aTJ
 clI
-eaS
+aTJ
 wer
 snm
 fTw
@@ -145492,15 +147089,15 @@ cnh
 qKb
 qKb
 lff
-rBC
+pDt
 dlG
 rCA
 ocX
-ocX
-rBC
+uJq
+sjv
 swD
-ozL
-ozL
+wQU
+xnT
 rEv
 dIM
 snm
@@ -145749,15 +147346,15 @@ usy
 qLH
 rMD
 ovl
-rBC
+sjv
 vcG
-aWZ
+rCA
 tyg
-pTO
-rBC
+uUz
+sjv
 jMt
 qjK
-ozL
+nIG
 oyY
 dIM
 snm
@@ -145987,7 +147584,7 @@ ydw
 mex
 cKs
 qKb
-qKb
+evu
 ipJ
 jpJ
 qKb
@@ -146007,14 +147604,14 @@ inY
 lXS
 krU
 txT
-vcG
-aWZ
-tyg
+kgi
+rCA
+ohn
 pTO
-rBC
+sjv
 lom
-ozL
-ozL
+aBD
+elK
 ssS
 dIM
 snm
@@ -146263,14 +147860,14 @@ dId
 qKb
 doC
 ggO
-wer
+mJd
 dIM
 dIM
 dIM
 ohi
 xtR
 xCw
-dIM
+ozL
 dIM
 dIM
 mJd
@@ -146528,7 +148125,7 @@ dIM
 dIM
 dIM
 wer
-sWI
+dIM
 gpm
 gpm
 mDs
@@ -147281,7 +148878,7 @@ yct
 vmg
 mmG
 uzv
-dmf
+wNq
 yct
 sHr
 vmg
@@ -148319,7 +149916,7 @@ cnh
 qKb
 mGF
 ggO
-hIo
+ray
 uiz
 iOA
 sfY
@@ -164313,10 +165910,10 @@ tYL
 uID
 aWV
 kGL
+nyZ
 fyT
 pBP
 cQx
-nyZ
 oZi
 dQN
 mAF
@@ -209491,11 +211088,11 @@ juz
 wer
 bag
 wer
-eaS
-eaS
-eaS
-eaS
+aTJ
+aTJ
+aTJ
 wer
+hJF
 hJF
 nft
 lzI
@@ -209743,16 +211340,16 @@ lzI
 lzI
 lzI
 lzI
-rBC
+sjv
 pTO
 pTO
 nCn
 ovV
-usa
-usa
-usa
+vit
+vit
+mHR
 sjv
-rBC
+xKp
 xKp
 qNx
 lzI
@@ -210000,16 +211597,16 @@ lzI
 lzI
 lzI
 lzI
-rBC
+sjv
 pTO
 pTO
 nCn
-aWZ
+oIA
 dpB
-usa
-usa
+wTG
+mHR
 sjv
-rBC
+xKp
 xKp
 qNx
 lzI
@@ -210261,7 +211858,7 @@ txT
 kyK
 kyK
 nCn
-aWZ
+uGK
 wer
 chv
 chv
@@ -210516,14 +212113,14 @@ vlK
 oxe
 wer
 dHR
-aWZ
-aWZ
-aWZ
+rCA
+rCA
+jFd
 chv
 ryB
 sTz
 ryB
-rBC
+sjv
 xKp
 qNx
 lzI
@@ -210772,10 +212369,10 @@ qjO
 qjO
 qjO
 uGQ
-aWZ
+eaY
 usa
 usa
-aWZ
+rCA
 agA
 thd
 thd
@@ -211029,17 +212626,17 @@ jXq
 jXq
 jXq
 oBg
-aWZ
+rCA
 usa
 usa
-aWZ
+opA
 chv
 thd
 thd
 rvz
 thd
 thd
-rBC
+sjv
 eUx
 eUx
 eUx
@@ -211271,13 +212868,13 @@ gPb
 iBF
 jTq
 ufZ
-cGf
+ayX
 cGf
 prE
 jTq
 ufZ
-onE
 cGf
+xXn
 prE
 jTq
 nTr
@@ -211285,11 +212882,11 @@ lfi
 lfi
 lfi
 nTr
-rBC
-aWZ
+sjv
+eaY
 usa
 usa
-aWZ
+uGK
 chv
 jeM
 thd
@@ -211523,18 +213120,18 @@ lzI
 lzI
 lzI
 lzI
-lzI
+nft
 lzI
 lzI
 cGf
-fcj
+vat
 xty
 aIs
-aIs
-cGf
-eYl
-eYl
-eYl
+cby
+vle
+qII
+xQQ
+iwx
 fcj
 cGf
 goh
@@ -211542,18 +213139,18 @@ rbB
 wZA
 mvr
 iEt
-rBC
-aWZ
+sjv
+xsJ
 bjR
-aWZ
-aWZ
+jpT
+uGK
 chv
 clp
 nfM
 clp
 thd
 clp
-rBC
+sjv
 myx
 uky
 uky
@@ -211784,15 +213381,15 @@ lzI
 lzI
 lzI
 yka
+wqC
 eYl
-eYl
-ckO
+qRU
 dmf
-cGf
+vle
+eFJ
+qRU
 eYl
-eYl
-eYl
-eYl
+byD
 eTn
 lzI
 lzI
@@ -211802,14 +213399,14 @@ lzI
 wer
 juz
 wer
-eaS
+aTJ
 fHS
-eaS
-eaS
+aTJ
+aTJ
 wer
-eaS
-eaS
-eaS
+aTJ
+aTJ
+aTJ
 wer
 myx
 lyL
@@ -212041,15 +213638,15 @@ lzI
 lzI
 lzI
 cGf
-eYl
+rHm
 dYZ
-nAA
-nAA
-cGf
-eYl
-eYl
-eYl
-eYl
+kfH
+rBX
+vle
+rsZ
+lNz
+xhV
+jnb
 cGf
 lzI
 lzI
@@ -212059,10 +213656,10 @@ lzI
 lzI
 lzI
 sDB
-xJf
-xJf
-xJf
-xJf
+eeQ
+jrx
+jrx
+jrx
 sDB
 xJf
 pjv
@@ -212298,15 +213895,15 @@ lzI
 lzI
 lzI
 jTq
-eYl
-eYl
-eYl
-eYl
+gMh
+fdg
 jTq
-eYl
-eYl
-eYl
-eYl
+geA
+jTq
+sMN
+odF
+fjo
+fUt
 jTq
 lzI
 lzI
@@ -212316,10 +213913,10 @@ lzI
 lzI
 lzI
 sDB
-xJf
-xJf
+edY
+jrx
 wyv
-xJf
+jrx
 pKE
 xJf
 woV
@@ -212554,16 +214151,16 @@ lzI
 lzI
 lzI
 lzI
-cGf
-eYl
-eYl
-eYl
-eYl
-cGf
-eYl
-eYl
-eYl
-eYl
+yct
+cZB
+lxq
+nAj
+rAL
+geA
+rsZ
+nNG
+rwU
+jnb
 cGf
 lzI
 lzI
@@ -212574,7 +214171,7 @@ lzI
 lzI
 sDB
 psL
-xJf
+jrx
 mXz
 qMP
 sDB
@@ -212811,14 +214408,14 @@ lzI
 lzI
 lzI
 lzI
-yka
-eYl
-eYl
-eYl
-eYl
+vmg
+bma
+lxq
+awP
+lxq
 onE
-eYl
-eYl
+tsC
+qRU
 eYl
 eYl
 eTn
@@ -212830,8 +214427,8 @@ lzI
 lzI
 lzI
 sDB
-xJf
-xJf
+eeQ
+jrx
 juw
 aCn
 koR
@@ -213068,16 +214665,16 @@ lzI
 lzI
 lzI
 lzI
-cGf
-eYl
+yct
+ile
+lxq
+lxq
+fhN
+geA
+qII
+klZ
 tQz
-eYl
-eYl
-cGf
-eYl
-eYl
-tQz
-eYl
+wJB
 cGf
 lzI
 lzI
@@ -213092,7 +214689,7 @@ lOY
 ixa
 ixa
 koR
-lyL
+mOG
 evu
 myx
 myx
@@ -213346,11 +214943,11 @@ wtf
 dId
 dId
 dId
-dhG
+tYw
 myx
-myx
-myx
-myx
+mOG
+mOG
+mOG
 myx
 myx
 lyL
@@ -213605,7 +215202,7 @@ dId
 dId
 myx
 lyL
-lyL
+mOG
 aJy
 lyL
 lyL
@@ -214117,11 +215714,11 @@ eUR
 eUR
 lyL
 myx
-myx
-lpH
+mOG
+mOG
 lpH
 lyL
-lpH
+mOG
 dFV
 dFV
 dFV
@@ -214375,8 +215972,8 @@ dId
 lyL
 myx
 evu
-lpH
-dFV
+mOG
+mOG
 lyL
 evu
 rED
@@ -275022,18 +276619,18 @@ lzI
 lzI
 lzI
 lzI
+pwm
+wer
+aTJ
+aaJ
+aTJ
 wer
 eaS
-eaS
-eaS
 wer
-eaS
-eaS
+aTJ
+aaJ
 wer
-eaS
-eaS
-eaS
-wer
+dwF
 lzI
 lzI
 lzI
@@ -275279,18 +276876,18 @@ lzI
 lzI
 lzI
 lzI
-rBC
-fhN
-fna
-gdo
-chv
-aWZ
-aWZ
-wqr
-pTO
+pwm
 sjv
-usa
-rBC
+iZN
+mbv
+sJh
+chv
+jLp
+wqr
+mHR
+iRB
+sjv
+dwF
 lzI
 lzI
 lzI
@@ -275536,18 +277133,18 @@ lzI
 lzI
 lzI
 lzI
-rBC
-ayX
-mIq
-sCe
-chv
-aWZ
-aWZ
-kKE
-pTO
+pwm
 sjv
+mIq
+cPk
+tMT
+chv
+gXg
+pTO
+mHR
 usa
-rBC
+bBP
+dwF
 lzI
 lzI
 lzI
@@ -275793,19 +277390,19 @@ lzI
 lzI
 lzI
 lzI
-rBC
+pwm
 sCe
 tMT
 fna
 mbv
-aWZ
+exi
+eBE
 aWZ
 aWZ
 oVC
-oVC
-aWZ
+sjv
 rBC
-lzI
+evV
 lzI
 lzI
 lzI
@@ -276050,19 +277647,19 @@ lzI
 lzI
 lzI
 lzI
-rBC
-gdo
-fna
-fna
+pwm
+sjv
+sJh
+mbv
+mbv
 chv
-aWZ
-aWZ
+eCA
 wer
 chv
 chv
 chv
 wer
-lzI
+dwF
 lzI
 lzI
 lzI
@@ -276291,8 +277888,8 @@ lJb
 pwm
 pwm
 pwm
-pwm
-pwm
+iXB
+iXB
 pwm
 pwm
 pwm
@@ -276307,19 +277904,19 @@ pwm
 pwm
 iXB
 iXB
+pwm
 wer
 chv
 chv
 chv
 wer
-aWZ
-aWZ
+nBO
 chv
 wvA
 dmd
 pQS
-rBC
-lzI
+bBP
+dwF
 lzI
 lzI
 lzI
@@ -276547,36 +278144,36 @@ pwm
 iXB
 pwm
 pwm
+iXB
+iXB
+iXB
+iXB
 pwm
 pwm
+iXB
+iXB
+iXB
 pwm
 pwm
-pwm
-pwm
-pwm
-pwm
-pwm
-pwm
-pwm
-pwm
+iXB
 iXB
 iXB
 iXB
 iXB
 lYa
-rBC
-aWZ
-aWZ
-aWZ
-aWZ
-aWZ
-aWZ
+pwm
+pwm
+pwm
+sjv
+sJF
+sPx
+gWW
 chv
 uKe
 tiz
 hhZ
-rBC
-lzI
+sjv
+dwF
 lzI
 lzI
 lzI
@@ -276802,38 +278399,38 @@ lzI
 lzI
 lzI
 lzI
-lzI
-lzI
-lzI
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+oZm
+oZm
+oZm
+oZm
+oZm
+oZm
+oZm
+acT
+oZm
 acT
 acT
 oZm
 oZm
 oZm
-rBC
-aWZ
-aWZ
-aWZ
-aWZ
-aWZ
-aWZ
+acT
+acT
+oZm
+oZm
+oZm
+nnb
+nnb
+xBl
+sCe
+gtB
+usa
+usa
 agA
 sqS
 thd
 hYS
-rBC
-lzI
+sjv
+dwF
 lzI
 lzI
 lzI
@@ -277059,38 +278656,38 @@ lzI
 lzI
 lzI
 lzI
-lzI
-lzI
-lzI
-dwF
-dwF
-dwF
-bxg
-bxg
-dwF
-dwF
-dwF
-bxg
-dwF
-dwF
+oZm
+oZm
+oZm
+oZm
+rps
+kKE
+kKE
+kKE
+kKE
+kKE
+kKE
+kKE
+kIg
+oZm
 acT
 oZm
 oZm
 oZm
 oZm
-rBC
-bjR
-aWZ
-aWZ
-aWZ
-aWZ
-bjR
+oZm
+tJb
+oZm
+sjv
+lng
+usa
+eyL
 chv
 vzR
 xvv
 oji
-rBC
-lzI
+bBP
+dwF
 lzI
 lzI
 lzI
@@ -277320,15 +278917,15 @@ lzI
 lzI
 lzI
 dwF
-dwF
-dwF
-bxg
-dwF
-dwF
-dwF
-bxg
-bxg
-dwF
+jTq
+geA
+nSI
+eYl
+iPK
+qsO
+lDl
+geA
+jTq
 dwF
 lzI
 koR
@@ -277343,11 +278940,11 @@ pgz
 pgz
 ixa
 koR
-eaS
 aTJ
-eaS
+nFz
+aTJ
 wer
-lzI
+dwF
 lzI
 lzI
 lzI
@@ -277577,15 +279174,15 @@ lzI
 lzI
 lzI
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-bxg
-dwF
-dwF
-dwF
+mqy
+cGf
+eYl
+eYl
+wSJ
+tvU
+lwA
+cGf
+gee
 dwF
 lzI
 wZo
@@ -277600,11 +279197,11 @@ ibD
 ibD
 isd
 uOT
-xKp
-xKp
+dnO
 xKp
 qNx
-lzI
+gGd
+dwF
 lzI
 lzI
 lzI
@@ -277834,15 +279431,15 @@ lzI
 lzI
 lzI
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+oFX
+wGZ
+xty
+kMn
+wSJ
+cEa
+lwA
+fzK
+oFX
 dwF
 lzI
 sDB
@@ -277857,10 +279454,10 @@ xJf
 xYQ
 xfW
 uOT
-dgs
-xKp
+wdj
 xKp
 qNx
+gGd
 lzI
 lzI
 lzI
@@ -278091,15 +279688,15 @@ lzI
 lzI
 lzI
 dwF
-dwF
-bxg
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+lUq
+cGf
+jig
+dmf
+wSJ
+sAv
+lwA
+cGf
+xQg
 dwF
 lzI
 koR
@@ -278114,10 +279711,10 @@ xJf
 tzQ
 qmp
 uOT
-xKp
-xKp
+dnO
 xKp
 qNx
+nRJ
 lzI
 lzI
 lzI
@@ -278348,15 +279945,15 @@ lzI
 lzI
 lzI
 dwF
-dwF
-bxg
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+jTq
+geA
+hLM
+nAA
+aTe
+qsO
+lDl
+geA
+jTq
 dwF
 lzI
 qre
@@ -278373,8 +279970,8 @@ qMP
 uOT
 xKp
 xKp
-jlT
 qNc
+mhz
 lzI
 lzI
 lzI
@@ -278605,15 +280202,15 @@ lzI
 lzI
 lzI
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+uHT
+gdo
+gdo
+gdo
+gdo
+gdo
+gdo
+gdo
+dBT
 dwF
 lzI
 koR
@@ -278863,10 +280460,10 @@ lzI
 lzI
 dwF
 dwF
-dwF
-dwF
-dwF
-dwF
+bxg
+bxg
+bxg
+bxg
 dwF
 dwF
 dwF
@@ -278887,7 +280484,7 @@ nqy
 aQY
 tso
 uOT
-lzI
+sHw
 lzI
 lzI
 lzI
@@ -279144,7 +280741,7 @@ lpi
 aDF
 ism
 yjA
-lzI
+sHw
 lzI
 lzI
 lzI
@@ -279401,7 +280998,7 @@ pox
 aDF
 cBJ
 sfu
-lzI
+sHw
 lzI
 lzI
 lzI
@@ -279658,7 +281255,7 @@ tlt
 tTN
 nHY
 uOT
-lzI
+sHw
 lzI
 lzI
 lzI
@@ -280163,10 +281760,10 @@ lzI
 lzI
 lzI
 lzI
-lzI
-lzI
-lzI
-lzI
+dwF
+dwF
+dwF
+dwF
 lzI
 lzI
 lzI
@@ -340558,18 +342155,18 @@ lzI
 lzI
 lzI
 lzI
+lzI
 dwF
 dwF
 dwF
 dwF
 dwF
 dwF
+bxg
+bxg
+bxg
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+lzI
 lzI
 lzI
 lzI
@@ -340815,18 +342412,18 @@ lzI
 lzI
 lzI
 lzI
+lzI
+bxg
+bxg
+koN
+sDa
+lbf
+sDa
+lbf
+sDa
+uzD
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+lzI
 lzI
 lzI
 lzI
@@ -341072,18 +342669,18 @@ lzI
 lzI
 lzI
 lzI
+lzI
 dwF
 dwF
+tMW
+duQ
+uGE
+pTO
+pTO
+pTO
+qRk
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+lzI
 lzI
 lzI
 lzI
@@ -341329,18 +342926,18 @@ lzI
 lzI
 lzI
 lzI
+lzI
 dwF
 dwF
+tMW
+duQ
+uGE
+pTO
+pTO
+pTO
+qRk
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+lzI
 lzI
 lzI
 lzI
@@ -341586,18 +343183,18 @@ lzI
 lzI
 lzI
 lzI
-dwF
+lzI
 dwF
 eYr
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+iso
+kat
+duQ
+vRM
+vRM
+vRM
+qRk
+bxg
+bxg
 lzI
 lzI
 lzI
@@ -341843,17 +343440,17 @@ lzI
 lzI
 lzI
 lzI
+lzI
 dwF
 dwF
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+tMW
+eXi
+eXi
+duQ
+duQ
+lbI
+uzD
 dwF
 lzI
 lzI
@@ -342100,17 +343697,17 @@ lzI
 lzI
 lzI
 lzI
+lzI
+lzI
+lzI
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+tMW
+pTO
+pTO
+mYv
+duQ
+duQ
+qRk
 dwF
 lzI
 lzI
@@ -342357,17 +343954,17 @@ lzI
 lzI
 lzI
 lzI
+lzI
+lzI
+lzI
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+tMW
+pTO
+pTO
+mYv
+duQ
+duQ
+qRk
 dwF
 lzI
 lzI
@@ -342599,12 +344196,15 @@ lzI
 lzI
 lzI
 lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
+ciH
+ciH
+ciH
+ciH
+ciH
+ciH
+ciH
+ciH
+ciH
 lzI
 lzI
 lzI
@@ -342615,16 +344215,13 @@ lzI
 lzI
 lzI
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+iso
+hAB
+wer
+mhw
+wer
+hAB
+qQH
 dwF
 lzI
 lzI
@@ -342856,31 +344453,31 @@ lzI
 lzI
 lzI
 lzI
+ciH
+ciH
+vnI
+vnI
+ciH
+ciH
+ciH
+ciH
+ciH
 lzI
 lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
+dwF
+bxg
+dwF
+dwF
+bxg
+bxg
+bxg
+bxg
 dwF
 dwF
 dwF
 dwF
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+bxg
 dwF
 dwF
 lzI
@@ -343113,28 +344710,28 @@ lzI
 lzI
 lzI
 lzI
+ciH
+ciH
+vnI
+ciH
+ciH
+vnI
+vnI
+ciH
+ciH
 lzI
 lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+bxg
+nbx
+jlT
+udF
+udF
+jlT
+jlT
+jlT
+jlT
+jlT
+xKp
 dwF
 lzI
 lzI
@@ -343370,29 +344967,29 @@ lzI
 lzI
 lzI
 lzI
+xBl
+xBl
+nnb
+nnb
+nnb
+nnb
+xBl
+xBl
+xBl
 lzI
 lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+bxg
+qNx
+mAk
+rGh
+mAk
+mAk
+rGh
+rGh
+mAk
+mAk
+way
+bxg
 lzI
 lzI
 lzI
@@ -343627,29 +345224,29 @@ lzI
 lzI
 lzI
 lzI
+dwF
+dwF
+dwF
+dwF
+bxg
+bxg
+bxg
+bxg
+dwF
 lzI
 lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+qNx
+mAk
+rGh
+mAk
+mAk
+mAk
+mAk
+rGh
+mAk
+srf
+bxg
 lzI
 lzI
 lzI
@@ -343884,29 +345481,29 @@ lzI
 lzI
 lzI
 lzI
+dwF
+dwF
+dwF
+dwF
+bxg
+dwF
+dwF
+dwF
+bxg
 lzI
 lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+xKp
+hJF
+hJF
+rnx
+rnx
+hJF
+hJF
+hJF
+hJF
+nbx
+bxg
 lzI
 lzI
 lzI
@@ -344141,31 +345738,31 @@ lzI
 lzI
 lzI
 lzI
+dwF
+dwF
+dwF
+dwF
+dwF
+dwF
+dwF
+dwF
+dwF
 lzI
 lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
-lzI
+dwF
+bxg
+bxg
+bxg
 dwF
 dwF
 dwF
+bxg
+bxg
 dwF
 dwF
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+bxg
+bxg
 lzI
 lzI
 lzI
@@ -344410,18 +346007,18 @@ lzI
 lzI
 lzI
 dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+koN
+sDa
+wer
+lbf
+wer
+sDa
+sDa
+wer
+lbf
+wer
+sDa
+uzD
 dwF
 lzI
 lzI
@@ -344666,19 +346263,19 @@ lzI
 lzI
 lzI
 lzI
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+bxg
+tMW
+pTO
+pTO
+pTO
+pTO
+pTO
+pTO
+pTO
+duQ
+duQ
+duQ
+qRk
 dwF
 lzI
 lzI
@@ -344923,19 +346520,19 @@ lzI
 lzI
 lzI
 lzI
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+bxg
+tMW
+pTO
+pTO
+pTO
+pTO
+pTO
+pTO
+pTO
+duQ
+duQ
+duQ
+qRk
 dwF
 lzI
 lzI
@@ -345180,19 +346777,19 @@ lzI
 lzI
 lzI
 lzI
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
-dwF
+bxg
+iso
+hAB
+wer
+vbk
+wer
+hAB
+hAB
+wer
+vbk
+wer
+hAB
+qQH
 dwF
 lzI
 lzI
@@ -345445,9 +347042,9 @@ dwF
 dwF
 dwF
 dwF
-dwF
-dwF
-dwF
+bxg
+bxg
+bxg
 dwF
 dwF
 dwF
