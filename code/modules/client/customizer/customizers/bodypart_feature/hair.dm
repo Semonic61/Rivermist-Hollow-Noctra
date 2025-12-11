@@ -135,6 +135,7 @@
 	sprite_accessories = list(
 		/datum/sprite_accessory/hair/head/bald,
 		/datum/sprite_accessory/hair/head/adventurer_human,
+		/datum/sprite_accessory/hair/head/alchemist,
 		/datum/sprite_accessory/hair/head/berserker,
 		/datum/sprite_accessory/hair/head/bog,
 		/datum/sprite_accessory/hair/head/boss_dwarf,
@@ -220,8 +221,13 @@
 		/datum/sprite_accessory/hair/head/orc,
 		/datum/sprite_accessory/hair/head/performer,
 		/datum/sprite_accessory/hair/head/pix,
+		/datum/sprite_accessory/hair/head/pigtails,
 		/datum/sprite_accessory/hair/head/plain,
+		/datum/sprite_accessory/hair/head/ponytail,
 		/datum/sprite_accessory/hair/head/ponytail8,
+		/datum/sprite_accessory/hair/head/puffdouble,
+		/datum/sprite_accessory/hair/head/puffleft,
+		/datum/sprite_accessory/hair/head/puffright,
 		/datum/sprite_accessory/hair/head/queen,
 		/datum/sprite_accessory/hair/head/sideways_ponytail,
 		/datum/sprite_accessory/hair/head/shrine,
@@ -308,10 +314,27 @@
 		/datum/sprite_accessory/hair/head/kusanagi_alt,
 		/datum/sprite_accessory/hair/head/shorthair6,
 		/datum/sprite_accessory/hair/head/helmet,
+<<<<<<< HEAD
 
 		//RMH
 		/datum/sprite_accessory/hair/head/cowlick,
 		/datum/sprite_accessory/hair/head/cowbangs,
+=======
+		/datum/sprite_accessory/hair/head/phoenix,
+		/datum/sprite_accessory/hair/head/phoenixhalfshaven,
+		/datum/sprite_accessory/hair/head/royalcurl,
+		/datum/sprite_accessory/hair/head/shorthair4,
+		/datum/sprite_accessory/hair/head/slightlymessy,
+		/datum/sprite_accessory/hair/head/veryshortovereye,
+		/datum/sprite_accessory/hair/head/flatpressed,
+		/datum/sprite_accessory/hair/head/beachwave,
+		/datum/sprite_accessory/hair/head/fortuneteller,
+		/datum/sprite_accessory/hair/head/hyenamane,
+		/datum/sprite_accessory/hair/head/kajam,
+		/datum/sprite_accessory/hair/head/mermaid,
+		/datum/sprite_accessory/hair/head/unkemptcurls,
+		/datum/sprite_accessory/hair/head/shrinepriestess,
+>>>>>>> vanderlin/main
 		)
 
 /datum/customizer/bodypart_feature/hair/head/humanoid/triton
