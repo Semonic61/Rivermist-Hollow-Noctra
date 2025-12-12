@@ -455,8 +455,14 @@ GLOBAL_LIST_EMPTY(respawncounts)
 		if(isnull(address) || (address in localhost_addresses))
 			var/datum/admin_rank/localhost_rank = new("!localhost!", R_EVERYTHING, R_DBRANKS, R_EVERYTHING) //+EVERYTHING -DBRANKS *EVERYTHING
 			new /datum/admins(localhost_rank, ckey, 1, 1)
+<<<<<<< HEAD
 	// Init patreon data, used by prefs
 	//patreon = new(src)
+=======
+	// Init donator data, used by prefs
+	patreon = new(src)
+	twitch = new(src)
+>>>>>>> vanderlin/main
 	//preferences datum - also holds some persistent data for the client (because we may as well keep these datums to a minimum)
 	prefs = GLOB.preferences_datums[ckey]
 	if(prefs)
@@ -1392,6 +1398,13 @@ GLOBAL_LIST_EMPTY(respawncounts)
 	if(SSsounds.initialized == TRUE)
 		for(var/sound_path as anything in SSsounds.all_music_sounds)
 			src << load_resource(sound_path, -1)
+
+/client/proc/is_donator()
+	if(patreon?.has_access(ACCESS_ASSISTANT_RANK))
+		return TRUE
+	if(twitch?.has_access(ACCESS_TWITCH_SUB_TIER_1))
+		return TRUE
+	return FALSE
 
 #undef LIMITER_SIZE
 #undef CURRENT_SECOND

@@ -6,10 +6,9 @@
 	allowed_races = RACES_PLAYER_ALL
 	outfit = /datum/outfit/adventurer/inhumencleric
 	category_tags = list(CTAG_ADVENTURER)
-	min_pq = 0
 	total_positions = 4
 
-	exp_types_granted  = list(EXP_TYPE_ADVENTURER, EXP_TYPE_COMBAT, EXP_TYPE_CLERIC)
+	exp_types_granted = list(EXP_TYPE_ADVENTURER, EXP_TYPE_COMBAT, EXP_TYPE_CLERIC)
 
 /datum/outfit/adventurer/inhumencleric/pre_equip(mob/living/carbon/human/H)
 	..()

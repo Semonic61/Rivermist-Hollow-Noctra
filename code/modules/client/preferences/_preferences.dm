@@ -230,8 +230,13 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	var/has_spawned = FALSE
 	///our selected accent
 	var/selected_accent = ACCENT_DEFAULT
+<<<<<<< HEAD
 	/// If our owner has patreon access
 	var/patreon = TRUE
+=======
+	/// If our owner is patreon or twitch sub
+	var/donator = FALSE
+>>>>>>> vanderlin/main
 	/// If our owner is from a race that has more than one accent
 	var/change_accent = FALSE
 
@@ -253,8 +258,13 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	headshot_link = null
 
 	// C/parent can be a client_interface
+<<<<<<< HEAD
 	//if(isclient(parent))
 	//	patreon = parent?.patreon?.has_access(ACCESS_ASSISTANT_RANK)
+=======
+	if(isclient(parent))
+		donator = parent.is_donator()
+>>>>>>> vanderlin/main
 
 	for(var/custom_name_id in GLOB.preferences_custom_names)
 		custom_names[custom_name_id] = get_default_name(custom_name_id)
@@ -267,9 +277,14 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 			unlock_content = C.IsByondMember()
 			if(unlock_content)
 				max_save_slots += 5
+<<<<<<< HEAD
 		max_save_slots += 30
 		//if(patreon)
 		//	max_save_slots += 30
+=======
+		if(donator)
+			max_save_slots += 30
+>>>>>>> vanderlin/main
 	var/loaded_preferences_successfully = load_preferences()
 	if(loaded_preferences_successfully)
 		if(load_character())
@@ -277,7 +292,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 				real_name = pref_species.random_name(gender,1)
 			return
 	//we couldn't load character data so just randomize the character appearance + name
-	randomise_appearance_prefs(include_patreon = patreon)		//let's create a random character then - rather than a fat, bald and naked man.
+	randomise_appearance_prefs(include_donator = donator)		//let's create a random character then - rather than a fat, bald and naked man.
 	if(!charflaw)
 		charflaw = pick(GLOB.character_flaws)
 		charflaw = GLOB.character_flaws[charflaw]
@@ -1366,9 +1381,18 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 						voice_color = sanitize_hexcolor(new_voice)
 
 				if("headshot")
+<<<<<<< HEAD
 					to_chat(user, "<span class='notice'>Please use an image of the head and shoulder area to maintain immersion level. Lastly, ["<span class='bold'>do not use a real life photo or use any image that is less than serious.</span>"]</span>")
 					to_chat(user, "<span class='notice'>If the photo doesn't show up properly in-game, ensure that it's a direct image link that opens properly in a browser.</span>")
 					to_chat(user, "<span class='notice'>Keep in mind that the photo will be downsized to 325x325 pixels, so the more square the photo, the better it will look.</span>")
+=======
+					if(!donator)
+						to_chat(user, "This is a donator exclusive feature, your headshot link will be applied but others will only be able to view it if you are a Patreon supporter or Twitch subscriber.")
+
+					to_chat(user, span_notice("Please use an image of the head and shoulder area to maintain immersion level. Lastly, ["<span class='bold'>do not use a real life photo or ANYTHING AI generated.</span>"]"))
+					to_chat(user, span_notice("If the photo doesn't show up properly in-game, ensure that it's a direct image link that opens properly in a browser."))
+					to_chat(user, span_notice("Keep in mind that the photo will be downsized to 325x325 pixels, so the more square the photo, the better it will look."))
+>>>>>>> vanderlin/main
 					var/new_headshot_link = input(user, "Input the headshot link (https, hosts: gyazo, lensdump, imgbox, catbox):", "Headshot", headshot_link) as text|null
 					if(!new_headshot_link)
 						return
@@ -1415,7 +1439,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 
 				if("species")
 					selected_accent = ACCENT_DEFAULT
-					var/list/selectable = get_selectable_species(patreon)
+					var/list/selectable = get_selectable_species(donator)
 					var/result = browser_input_list(user, "SELECT YOUR HERO'S PEOPLE:", "VANDERLIN FAUNA", selectable, pref_species)
 
 					if(result)
@@ -1525,6 +1549,12 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 					popup.set_content(dat.Join())
 					popup.open(FALSE)
 				if("ooc_extra")
+<<<<<<< HEAD
+=======
+					if(!donator)
+						to_chat(user, "This is a donator exclusive feature, your OOC Extra link will be applied but others will only be able to view it if you are a patreon supporter or Twitch Subscriber.")
+
+>>>>>>> vanderlin/main
 					to_chat(user, span_notice("Add a link from a suitable host (catbox, etc) to an mp3, mp4, or jpg / png file to have it embed at the bottom of your OOC notes."))
 					to_chat(user, span_notice("If the link doesn't show up properly in-game, ensure that it's a direct link that opens properly in a browser."))
 					to_chat(user, span_notice("Videos will be shrunk to a ~300x300 square. Keep this in mind."))
@@ -1589,10 +1619,22 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 						change_accent = TRUE
 					else
 						change_accent = FALSE
+<<<<<<< HEAD
 					var/accent
 					accent = browser_input_list(user, "CHOOSE YOUR HERO'S ACCENT", "VOICE OF THE WORLD", GLOB.accent_list, selected_accent)
 					if(accent)
 						selected_accent = accent
+=======
+					if(!donator && !change_accent)
+						to_chat(user, "Sorry, this option is Donator-exclusive or unavailable to your race.")
+						selected_accent = ACCENT_DEFAULT
+						return
+					var/accent
+					if(donator)
+						accent = browser_input_list(user, "CHOOSE YOUR HERO'S ACCENT", "VOICE OF THE WORLD", GLOB.accent_list, selected_accent)
+						if(accent)
+							selected_accent = accent
+>>>>>>> vanderlin/main
 					else if(change_accent)
 						accent = browser_input_list(user, "CHOOSE YOUR HERO'S ACCENT", "VOICE OF THE WORLD", pref_species.multiple_accents, selected_accent)
 						if(accent)
@@ -1644,6 +1686,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 						print_special_text(user, next_special_trait)
 						return
 					to_chat(user, span_boldwarning("You will become special for one round, this could be something negative, positive or neutral and could have a high impact on your character and your experience. You cannot back out from or reroll this, and it will not carry over to other rounds."))
+<<<<<<< HEAD
 					to_chat(user, span_boldwarning("THIS COSTS 1 TRIUMPH"))
 					if(user.get_triumphs() < 1)
 						to_chat(user, span_bignotice("YOU DON'T HAVE ENOUGH TRIUMPHS."))
@@ -1652,6 +1695,18 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 					if(result != "Yes")
 						return
 					user.adjust_triumphs(-1)
+=======
+					if(!donator)
+						to_chat(user, span_boldwarning("THIS COSTS 1 TRIUMPH"))
+						if(user.get_triumphs() < 1)
+							to_chat(user, span_bignotice("YOU DON'T HAVE ENOUGH TRIUMPHS."))
+							return
+					var/result = alert(user, "You'll receive a unique trait for one round\n You cannot back out from or reroll this.\nDo you really wish to [donator ? "" : "spend 1 triumph and " ]proceed?", "Be Special", "Yes", "No")
+					if(result != "Yes")
+						return
+					if(!donator)
+						user.adjust_triumphs(-1)
+>>>>>>> vanderlin/main
 					if(next_special_trait)
 						return
 					next_special_trait = roll_random_special(user.client)
@@ -1888,11 +1943,11 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 					if(choice)
 						choice = choices[choice]
 						if(!load_character(choice))
-							randomise_appearance_prefs(include_patreon = patreon)
+							randomise_appearance_prefs(include_donator = donator)
 							save_character()
 
 				if("randomiseappearanceprefs")
-					randomise_appearance_prefs(include_patreon = patreon)
+					randomise_appearance_prefs(include_donator = donator)
 					customizer_entries = list()
 					validate_customizer_entries()
 					reset_all_customizer_accessory_colors()
@@ -1910,9 +1965,15 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 
 /// Sanitization checks to be performed before using these preferences.
 /datum/preferences/proc/sanitize_chosen_prefs()
+<<<<<<< HEAD
 	//if(!(pref_species.name in get_selectable_species(patreon)))
 	//	pref_species = new /datum/species/human/northern
 	//	save_character()
+=======
+	if(!(pref_species.name in get_selectable_species(donator)))
+		pref_species = new /datum/species/human/northern
+		save_character()
+>>>>>>> vanderlin/main
 
 	if(CONFIG_GET(flag/humans_need_surnames) && (pref_species.id == SPEC_ID_HUMEN))
 		var/firstspace = findtext(real_name, " ")
@@ -2028,7 +2089,15 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	else
 		change_accent = FALSE
 
+<<<<<<< HEAD
 	character.accent = selected_accent
+=======
+	if(donator)
+		character.accent = selected_accent
+	if(change_accent && !donator)
+		character.accent = selected_accent
+		change_accent = FALSE
+>>>>>>> vanderlin/main
 
 	/* :V */
 	apply_character_kinks(character)
@@ -2206,6 +2275,12 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 /datum/preferences/proc/set_loadout(mob/user, loadout_number, datum/loadout_item/loadout)
 	if(!loadout)
 		return
+<<<<<<< HEAD
+=======
+	if(!donator)
+		to_chat(user, span_danger("This is a donator feature!"))
+		return FALSE
+>>>>>>> vanderlin/main
 
 	if(loadout == "None")
 		vars["loadout[loadout]"] = null
