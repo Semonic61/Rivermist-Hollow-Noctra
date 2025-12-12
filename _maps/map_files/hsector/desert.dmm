@@ -4507,13 +4507,6 @@
 	},
 /turf/open/floor/sandstone,
 /area/indoors/rmh_desert_phouse)
-"mP" = (
-/obj/effect/decal/edge{
-	dir = 1;
-	color = "#3b3b3b"
-	},
-/turf/open/floor/sand/desertsand,
-/area/indoors/cave/rmh_desertcaves)
 "mQ" = (
 /obj/structure/table/stone_small,
 /obj/effect/spawner/map_spawner/loot/decrepit_equipment_spawner,
@@ -6563,7 +6556,7 @@
 	color = "#3b3b3b"
 	},
 /obj/structure/table/wood,
-/obj/item/tray,
+/obj/item/storage/bag/tray,
 /turf/open/floor/tile/kitchen,
 /area/indoors/rmh_desert_phouse)
 "tf" = (
@@ -9597,7 +9590,9 @@
 	dir = 1;
 	color = "#3b3b3b"
 	},
-/turf/open/floor/sand/desertsand/sandpath,
+/turf/closed/mineral/bedrock{
+	name = "solid rock"
+	},
 /area/indoors/cave/rmh_desertcaves)
 "Cc" = (
 /obj/effect/decal/edge{
@@ -11773,7 +11768,7 @@
 /area/under/cave/mazedungeon)
 "Iw" = (
 /obj/structure/door/arcyne/bolt,
-/obj/effect/mapping_helpers/access/keyset/manor/mage,
+/obj/effect/mapping_helpers/access/keyset/town/tower,
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/concrete,
 /area/indoors/town/rmh/magician/pass)
@@ -135308,7 +135303,7 @@ PY
 if
 if
 Tq
-mP
+Cb
 rL
 rL
 Qt
