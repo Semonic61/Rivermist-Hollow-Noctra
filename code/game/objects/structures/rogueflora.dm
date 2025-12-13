@@ -644,7 +644,7 @@
 /obj/structure/flora/mushroomcluster
 	name = "mushroom cluster"
 	desc = "A cluster of mushrooms native to the underdark."
-	icon = 'icons/roguetown/misc/foliage.dmi'
+	icon = 'modular_rmh/icons/obj/flora/foliage.dmi'
 	icon_state = "mushroomcluster"
 	density = TRUE
 

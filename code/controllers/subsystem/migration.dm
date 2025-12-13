@@ -335,6 +335,7 @@ SUBSYSTEM_DEF(migrants)
 		return
 
 	var/mob/living/carbon/human/human_character = character
+	SSquirks.AssignQuirks(human_character, human_character.client, TRUE)
 
 	var/fakekey = get_display_ckey(human_character.ckey)
 	GLOB.character_list[human_character.mobid] = "[fakekey] was [human_character.real_name] ([migrant_job.title])<BR>"

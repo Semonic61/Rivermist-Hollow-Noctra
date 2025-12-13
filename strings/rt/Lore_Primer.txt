@@ -105,11 +105,8 @@ While it's not required reading, leadership roles may find this information usef
 	</details>
 	<br><br>
 </details>
-<<<<<<< HEAD
 <br>
 <br>
-=======
->>>>>>> vanderlin/main
 
 
 <details>

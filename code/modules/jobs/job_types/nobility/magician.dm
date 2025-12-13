@@ -28,10 +28,6 @@
 		/datum/action/cooldown/spell/undirected/jaunt/ethereal_jaunt,
 		/datum/action/cooldown/spell/undirected/touch/prestidigitation,
 	)
-<<<<<<< HEAD
-	spell_points = 30
-	attunements_max = 8
-=======
 	skills = list(
 	/datum/skill/misc/reading = 6,
 	/datum/skill/misc/riding = 2 ,
@@ -57,9 +53,8 @@
 	TRAIT_OLDPARTY,
 	)
 
-	spell_points = 17
-	attunements_max = 6
->>>>>>> vanderlin/main
+	spell_points = 30
+	attunements_max = 10
 	attunements_min = 4
 
 	job_bitflag = BITFLAG_ROYALTY

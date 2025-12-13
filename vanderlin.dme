@@ -3770,6 +3770,7 @@
 #include "modular_rmh\code\game\objects\structures\woodcutter.dm"
 #include "modular_rmh\code\game\turfs\open\floor\azure_floors.dm"
 #include "modular_rmh\code\game\turfs\open\floor\desertfloor.dm"
+#include "modular_rmh\code\modules\clothing\nun_robes.dm"
 #include "modular_rmh\code\modules\clothing\shirts.dm"
 #include "modular_rmh\code\modules\clothing\storage.dm"
 #include "modular_rmh\code\modules\farming\big_liquid_containers.dm"

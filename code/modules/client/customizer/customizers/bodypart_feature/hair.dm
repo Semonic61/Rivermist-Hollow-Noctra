@@ -314,12 +314,6 @@
 		/datum/sprite_accessory/hair/head/kusanagi_alt,
 		/datum/sprite_accessory/hair/head/shorthair6,
 		/datum/sprite_accessory/hair/head/helmet,
-<<<<<<< HEAD
-
-		//RMH
-		/datum/sprite_accessory/hair/head/cowlick,
-		/datum/sprite_accessory/hair/head/cowbangs,
-=======
 		/datum/sprite_accessory/hair/head/phoenix,
 		/datum/sprite_accessory/hair/head/phoenixhalfshaven,
 		/datum/sprite_accessory/hair/head/royalcurl,
@@ -334,7 +328,13 @@
 		/datum/sprite_accessory/hair/head/mermaid,
 		/datum/sprite_accessory/hair/head/unkemptcurls,
 		/datum/sprite_accessory/hair/head/shrinepriestess,
->>>>>>> vanderlin/main
+		//RMH
+		/datum/sprite_accessory/hair/head/cowlick,
+		/datum/sprite_accessory/hair/head/cowbangs,
+		/datum/sprite_accessory/hair/head/rakshari/high_tail,
+		/datum/sprite_accessory/hair/head/rakshari/doubleknot,
+		/datum/sprite_accessory/hair/head/rakshari/fluffy_tail,
+
 		)
 
 /datum/customizer/bodypart_feature/hair/head/humanoid/triton
@@ -425,6 +425,10 @@
 		/datum/sprite_accessory/hair/facial/vandyke,
 		/datum/sprite_accessory/hair/facial/burns,
 		/datum/sprite_accessory/hair/facial/hermit,
+		/datum/sprite_accessory/hair/facial/rakshari/kesh,
+		/datum/sprite_accessory/hair/facial/rakshari/spry,
+		/datum/sprite_accessory/hair/facial/rakshari/whiskered,
+		/datum/sprite_accessory/hair/facial/rakshari/jinni,
 	)
 
 /datum/customizer/bodypart_feature/hair/facial/humanoid/rakshari

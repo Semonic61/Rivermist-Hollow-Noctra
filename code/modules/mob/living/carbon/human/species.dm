@@ -226,7 +226,6 @@ GLOBAL_LIST_EMPTY(donator_races)
 		ORGAN_SLOT_APPENDIX = /obj/item/organ/appendix,
 		ORGAN_SLOT_GUTS = /obj/item/organ/guts,
 		ORGAN_SLOT_ANUS = /obj/item/organ/genitals/filling_organ/anus,
-		ORGAN_SLOT_ANUS = /obj/item/organ/genitals/filling_organ/anus,
 	)
 
 	/// List of descriptor choices this species gets in preferences customization
@@ -483,12 +482,12 @@ GLOBAL_LIST_EMPTY(donator_races)
 		GLOB.roundstart_races += "Humen" // GLOB.species_list uses name and should probably be refactored
 	sortTim(GLOB.roundstart_races, GLOBAL_PROC_REF(cmp_text_dsc))
 
-/proc/get_selectable_species(donator = TRUE)
+/proc/get_selectable_species()
 	if(!LAZYLEN(GLOB.roundstart_races))
 		generate_selectable_species()
 	var/list/species = GLOB.roundstart_races.Copy()
-	if(!donator)
-		species -= GLOB.donator_races
+	//if(!donator)
+	//	species -= GLOB.donator_races
 	return species
 
 /datum/species/proc/check_roundstart_eligible()

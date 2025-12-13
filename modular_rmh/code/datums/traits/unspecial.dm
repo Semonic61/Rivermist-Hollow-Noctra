@@ -552,9 +552,11 @@
 	value = -1
 
 /datum/quirk/wild_night/on_spawn()
-	var/mob/living/carbon/human/H = quirk_holder
 	var/turf/location = get_spawn_turf_for_job("Pilgrim")
-	H.forceMove(location)
+	character.forceMove(location)
+	character.reagents.add_reagent(pick(/datum/reagent/ozium, /datum/reagent/moondust, /datum/reagent/druqks), 15)
+	character.reagents.add_reagent(/datum/reagent/consumable/ethanol/beer, 72)
+	character.grant_lit_torch()
 
 /datum/quirk/atrophy
 	name = "Atrophy"

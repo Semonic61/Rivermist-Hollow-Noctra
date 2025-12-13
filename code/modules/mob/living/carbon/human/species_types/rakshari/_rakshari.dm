@@ -39,8 +39,6 @@
 	limbs_icon_f = 'icons/roguetown/mob/bodies/f/rakshari.dmi'
 	child_icon = 'icons/roguetown/mob/bodies/c/child-rakshari.dmi'
 
-	no_boobs = TRUE
-
 	exotic_bloodtype = /datum/blood_type/human/rakshari
 
 	offset_features_m = list(
@@ -95,19 +93,20 @@
 	)
 	customizers = list(
 		/datum/customizer/organ/eyes/humanoid,
-		/datum/customizer/bodypart_feature/hair/head/humanoid/rakshari,
-		/datum/customizer/bodypart_feature/hair/facial/humanoid/rakshari,
+		/datum/customizer/bodypart_feature/hair/head/humanoid,
+		/datum/customizer/bodypart_feature/hair/facial/humanoid,
 		/datum/customizer/bodypart_feature/accessory/rakshari,
 		/datum/customizer/bodypart_feature/face_detail,
 		/datum/customizer/bodypart_feature/underwear,
 		/datum/customizer/bodypart_feature/legwear,
 		/datum/customizer/bodypart_feature/piercing,
-		/datum/customizer/organ/genitals/penis/human,
-		/datum/customizer/organ/genitals/vagina/human,
-		/datum/customizer/organ/genitals/breasts/human,
-		/datum/customizer/organ/genitals/belly/human,
-		/datum/customizer/organ/genitals/butt/human,
-		/datum/customizer/organ/genitals/testicles/human,
+		/datum/customizer/organ/tail/rakshari,
+		/datum/customizer/organ/genitals/penis/anthro,
+		/datum/customizer/organ/genitals/vagina/anthro,
+		/datum/customizer/organ/genitals/breasts/animal,
+		/datum/customizer/organ/genitals/belly/animal,
+		/datum/customizer/organ/genitals/butt/animal,
+		/datum/customizer/organ/genitals/testicles/anthro,
 	)
 	body_markings = list(
 		/datum/body_marking/tonage,

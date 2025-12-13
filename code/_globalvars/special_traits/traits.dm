@@ -208,10 +208,6 @@
 	name = "Psydon's Drunkest Rider"
 	greet_text = span_notice("I ride! None of the laws shall stop me for that is Psydon's divine will!")
 	req_text = "Worship Psydon"
-<<<<<<< HEAD
-=======
-	allowed_patrons = list(/datum/patron/psydon, /datum/patron/psydon/extremist)
->>>>>>> vanderlin/main
 	weight = 100
 
 /datum/special_trait/psydons_rider/on_apply(mob/living/carbon/human/character, silent)
