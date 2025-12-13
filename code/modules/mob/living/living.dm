@@ -62,6 +62,10 @@
 	. = ..()
 	update_reflection()
 
+/mob/living/update_icon(updates)
+	. = ..()
+	update_reflection()
+
 /mob/living/proc/create_reflection()
 	//Add custom reflection image
 	reflective_icon = copy_appearance_filter_overlays(appearance)

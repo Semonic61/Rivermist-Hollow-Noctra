@@ -552,6 +552,7 @@
 	value = -1
 
 /datum/quirk/wild_night/on_spawn()
+	var/mob/living/carbon/human/character = quirk_holder
 	var/turf/location = get_spawn_turf_for_job("Pilgrim")
 	character.forceMove(location)
 	character.reagents.add_reagent(pick(/datum/reagent/ozium, /datum/reagent/moondust, /datum/reagent/druqks), 15)
