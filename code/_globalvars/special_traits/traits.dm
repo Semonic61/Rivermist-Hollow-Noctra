@@ -394,6 +394,7 @@
 
 /datum/special_trait/gourmand/on_apply(mob/living/carbon/human/character, silent)
 	ADD_TRAIT(character, TRAIT_NASTY_EATER, "[type]")
+	ADD_TRAIT(character, TRAIT_ROT_EATER, "[type]")
 
 /datum/special_trait/lucky
 	name = "Fortune's Grace"
@@ -821,7 +822,7 @@
 			psycross = /obj/item/clothing/neck/psycross/silver/malum
 			helmet = /obj/item/clothing/head/helmet/heavy/necked/malumhelm
 			cloak = /obj/item/clothing/cloak/templar/malumite
-			weapon = /obj/item/weapon/mace/goden/steel/malum
+			weapon = /obj/item/weapon/hammer/sledgehammer/war/malum
 			character.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
 			character.clamped_adjust_skillrank(/datum/skill/combat/axesmaces, 4, 4, TRUE)
 		if(/datum/patron/divine/abyssor)
