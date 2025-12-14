@@ -957,7 +957,7 @@
 	var/datum/inspiration/I = new /datum/inspiration(character)
 	I.grant_inspiration(character, bard_tier = BARD_T2)
 	character.adjust_skillrank(/datum/skill/misc/music, 4, TRUE)
-
+/*
 /datum/special_trait/baothan
 	name = "Adored by Baotha"
 	greet_text = span_notice("Baotha adore me so much that she gave me some goodies, dope tbh.")
@@ -973,4 +973,4 @@
 		devotion.make_churching()
 		devotion.grant_to(character)
 	character.mind.special_items["Baotha's Gift"] = /obj/item/clothing/head/corruptflower
-	character.AddComponent(/datum/component/theme_music)
+	character.AddComponent(/datum/component/theme_music)*/
