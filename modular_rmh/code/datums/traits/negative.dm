@@ -116,7 +116,7 @@
 */
 /datum/quirk/light_drinker
 	name = "Light Drinker"
-	desc = ""
+	desc = "Even a drop of alcohol knocks me out."
 	value = -1
 	mob_trait = TRAIT_LIGHT_DRINKER
 	gain_text = span_notice("Just the thought of drinking alcohol makes my head spin.")
@@ -125,7 +125,7 @@
 
 /datum/quirk/nearsighted //t. errorage
 	name = "Nearsighted"
-	desc = ""
+	desc = "My eyesight is pretty poor..."
 	value = -3
 	gain_text = span_danger("Things far away from you start looking blurry.")
 	lose_text = span_notice("I start seeing faraway things normally again.")
@@ -159,7 +159,7 @@
 
 /datum/quirk/poor_aim
 	name = "Poor Aim"
-	desc = ""
+	desc = "My aim is poor."
 	value = -1
 	mob_trait = TRAIT_POOR_AIM
 	medical_record_text = "Patient possesses a strong tremor in both hands."
