@@ -75,6 +75,7 @@
 	gain_text = span_notice("The shadows seem a little less dark.")
 	lose_text = span_danger("Everything seems a little darker.")
 	medical_record_text = "Patient's eyes show above-average acclimation to darkness."
+	revive_reapply = TRUE
 
 /datum/quirk/night_vision/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder

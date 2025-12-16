@@ -627,9 +627,11 @@
 	name = "Naturally Endowed"
 	desc = "I have massive bits... This makes life hard."
 	value = -2
+	revive_reapply = TRUE
 
 /datum/quirk/endowed/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
+	H.remove_status_effect(/datum/status_effect/debuff/bigboobs/permanent)
 	H.apply_status_effect(/datum/status_effect/debuff/bigboobs/permanent)
 
 /*/datum/quirk/endowedlite
