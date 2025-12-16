@@ -3775,6 +3775,7 @@
 #include "modular_rmh\code\modules\clothing\storage.dm"
 #include "modular_rmh\code\modules\farming\big_liquid_containers.dm"
 #include "modular_rmh\code\modules\mob\abyssal_monsters.dm"
+#include "modular_rmh\code\modules\mob\hedghog.dm"
 #include "modular_rmh\code\modules\mob\undead_wolf.dm"
 #include "modular_rmh\code\modules\reagents\reagents.dm"
 #include "modular_rmh\code\modules\sprite_accesory\hair.dm"

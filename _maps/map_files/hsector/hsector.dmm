@@ -11281,10 +11281,10 @@
 /obj/item/reagent_containers/glass/bottle/redwine{
 	pixel_y = 45
 	},
-/obj/item/tray{
+/obj/item/storage/bag/tray{
 	pixel_y = 12
 	},
-/obj/item/tray{
+/obj/item/storage/bag/tray{
 	pixel_y = 12
 	},
 /obj/item/natural/bundle/stick{
