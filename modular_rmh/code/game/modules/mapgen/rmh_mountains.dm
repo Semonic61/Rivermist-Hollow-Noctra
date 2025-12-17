@@ -39,9 +39,9 @@
 	allowed_turfs = list(/turf/open/floor/grass, /turf/open/floor/grass/red, /turf/open/floor/grass/yel, /turf/open/floor/grass/cold)
 	excluded_turfs = list()
 	allowed_areas = list(/area/outdoors/mountains/rmh_mountains)
-	spawnableAtoms = list(/obj/structure/flora/grass = 25,
+	spawnableAtoms = list(/obj/structure/flora/grass/tundra = 25,
 							/obj/structure/flora/grass/herb/random = 2,
-							/obj/structure/flora/grass/bush_meagre = 2,
+							/obj/structure/flora/grass/bush_meagre/tundra = 2,
 							/obj/item/natural/stone = 6,
 							/obj/item/natural/rock = 1,
 							/obj/item/grown/log/tree/stick = 3)
