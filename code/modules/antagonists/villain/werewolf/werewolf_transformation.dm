@@ -29,10 +29,18 @@
 		return
 	if(HAS_TRAIT(src, TRAIT_WEREWOLF_RAGE))
 		return
+	if(mind?.has_antag_datum(/datum/antagonist/zombie))
+		return
 	if(is_species(src, /datum/species/werewolf))
 		return
 
 	ADD_TRAIT(src, TRAIT_WEREWOLF_RAGE, INNATE_TRAIT)
+
+	var/brute_transfer = getBruteLoss()
+	var/burn_transfer = getFireLoss()
+	var/tox_transfer = getToxLoss()
+	var/oxy_transfer = getOxyLoss()
+	var/clone_transfer = getCloneLoss()
 
 	flash_fullscreen("redflash3")
 	emote("agony", forced = TRUE)
@@ -130,6 +138,13 @@
 
 	W.rage_datum.grant_to_secondary(W)
 
+
+	W.adjustBruteLoss(brute_transfer)
+	W.adjustFireLoss(burn_transfer)
+	W.adjustToxLoss(tox_transfer)
+	W.adjustOxyLoss(oxy_transfer)
+	W.adjustCloneLoss(clone_transfer)
+
 	invisibility = oldinv
 
 /mob/living/carbon/human/proc/werewolf_untransform(mob/bleh, dead,gibbed)
@@ -156,6 +171,12 @@
 
 	W.forceMove(get_turf(src))
 
+	var/brute_transfer = getBruteLoss()
+	var/burn_transfer = getFireLoss()
+	var/tox_transfer = getToxLoss()
+	var/oxy_transfer = getOxyLoss()
+	var/clone_transfer = getCloneLoss()
+
 	REMOVE_TRAIT(W, TRAIT_NOMOOD, TRAIT_GENERIC)
 
 	mind.transfer_to(W)
@@ -181,5 +202,11 @@
 	playsound(W.loc, pick('sound/combat/gib (1).ogg','sound/combat/gib (2).ogg'), 200, FALSE, 3)
 	W.Knockdown(30)
 	W.Stun(30)
+
+	W.adjustBruteLoss(brute_transfer)
+	W.adjustFireLoss(burn_transfer)
+	W.adjustToxLoss(tox_transfer)
+	W.adjustOxyLoss(oxy_transfer)
+	W.adjustCloneLoss(clone_transfer)
 
 	qdel(src)
