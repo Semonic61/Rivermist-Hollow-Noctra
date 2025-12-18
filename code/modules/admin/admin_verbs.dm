@@ -150,6 +150,7 @@ GLOBAL_LIST_INIT(admin_verbs_fun, list(
 	/client/proc/run_particle_weather,
 	/client/proc/show_tip,
 	/client/proc/smite,
+	/client/proc/direct_control_context,
 	/client/proc/heart_attack,
 	))
 GLOBAL_PROTECT(admin_verbs_fun)
@@ -444,6 +445,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 			body.invisibility = INVISIBILITY_MAXIMUM
 			body.density = 0
 		body.ghostize(1)
+		src.release_direct_controle()
 		if(body && !body.key)
 			body.key = "@[key]"	//Haaaaaaaack. But the people have spoken. If it breaks; blame adminbus
 		SSblackbox.record_feedback("tally", "admin_verb", 1, "Admin Ghost") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
@@ -513,6 +515,37 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	if(holder)
 		holder.Game()
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Game Panel") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+
+/client/proc/direct_control_context(mob/M as mob in GLOB.mob_list)
+	set name ="Direct Control"
+	set category = "Admine"
+	if(!holder)
+		to_chat (src, "Only admins can use that.")
+		return
+	if(!M)
+		to_chat(src, "No mob selected.")
+		return
+
+	src.release_direct_controle()
+	src.saved_mind_by_direct_control = M.mind
+	src.saved_mind_mob_ref = M
+
+	var/mob/my_mob = src.mob
+	if(my_mob.mind)
+		my_mob.mind.transfer_to(M)
+		to_chat(src, "You now controlling [M].")
+	else
+		to_chat(src, "You dont have a valid mind to transfer.")
+
+/client/proc/release_direct_controle()
+	if(src.saved_mind_mob_ref && src.saved_mind_by_direct_control)
+		if(!src.saved_mind_mob_ref.mind)
+			src.saved_mind_mob_ref.mind = src.saved_mind_by_direct_control
+			to_chat(src, "Original AI has been restored to [src.saved_mind_mob_ref].")
+		src.saved_mind_by_direct_control = null
+		src.saved_mind_mob_ref = null
+
 
 /client/proc/secrets()
 	set name = "Secrets"
