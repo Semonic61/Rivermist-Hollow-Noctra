@@ -157,7 +157,7 @@ GLOBAL_LIST_INIT(traits_by_type, list(
 		"Bad Mood" = TRAIT_BAD_MOOD,
 		"Night Owl" = TRAIT_NIGHT_OWL,
 		"Ugly" = TRAIT_UGLY,
-		"Fishface" = TRAIT_FISHFACE,
+		"Fishface" = TRAIT_FISHFACE, /// Убрал у тритонов, ибо в ДнД у них такого нету
 		"Obese" = TRAIT_FAT,
 		"Hollow Bones" = TRAIT_HOLLOWBONES,
 		"Light Load" = TRAIT_AMAZING_BACK,
