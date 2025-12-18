@@ -8,7 +8,7 @@
 
 	cmode_music = 'sound/music/cmode/adventurer/CombatSorcerer.ogg'
 	blacklisted_species = list(SPEC_ID_HALFLING)
-	exp_types_granted  = list(EXP_TYPE_MERCENARY, EXP_TYPE_COMBAT, EXP_TYPE_MAGICK)
+	exp_types_granted = list(EXP_TYPE_MERCENARY, EXP_TYPE_COMBAT, EXP_TYPE_MAGICK)
 
 /datum/outfit/mercenary/spellsword
 	armor = /obj/item/clothing/armor/cuirass/iron

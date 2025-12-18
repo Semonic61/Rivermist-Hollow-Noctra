@@ -149,7 +149,7 @@
 		var/mob/living/carbon/human/human_target = target_living
 
 		//disarm
-		if(human_target.get_active_held_item())
+		if(human_target.get_active_held_item() && human_target.Adjacent(basic_mob))
 			for(var/obj/item/I in human_target.held_items)
 				human_target.dropItemToGround(I, force = FALSE, silent = FALSE)
 			human_target.Stun(30)

@@ -1,8 +1,8 @@
 /datum/job/mageapprentice
 	title = "Magician Apprentice"
 	tutorial = "Your family managed to send you to college to learn the Arcyne Arts.\
-	 It's been stressful, but you'll earn your degree and become a fully fleged Magician one dae.\
-	  As long as you can keep your grades up, that is..."
+	It's been stressful, but you'll earn your degree and become a fully fleged Magician one dae.\
+	As long as you can keep your grades up, that is..."
 	department_flag = APPRENTICES
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	faction = FACTION_TOWN
@@ -12,10 +12,9 @@
 	allowed_races = RACES_PLAYER_ALL
 	allowed_ages = list(AGE_CHILD, AGE_ADULT)
 	allowed_sexes = list(MALE, FEMALE)
-
+	cmode_music = "sound/music/cmode/adventurer/CombatSorcerer.ogg"
 	outfit = /datum/outfit/mageapprentice
 	display_order = JDO_WAPP
-	min_pq = 3 //they actually have good magick now
 	give_bank_account = TRUE
 	bypass_lastclass = TRUE
 	banned_leprosy = FALSE
@@ -27,7 +26,7 @@
 
 
 	exp_type = list(EXP_TYPE_LIVING, EXP_TYPE_MAGICK)
-	exp_types_granted  = list(EXP_TYPE_MAGICK)
+	exp_types_granted = list(EXP_TYPE_MAGICK)
 
 /datum/outfit/mageapprentice/pre_equip(mob/living/carbon/human/H)
 	. = ..()
@@ -50,7 +49,7 @@
 		armor = /obj/item/clothing/shirt/robe/newmage/adept
 		backr = /obj/item/storage/backpack/satchel
 		head = /obj/item/clothing/head/wizhat/witch
-	backpack_contents = list(/obj/item/book/granter/spellbook/apprentice = 1, /obj/item/chalk = 1)
+	backpack_contents = list(/obj/item/book/granter/spellbook/apprentice = 1, /obj/item/chalk = 1, /obj/item/storage/belt/pouch/coins/mid)
 	H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE) //children can have one spellpoint, as a treat.
 	if (H.age == AGE_ADULT)
 		H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)

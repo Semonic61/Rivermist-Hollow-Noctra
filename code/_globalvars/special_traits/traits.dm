@@ -394,6 +394,7 @@
 
 /datum/special_trait/gourmand/on_apply(mob/living/carbon/human/character, silent)
 	ADD_TRAIT(character, TRAIT_NASTY_EATER, "[type]")
+	ADD_TRAIT(character, TRAIT_ROT_EATER, "[type]")
 
 /datum/special_trait/lucky
 	name = "Fortune's Grace"
@@ -821,7 +822,7 @@
 			psycross = /obj/item/clothing/neck/psycross/silver/malum
 			helmet = /obj/item/clothing/head/helmet/heavy/necked/malumhelm
 			cloak = /obj/item/clothing/cloak/templar/malumite
-			weapon = /obj/item/weapon/mace/goden/steel/malum
+			weapon = /obj/item/weapon/hammer/sledgehammer/war/malum
 			character.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
 			character.clamped_adjust_skillrank(/datum/skill/combat/axesmaces, 4, 4, TRUE)
 		if(/datum/patron/divine/abyssor)
@@ -956,7 +957,7 @@
 	var/datum/inspiration/I = new /datum/inspiration(character)
 	I.grant_inspiration(character, bard_tier = BARD_T2)
 	character.adjust_skillrank(/datum/skill/misc/music, 4, TRUE)
-
+/*
 /datum/special_trait/baothan
 	name = "Adored by Baotha"
 	greet_text = span_notice("Baotha adore me so much that she gave me some goodies, dope tbh.")
@@ -972,4 +973,4 @@
 		devotion.make_churching()
 		devotion.grant_to(character)
 	character.mind.special_items["Baotha's Gift"] = /obj/item/clothing/head/corruptflower
-	character.AddComponent(/datum/component/theme_music)
+	character.AddComponent(/datum/component/theme_music)*/

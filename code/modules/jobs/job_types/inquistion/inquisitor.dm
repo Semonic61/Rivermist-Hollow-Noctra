@@ -28,7 +28,7 @@
 	)
 
 	exp_type = list(EXP_TYPE_INQUISITION)
-	exp_types_granted  = list(EXP_TYPE_INQUISITION, EXP_TYPE_COMBAT, EXP_TYPE_LEADERSHIP)
+	exp_types_granted = list(EXP_TYPE_INQUISITION, EXP_TYPE_COMBAT, EXP_TYPE_LEADERSHIP)
 	exp_requirements = list(
 		EXP_TYPE_INQUISITION = 900
 	)
@@ -293,7 +293,7 @@
 						interrogator.add_stress(/datum/stress_event/torture_small_penalty)
 					else if(victim_patron.type == /datum/patron/godless/naivety)
 						interrogator.add_stress(/datum/stress_event/torture_small_penalty)
-					else if(victim_patron.type == /datum/patron/psydon)
+					else if(istype(victim_patron, /datum/patron/psydon))
 						interrogator.add_stress(/datum/stress_event/torture_large_penalty)
 
 		if(length(confessions))
@@ -404,4 +404,4 @@
 	return
 
 /datum/job/advclass/puritan
-	exp_types_granted  = list(EXP_TYPE_INQUISITION, EXP_TYPE_COMBAT, EXP_TYPE_LEADERSHIP)
+	exp_types_granted = list(EXP_TYPE_INQUISITION, EXP_TYPE_COMBAT, EXP_TYPE_LEADERSHIP)

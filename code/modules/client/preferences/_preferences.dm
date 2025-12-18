@@ -277,7 +277,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 				real_name = pref_species.random_name(gender,1)
 			return
 	//we couldn't load character data so just randomize the character appearance + name
-	randomise_appearance_prefs(include_patreon = patreon)		//let's create a random character then - rather than a fat, bald and naked man.
+	randomise_appearance_prefs()		//let's create a random character then - rather than a fat, bald and naked man.
 	if(!charflaw)
 		charflaw = pick(GLOB.character_flaws)
 		charflaw = GLOB.character_flaws[charflaw]
@@ -1415,7 +1415,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 
 				if("species")
 					selected_accent = ACCENT_DEFAULT
-					var/list/selectable = get_selectable_species(patreon)
+					var/list/selectable = get_selectable_species()
 					var/result = browser_input_list(user, "SELECT YOUR HERO'S PEOPLE:", "VANDERLIN FAUNA", selectable, pref_species)
 
 					if(result)
@@ -1589,6 +1589,10 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 						change_accent = TRUE
 					else
 						change_accent = FALSE
+					if(!change_accent)
+						to_chat(user, "Sorry, this option is unavailable to your race.")
+						selected_accent = ACCENT_DEFAULT
+						return
 					var/accent
 					accent = browser_input_list(user, "CHOOSE YOUR HERO'S ACCENT", "VOICE OF THE WORLD", GLOB.accent_list, selected_accent)
 					if(accent)
@@ -1888,11 +1892,11 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 					if(choice)
 						choice = choices[choice]
 						if(!load_character(choice))
-							randomise_appearance_prefs(include_patreon = patreon)
+							randomise_appearance_prefs()
 							save_character()
 
 				if("randomiseappearanceprefs")
-					randomise_appearance_prefs(include_patreon = patreon)
+					randomise_appearance_prefs()
 					customizer_entries = list()
 					validate_customizer_entries()
 					reset_all_customizer_accessory_colors()

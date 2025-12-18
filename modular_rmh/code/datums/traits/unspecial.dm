@@ -552,9 +552,12 @@
 	value = -1
 
 /datum/quirk/wild_night/on_spawn()
-	var/mob/living/carbon/human/H = quirk_holder
+	var/mob/living/carbon/human/character = quirk_holder
 	var/turf/location = get_spawn_turf_for_job("Pilgrim")
-	H.forceMove(location)
+	character.forceMove(location)
+	character.reagents.add_reagent(pick(/datum/reagent/ozium, /datum/reagent/moondust, /datum/reagent/druqks), 15)
+	character.reagents.add_reagent(/datum/reagent/consumable/ethanol/beer, 72)
+	character.grant_lit_torch()
 
 /datum/quirk/atrophy
 	name = "Atrophy"
@@ -624,9 +627,11 @@
 	name = "Naturally Endowed"
 	desc = "I have massive bits... This makes life hard."
 	value = -2
+	revive_reapply = TRUE
 
 /datum/quirk/endowed/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
+	H.remove_status_effect(/datum/status_effect/debuff/bigboobs/permanent)
 	H.apply_status_effect(/datum/status_effect/debuff/bigboobs/permanent)
 
 /*/datum/quirk/endowedlite
