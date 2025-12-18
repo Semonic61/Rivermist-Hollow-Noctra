@@ -9,7 +9,8 @@
 	return "[icon_state]_[belleh.organ_size]"
 
 /datum/sprite_accessory/genitals/belly/adjust_appearance_list(list/appearance_list, obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
-	generic_gender_feature_adjust(appearance_list, organ, bodypart, owner, OFFSET_BELT)//, OFFSET_BELT_F)
+	gender_genitals_adjust(appearance_list, organ, bodypart, owner, OFFSET_BELLY)
+	//generic_gender_feature_adjust(appearance_list, organ, bodypart, owner, OFFSET_BELT)//, OFFSET_BELT_F)
 
 /datum/sprite_accessory/genitals/belly/is_visible(obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
 	//if(organ.visible_through_clothes)
