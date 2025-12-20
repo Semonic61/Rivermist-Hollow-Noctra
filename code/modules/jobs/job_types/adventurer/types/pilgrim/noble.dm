@@ -71,7 +71,10 @@
 	if(!choice)
 		return
 		//Yeah this is copied from how lieutenant does it which in turn was copied from how rk does it lmao
+<<<<<<< HEAD
 	//var/shield_type = null
+=======
+>>>>>>> vanderlin/main
 	switch(choice)
 		if("Dagger")
 			H.clamped_adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
