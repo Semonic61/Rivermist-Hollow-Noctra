@@ -20,9 +20,6 @@ window.onerror = function(msg, url, line, col, error) {
 };
 
 //Globals
-<<<<<<< HEAD
-var collectiveTabs = {};
-=======
 var messageQueue = {
     messages: [],
     processing: false,
@@ -218,7 +215,6 @@ var messageQueue = {
     }
 };
 
->>>>>>> vanderlin/main
 var highlightSystem = {
     filters: [], // Array of {term: string, color: string, animation: string, enabled: boolean, id: string, soundEnabled: boolean}
     animations: {
@@ -1967,47 +1963,6 @@ function applyFilterToMessage(messageElement) {
             var classes = messageElement.className.split(' ');
             var innerHTML = messageElement.innerHTML;
 
-<<<<<<< HEAD
-        // Also check for classes in nested elements (where the actual chat classes are)
-        var nestedElements = messageElement.querySelectorAll('*');
-        var allClasses = [...classes];
-
-        for (var i = 0; i < nestedElements.length; i++) {
-            if (nestedElements[i].className) {
-                var nestedClasses = nestedElements[i].className.split(' ');
-                allClasses = allClasses.concat(nestedClasses);
-            }
-        }
-
-        // Remove duplicates and filter out empty strings
-        allClasses = [...new Set(allClasses)].filter(cls => cls.trim() !== '');
-
-        // Check if message has the required class for built-in filters
-        if (allClasses.includes(opts.currentFilter)) {
-            shouldShow = true;
-        }
-
-        // Check collective tabs
-        if (!shouldShow && collectiveTabs) {
-            for (var collectiveId in collectiveTabs) {
-                if (collectiveId.toLowerCase() === opts.currentFilter.toLowerCase()) {
-                    // Check if message has the collective span class
-                    if (allClasses.includes(collectiveId)) {
-                        shouldShow = true;
-                        break;
-                    }
-                }
-            }
-        }
-
-        // Check custom tabs
-        if (!shouldShow && opts.customTabs && opts.customTabs.length > 0) {
-            opts.customTabs.forEach(tab => {
-                if (tab.name.toLowerCase() === opts.currentFilter.toLowerCase()) {
-                    tab.classes.forEach(cls => {
-                        if (allClasses.includes(cls)) {
-                            shouldShow = true;
-=======
             shouldShow = classes.indexOf(opts.currentFilter) !== -1 ||
                         innerHTML.indexOf('class="' + opts.currentFilter) !== -1;
 
@@ -2021,7 +1976,6 @@ function applyFilterToMessage(messageElement) {
                                 shouldShow = true;
                                 break;
                             }
->>>>>>> vanderlin/main
                         }
                         break;
                     }
@@ -2046,66 +2000,7 @@ function applyFilterToMessage(messageElement) {
 }
 
 
-<<<<<<< HEAD
-function addCollectiveTab(collective_id, display_name) {
-    if (collectiveTabs[collective_id]) {
-        updateCollectiveTab(collective_id, display_name);
-        return;
-    }
-
-    collectiveTabs[collective_id] = { id: collective_id, name: display_name };
-
-    // Create the tab element
-    var tabElement = $(`<div class="filter-tab collective-tab" data-filter="${collective_id.toLowerCase()}">${display_name} <span class="collective-indicator">♥</span></div>`);
-
-    // Insert before the add button (or at the end of filter tabs)
-    if ($('#addTabBtn').length) {
-        $('#addTabBtn').before(tabElement);
-    } else {
-        $('.filter-tabs').append(tabElement);
-    }
-
-    // Add click handler for the new tab
-    tabElement.on('click', function(e) {
-        e.preventDefault();
-        switchFilter(collective_id.toLowerCase());
-    });
-}
-
-function updateCollectiveTab(collective_id, display_name) {
-    if (!collectiveTabs[collective_id]) {
-        addCollectiveTab(collective_id, display_name);
-        return;
-    }
-
-    collectiveTabs[collective_id] = { id: collective_id, name: display_name };
-
-    // Update the tab display name
-    var tabElement = $(`.filter-tab[data-filter="${collective_id.toLowerCase()}"]`);
-    if (tabElement.length) {
-        tabElement.html(`${display_name} <span class="collective-indicator">♥</span>`);
-    }
-}
-
-function removeCollectiveTab(collective_id) {
-    if (!collectiveTabs[collective_id]) {
-        return;
-    }
-
-    delete collectiveTabs[collective_id];
-
-    // Remove the tab element
-    var tabElement = $(`.filter-tab[data-filter="${collective_id.toLowerCase()}"]`);
-    tabElement.remove();
-
-    // If this was the active filter, switch to 'all'
-    if (opts.currentFilter === collective_id.toLowerCase()) {
-        switchFilter('all');
-    }
-}
-=======
 var filterCache = new Map();
->>>>>>> vanderlin/main
 
 function switchFilter(filterName) {
     console.log('Switching to filter:', filterName);
