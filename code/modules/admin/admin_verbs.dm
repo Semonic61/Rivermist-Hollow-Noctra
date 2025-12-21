@@ -519,7 +519,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 
 /client/proc/direct_control_context(mob/M as mob in GLOB.mob_list)
 	set name ="Direct Control"
-	set category = "Admine"
+	set category = "Admin"
 	if(!holder)
 		to_chat (src, "Only admins can use that.")
 		return
