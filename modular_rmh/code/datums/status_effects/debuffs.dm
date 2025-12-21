@@ -3,6 +3,10 @@
 	alert_type = null // don't show an alert on screen
 	duration = 12 MINUTES // wear off eventually or until character washes themselves
 
+/datum/stress_event/facial
+	desc = "<span class='warning'>I've been creamed. Tastes like cum.</span>\n"
+	timer = 20 MINUTES
+
 /datum/status_effect/facial/internal
 	id = "creampie"
 	alert_type = null // don't show an alert on screen
@@ -10,10 +14,12 @@
 
 /datum/status_effect/facial/on_apply()
 	RegisterSignal(owner, list(COMSIG_COMPONENT_CLEAN_ACT, COMSIG_COMPONENT_CLEAN_FACE_ACT),PROC_REF(clean_up))
+	owner.add_stress(/datum/stress_event/facial)
 	return ..()
 
 /datum/status_effect/facial/on_remove()
 	UnregisterSignal(owner, list(COMSIG_COMPONENT_CLEAN_ACT, COMSIG_COMPONENT_CLEAN_FACE_ACT))
+	owner.remove_stress(/datum/stress_event/facial)
 	return ..()
 
 ///Callback to remove pearl necklace
@@ -61,6 +67,19 @@
 	alert_type = /atom/movable/screen/alert/status_effect/edging_overstimulation
 	effectedstats = list("strength" = -1, "speed" = -2, "intelligence" = -2)
 
+/datum/stress_event/edging_overstimulation
+	desc = "<span class='love_low'>I have been going at it for too long without release, I need relief...</span>\n"
+	timer = 60 MINUTES
+	stress_change = 1
+
+/datum/status_effect/edging_overstimulation/on_apply()
+	owner.add_stress(/datum/stress_event/edging_overstimulation)
+	. = ..()
+
+/datum/status_effect/edging_overstimulation/on_remove()
+	owner.remove_stress(/datum/stress_event/edging_overstimulation)
+	. = ..()
+
 /atom/movable/screen/alert/status_effect/edging_overstimulation
 	name = "Overstimulated"
 	desc = "I have been going at it for too long without release, I need relief..."
@@ -70,6 +89,19 @@
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/orgasmbroken
 	effectedstats = list("intelligence" = -10, "strength" = -2, "speed" = -2, "perception" = -5, "endurance" = 2, "constitution" = -2)
 	duration = -1
+
+/datum/stress_event/orgasmbroken
+	desc = "<span class='love_low'>My legs are shaking, but I need more.</span>\n"
+	timer = 60 MINUTES
+	stress_change = -5
+
+/datum/status_effect/debuff/orgasmbroken/on_apply()
+	owner.add_stress(/datum/stress_event/orgasmbroken)
+	. = ..()
+
+/datum/status_effect/debuff/orgasmbroken/on_remove()
+	owner.remove_stress(/datum/stress_event/orgasmbroken)
+	. = ..()
 
 /datum/status_effect/debuff/orgasmbroken/on_apply()
 	. = ..()
@@ -90,6 +122,19 @@
 	//effectedstats = list("intelligence" = -20, "strength" = -8, "speed" = -6, "perception" = -5, "endurance" = 2, "constitution" = -2)
 	duration = -1
 
+/datum/stress_event/nympho_addiction
+	desc = "<span class='love_low'>I want to do it again. And again. And again.</span>\n"
+	timer = 60 MINUTES
+	stress_change = -3
+
+/datum/status_effect/debuff/nympho_addiction/on_apply()
+	owner.add_stress(/datum/stress_event/nympho_addiction)
+	. = ..()
+
+/datum/status_effect/debuff/nympho_addiction/on_remove()
+	owner.remove_stress(/datum/stress_event/nympho_addiction)
+	. = ..()
+
 /datum/status_effect/debuff/nympho_addiction/on_apply()
 	. = ..()
 	var/mob/living/carbon/human/human = owner
@@ -106,9 +151,22 @@
 	effectedstats = list("intelligence" = -10, "strength" = -6, "speed" = -6)
 	duration = -1
 
+/datum/stress_event/cumbrained
+	desc = "<span class='love_low'>It's hard to think of anything but sex...</span>\n"
+	timer = 60 MINUTES
+	stress_change = -1
+
+/datum/status_effect/debuff/cumbrained/on_apply()
+	owner.add_stress(/datum/stress_event/cumbrained)
+	. = ..()
+
+/datum/status_effect/debuff/cumbrained/on_remove()
+	owner.remove_stress(/datum/stress_event/cumbrained)
+	. = ..()
+
 /atom/movable/screen/alert/status_effect/debuff/cumbrained
 	name = "Cum Brained"
-	desc = "It's hard to think..."
+	desc = "It's hard to think of anything but sex..."
 	icon_state = "debuff"
 
 /datum/status_effect/debuff/cumbrained/tick()
@@ -134,6 +192,19 @@
 	id = "loinspent"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/loinspent
 	duration = -1
+
+/datum/stress_event/loinspent
+	desc = "<span class='love_low'>All this effort is starting to hurt a bit...</span>\n"
+	timer = 60 MINUTES
+	stress_change = 1
+
+/datum/status_effect/debuff/loinspent/on_apply()
+	owner.add_stress(/datum/stress_event/loinspent)
+	. = ..()
+
+/datum/status_effect/debuff/loinspent/on_remove()
+	owner.remove_stress(/datum/stress_event/loinspent)
+	. = ..()
 
 /atom/movable/screen/alert/status_effect/debuff/loinspent
 	name = "Spent Loins"
@@ -170,6 +241,19 @@
 	examine_text = span_notice("Their belly is bulging...")
 	effectedstats = list("constitution" = 1, "speed" = -1)
 
+/datum/stress_event/bloatsex
+	desc = "<span class='love_low'>I have been filled to the brim...</span>\n"
+	timer = 60 MINUTES
+	stress_change = -1
+
+/datum/status_effect/debuff/bloatone/on_apply()
+	owner.add_stress(/datum/stress_event/bloatsex)
+	. = ..()
+
+/datum/status_effect/debuff/bloatone/on_remove()
+	owner.remove_stress(/datum/stress_event/bloatsex)
+	. = ..()
+
 /atom/movable/screen/alert/status_effect/bloatone
 	name = "Bloated"
 	desc = "Bit full..."
@@ -186,6 +270,11 @@
 	. = ..()
 	if(owner.has_status_effect(/datum/status_effect/debuff/bloatone))
 		owner.remove_status_effect(/datum/status_effect/debuff/bloatone)
+	owner.add_stress(/datum/stress_event/bloatsex)
+
+/datum/status_effect/debuff/bloattwo/on_remove()
+	owner.remove_stress(/datum/stress_event/bloatsex)
+	. = ..()
 
 /atom/movable/screen/alert/status_effect/bloattwo
 	name = "Bloated"

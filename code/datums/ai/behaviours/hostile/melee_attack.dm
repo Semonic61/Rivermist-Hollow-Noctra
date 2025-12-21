@@ -40,7 +40,7 @@
 
 
 	if(targetting_datum.should_disarm(basic_mob, target))
-		if(ishuman(target))
+		if(ishuman(target) && target.Adjacent(basic_mob))
 			var/mob/living/carbon/human/h_target = target
 			for(var/obj/item/I in h_target.held_items)
 				h_target.dropItemToGround(I, force = FALSE, silent = FALSE)
