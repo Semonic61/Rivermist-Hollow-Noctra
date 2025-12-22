@@ -169,22 +169,6 @@
 	icon = 'modular_rmh/icons/hud/ghost_hud.dmi'
 	var/tmp/button_animation = FALSE
 
-	proc/play_press_animation()
-		if(button_animation || !icon_state)
-			return
-		button_animation = TRUE
-
-		var/original_state = icon_state
-		icon_state = "[original_state]_a"
-
-		spawn(30)
-			if(!QDELETED(src))
-				icon_state = original_state
-			button_animation = FALSE
-
-	Click(location, control, params)
-		play_press_animation()
-		return ..()
 
 //return to body
 /atom/movable/screen/ghost/reenter
