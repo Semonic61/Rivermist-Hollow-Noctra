@@ -28,7 +28,7 @@
 	specstats_m = list(STATKEY_STR = -4, STATKEY_PER = -2, STATKEY_INT = -2, STATKEY_CON = -4, STATKEY_END = 2, STATKEY_SPD = 2, STATKEY_LCK = 0)
 	specstats_f = list(STATKEY_STR = -4, STATKEY_PER = -2, STATKEY_INT = -2, STATKEY_CON = -4, STATKEY_END = 2, STATKEY_SPD = 2, STATKEY_LCK = 0)
 
-	allowed_pronouns = PRONOUNS_LIST_IT_ONLY
+	// allowed_pronouns = PRONOUNS_LIST_IT_ONLY // Чтобы могли брать любые местоимения
 
 	possible_ages = NORMAL_AGES_LIST
 	use_skintones = TRUE
@@ -43,7 +43,7 @@
 	enflamed_icon = "widefire"
 
 	soundpack_m = /datum/voicepack/male/kobold
-	soundpack_f = /datum/voicepack/male/kobold
+	soundpack_f = /datum/voicepack/female/dwarf // Поменял на женский, так как мужской - это уродск
 
 	exotic_bloodtype = /datum/blood_type/human/kobold
 
@@ -73,19 +73,23 @@
 		OFFSET_ARMOR = list(0,0),\
 		OFFSET_UNDIES = list(0,0),\
 	)
-
+// Попытка починить смещение органов
 	offset_genitals_m = list(
 		OFFSET_PENIS = list(0,-4),\
 		OFFSET_BREASTS = list(0,-4),\
-		OFFSET_TESTICLES = list(0,-2),\
+		OFFSET_TESTICLES = list(0,-3),\
 		OFFSET_VAGINA = list(0,-4),\
+		OFFSET_BUTT = list(0,-4),\
+		OFFSET_BELLY = list(0,-4),\
 	)
 
 	offset_genitals_f = list(
-		OFFSET_PENIS = list(0,4),\
+		OFFSET_PENIS = list(0,-4),\
 		OFFSET_BREASTS = list(0,-4),\
-		OFFSET_TESTICLES = list(0,-2),\
+		OFFSET_TESTICLES = list(0,-3),\
 		OFFSET_VAGINA = list(0,-4),\
+		OFFSET_BUTT = list(0,-4),\
+		OFFSET_BELLY = list(0,-4),\
 	)
 
 	organs = list(

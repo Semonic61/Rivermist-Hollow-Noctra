@@ -123,13 +123,13 @@ GLOBAL_LIST_EMPTY(job_respawn_delays)
 #define FRYVEGGIE_NUTRITION SNACK_POOR
 #define COOKED_FAT_NUTRITION SNACK_DECENT
 
-/*	........   Rotting Food defines   ................ */
-#define SHELFLIFE_EXTREME 160 MINUTES
-#define SHELFLIFE_LONG 90 MINUTES
-#define SHELFLIFE_DECENT 70 MINUTES
-#define SHELFLIFE_SHORT 50 MINUTES
-#define SHELFLIFE_TINY 30 MINUTES
-#define SHELFLIFE_MINISCULE 10 MINUTES
+/*	........   Rotting Food defines   ................ */ //everything 10 times longer
+#define SHELFLIFE_EXTREME 160 MINUTES * 10
+#define SHELFLIFE_LONG 90 MINUTES * 10
+#define SHELFLIFE_DECENT 70 MINUTES * 10
+#define SHELFLIFE_SHORT 50 MINUTES * 10
+#define SHELFLIFE_TINY 30 MINUTES * 10
+#define SHELFLIFE_MINISCULE 10 MINUTES * 10
 
 /*
 	Formerly bitflags, now we are strings
