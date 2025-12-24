@@ -1,5 +1,5 @@
 GLOBAL_LIST_INIT(noble_positions, list(
-	/datum/job/lord::title,
+	/datum/job/roguetown/village/townmaster::title,
 	/datum/job/consort::title,
 	/datum/job/hand::title,
 	/datum/job/prince::title,

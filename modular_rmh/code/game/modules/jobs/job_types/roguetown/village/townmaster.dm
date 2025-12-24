@@ -1,16 +1,14 @@
-GLOBAL_VAR(lordsurname)
-GLOBAL_LIST_EMPTY(lord_titles)
+GLOBAL_VAR(townmastersurname)
+GLOBAL_LIST_EMPTY(townmaster_titles)
 
-/datum/job/lord
-	title = "Monarch"
-	var/ruler_title = "Monarch"
-	tutorial = "Elevated to your throne througha a web of intrigue, political maneuvering, and divine sanction, you are the \
-	unquestioned authority of these lands. The Church has bestowed upon you the legitimacy of the gods themselves, and now \
-	you sit at the center of every plot, and every whisper of ambition. Every man, woman, and child may envy your power and \
-	would replace you in the blink of an eye. But remember, its not envy that keeps you in place, it is your will. Show them \
-	the error of their ways."
+/datum/job/roguetown/village/townmaster
+	title = "Town Master"
+	var/ruler_title = "Town Master"
+	tutorial = "The great mage‑lords have chosen you to rule a distant village. Under your guidance, the guilds\
+	flourish and the people	find shelter beneath its roofs. The fate of this land - its order and its\
+	prosperity - rests in your hands."
 	department_flag = NOBLEMEN
-	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK ) // | JOB_NEW_PLAYER_JOINABLE)
+	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	display_order = JDO_LORD
 	faction = FACTION_TOWN
 	total_positions = 1
@@ -22,10 +20,10 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	)
 
 	allowed_races = RACES_PLAYER_ROYALTY
-	outfit = /datum/outfit/lord
+	outfit = /datum/outfit/townmaster
 	bypass_lastclass = TRUE
 	give_bank_account = 500
-	selection_color = "#7851A9"
+	selection_color = "#940581"
 
 	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
 	can_have_apprentices = FALSE
@@ -41,7 +39,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	)
 
 
-/datum/job/lord/get_informed_title(mob/mob, change_title = FALSE, new_title)
+/datum/job/roguetown/village/townmaster/get_informed_title(mob/mob, change_title = FALSE, new_title)
 	if(change_title)
 		ruler_title = new_title
 		return "[ruler_title]"
@@ -49,7 +47,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		return "[ruler_title]"
 
 //TODO: MOVE THIS INTO TICKER INIT
-/datum/job/lord/after_spawn(mob/living/spawned, client/player_client)
+/datum/job/roguetown/village/townmaster/after_spawn(mob/living/spawned, client/player_client)
 	. = ..()
 	SSticker.rulermob = spawned
 	var/mob/living/carbon/human/H = spawned
@@ -67,7 +65,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	if(GLOB.keep_doors.len > 0)
 		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(know_keep_door_password), H), 7 SECONDS)
 
-/datum/outfit/lord/map_override(mob/living/carbon/human/H)
+/datum/outfit/townmaster/map_override(mob/living/carbon/human/H)
 	if(SSmapping.config.map_name != "Voyage")
 		return
 	head = /obj/item/clothing/head/helmet/leather/tricorn
@@ -78,7 +76,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	wrists = null
 	shoes = /obj/item/clothing/shoes/boots
 
-/datum/outfit/lord/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/townmaster/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/crown/serpcrown
 	backr = /obj/item/storage/backpack/satchel
@@ -140,23 +138,23 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_KNOWKEEPPLANS, TRAIT_GENERIC)
 
-/datum/job/exlord //just used to change the lords title
-	title = "Ex-Monarch"
+/datum/job/roguetown/village/extownmaster //just used to change the lords title
+	title = "Ex-Town Master"
 	department_flag = NOBLEMEN
 	faction = FACTION_TOWN
 	total_positions = 0
 	spawn_positions = 0
 	display_order = JDO_LORD
 
-/proc/give_lord_surname(mob/living/carbon/human/family_guy, preserve_original = FALSE)
-	if(!GLOB.lordsurname)
+/proc/give_townmaster_surname(mob/living/carbon/human/family_guy, preserve_original = FALSE)
+	if(!GLOB.townmastersurname)
 		return
 	if(preserve_original)
-		family_guy.fully_replace_character_name(family_guy.real_name, family_guy.real_name + " " + GLOB.lordsurname)
+		family_guy.fully_replace_character_name(family_guy.real_name, family_guy.real_name + " " + GLOB.townmastersurname)
 		return family_guy.real_name
 	var/list/chopped_name = splittext(family_guy.real_name, " ")
 	if(length(chopped_name) > 1)
-		family_guy.fully_replace_character_name(family_guy.real_name, chopped_name[1] + " " + GLOB.lordsurname)
+		family_guy.fully_replace_character_name(family_guy.real_name, chopped_name[1] + " " + GLOB.townmastersurname)
 	else
-		family_guy.fully_replace_character_name(family_guy.real_name, family_guy.real_name + " " + GLOB.lordsurname)
+		family_guy.fully_replace_character_name(family_guy.real_name, family_guy.real_name + " " + GLOB.townmastersurname)
 	return family_guy.real_name
