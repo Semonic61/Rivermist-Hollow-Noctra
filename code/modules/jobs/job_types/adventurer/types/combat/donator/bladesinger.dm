@@ -8,6 +8,7 @@
 	category_tags = list(CTAG_ADVENTURER)
 	cmode_music = 'sound/music/cmode/adventurer/CombatWarrior.ogg'
 
+<<<<<<< HEAD
 /datum/outfit/adventurer/bladesinger/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(H.mind)
@@ -27,6 +28,40 @@
 		H.underwear = "Femleotard"
 		H.underwear_color = CLOTHING_SOOT_BLACK
 		H.update_body()*/
+=======
+	skills = list(
+		/datum/skill/combat/knives = 2,
+		/datum/skill/combat/swords = 4,
+		/datum/skill/combat/bows = 2,
+		/datum/skill/combat/wrestling = 3,
+		/datum/skill/combat/unarmed = 2,
+		/datum/skill/misc/swimming = 2,
+		/datum/skill/misc/climbing = 2,
+		/datum/skill/misc/athletics = 3,
+		/datum/skill/misc/reading = 2,
+	)
+
+	jobstats = list(
+		STATKEY_STR = 1,// Weaker than lancer/swordsman because..?
+		STATKEY_END = 1,
+		STATKEY_SPD = 1,
+	)
+
+	traits = list(
+		TRAIT_HEAVYARMOR,
+		TRAIT_DUALWIELDER,
+	)
+
+/datum/job/advclass/combat/bladesinger/after_spawn(mob/living/carbon/human/spawned, client/player_client)
+	. = ..()
+	if(spawned.gender == FEMALE)
+		spawned.underwear = "Femleotard"
+		spawned.underwear_color = CLOTHING_SOOT_BLACK
+		spawned.update_body()
+
+/datum/outfit/adventurer/bladesinger
+	name = "Bladesinger (Adventurer)"
+>>>>>>> vanderlin/main
 	pants = /obj/item/clothing/pants/tights/colored/black
 	backr = /obj/item/weapon/sword/long/greatsword/elfgsword
 	beltl = /obj/item/storage/belt/pouch/coins/mid
@@ -38,5 +73,3 @@
 	backl = /obj/item/storage/backpack/satchel
 	head = /obj/item/clothing/head/rare/elfplate/welfplate
 	neck = /obj/item/clothing/neck/chaincoif
-	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_DUALWIELDER, TRAIT_GENERIC)

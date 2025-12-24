@@ -49,6 +49,10 @@
 	beltr = /obj/item/storage/belt/pouch/coins/poor
 =======
 /datum/outfit/mercenary/grenzelhoft
+<<<<<<< HEAD
+>>>>>>> vanderlin/main
+=======
+	name = "Grenzelhoft (Mercenary)"
 >>>>>>> vanderlin/main
 	neck = /obj/item/clothing/neck/chaincoif
 	pants = /obj/item/clothing/pants/grenzelpants
