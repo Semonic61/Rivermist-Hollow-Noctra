@@ -163,8 +163,5 @@
 	if(COOLDOWN_TIMELEFT(src, activity_cooldown) < munch_time)
 		COOLDOWN_START(src, activity_cooldown, munch_time)
 		update_appearance(UPDATE_ICON_STATE | UPDATE_NAME)
-<<<<<<< HEAD
 	aggroed = world.time
 */
-=======
->>>>>>> vanderlin/main

@@ -10,9 +10,7 @@
 	faction = FACTION_TOWN
 	total_positions = 2
 	spawn_positions = 2
-<<<<<<< HEAD
 
-	allowed_races = RACES_PLAYER_NONDISCRIMINATED
 	/* Noctra edit BEGIN */
 	/*
 	allowed_ages = list(AGE_CHILD)
@@ -20,9 +18,6 @@
 	allowed_ages = list(AGE_ADULT)
 	/* Noctra edit END */
 
-	outfit = /datum/outfit/squire
-=======
->>>>>>> vanderlin/main
 	display_order = JDO_SQUIRE
 	give_bank_account = TRUE
 	bypass_lastclass = TRUE
@@ -33,7 +28,6 @@
 	exp_types_granted = list(EXP_TYPE_GARRISON)
 
 	allowed_races = RACES_PLAYER_NONDISCRIMINATED
-	allowed_ages = list(AGE_CHILD, AGE_ADULT)
 
 	outfit = /datum/outfit/squire
 

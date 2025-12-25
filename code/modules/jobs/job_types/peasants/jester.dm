@@ -18,13 +18,8 @@
 	spells = list(
 		/datum/action/cooldown/spell/undirected/joke,
 		/datum/action/cooldown/spell/undirected/tragedy,
-<<<<<<< HEAD
 		///datum/action/cooldown/spell/undirected/fart,
 		/datum/action/cooldown/spell/vicious_mockery,
-=======
-		/datum/action/cooldown/spell/undirected/fart,
-		/datum/action/cooldown/spell/vicious_mockery
->>>>>>> vanderlin/main
 	)
 	give_bank_account = TRUE
 

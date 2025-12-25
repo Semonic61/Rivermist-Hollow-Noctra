@@ -14,12 +14,8 @@
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
 	allowed_races = RACES_PLAYER_NONEXOTIC
 	blacklisted_species = list(SPEC_ID_HALFLING)
-<<<<<<< HEAD
-
-=======
-	allowed_patrons = list(/datum/patron/divine/noc)
+	//allowed_patrons = list(/datum/patron/divine/noc)
 	exp_types_granted  = list(EXP_TYPE_MAGICK)
->>>>>>> vanderlin/main
 	jobstats = list(
 		STATKEY_STR = -1,
 		STATKEY_INT = 4,
@@ -75,12 +71,8 @@
 	outfit = /datum/outfit/magic_student
 	allowed_ages = list(AGE_CHILD)
 	allowed_races = RACES_PLAYER_NONEXOTIC
-<<<<<<< HEAD
-
-=======
-	allowed_patrons = list(/datum/patron/divine/noc)
+	//allowed_patrons = list(/datum/patron/divine/noc)
 	exp_types_granted  = list(EXP_TYPE_MAGICK)
->>>>>>> vanderlin/main
 	jobstats = list(
 		STATKEY_STR = -1,
 		STATKEY_INT = 3,

@@ -32,10 +32,6 @@
 		/datum/action/cooldown/spell/undirected/touch/prestidigitation,
 	)
 
-<<<<<<< HEAD
-
-=======
->>>>>>> vanderlin/main
 	exp_type = list(EXP_TYPE_LIVING, EXP_TYPE_MAGICK)
 	exp_types_granted = list(EXP_TYPE_MAGICK)
 
@@ -73,7 +69,8 @@
 	head = /obj/item/clothing/head/wizhat/witch
 	backpack_contents = list(
 		/obj/item/book/granter/spellbook/apprentice = 1,
-		/obj/item/chalk = 1
+		/obj/item/chalk = 1,
+		/obj/item/storage/belt/pouch/coins/mid
 	)
 
 /datum/outfit/mageapprentice/pre_equip(mob/living/carbon/human/equipped_human, visuals_only)
@@ -83,7 +80,6 @@
 		shoes = /obj/item/clothing/shoes/simpleshoes
 		shirt = /obj/item/clothing/shirt/shortshirt
 		head = /obj/item/clothing/head/wizhat/gen
-<<<<<<< HEAD
 	else
 		shoes = /obj/item/clothing/shoes/sandals
 		shirt = /obj/item/clothing/shirt/dress/silkdress/colored/random
@@ -93,19 +89,4 @@
 		armor = /obj/item/clothing/shirt/robe/newmage/adept
 		backr = /obj/item/storage/backpack/satchel
 		head = /obj/item/clothing/head/wizhat/witch
-	backpack_contents = list(/obj/item/book/granter/spellbook/apprentice = 1, /obj/item/chalk = 1, /obj/item/storage/belt/pouch/coins/mid)
-	H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE) //children can have one spellpoint, as a treat.
-	if (H.age == AGE_ADULT)
-		H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
-		H.adjust_spell_points(4)
-	H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
-	H.change_stat(STATKEY_INT, 1)
-	H.change_stat(STATKEY_SPD, -1)
-	H.mana_pool?.set_intrinsic_recharge(MANA_ALL_LEYLINES)
-=======
->>>>>>> vanderlin/main
+	equipped_human.mana_pool?.set_intrinsic_recharge(MANA_ALL_LEYLINES)

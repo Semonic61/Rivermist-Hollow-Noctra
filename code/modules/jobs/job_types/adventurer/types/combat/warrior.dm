@@ -36,11 +36,6 @@
 /datum/job/advclass/combat/sfighter/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
 
-	if(spawned.gender == FEMALE)
-		spawned.underwear = "Femleotard"
-		spawned.underwear_color = CLOTHING_SOOT_BLACK
-		spawned.update_body()
-
 	if(spawned.age == AGE_OLD) // old warriors get immunity to see gibs
 		ADD_TRAIT(spawned, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
@@ -70,29 +65,6 @@
 	neck = pick(/obj/item/clothing/neck/chaincoif/iron, /obj/item/clothing/neck/gorget, /obj/item/clothing/neck/highcollier/iron, /obj/item/clothing/neck/coif/cloth, /obj/item/clothing/neck/coif)
 	head = pick(/obj/item/clothing/head/helmet/skullcap, /obj/item/clothing/head/helmet/ironpot, /obj/item/clothing/head/helmet/sallet/iron, /obj/item/clothing/head/helmet/leather/headscarf)
 	shirt = pick(/obj/item/clothing/armor/gambeson, /obj/item/clothing/armor/gambeson/light)
-<<<<<<< HEAD
-	r_hand = /obj/item/flashlight/flare/torch/prelit // they get back their missing torches
-
-	if(H.gender == FEMALE)
-		H.underwear = "Femleotard"
-		H.update_body()
-
-	H.change_stat(STATKEY_STR, 2)
-	H.change_stat(STATKEY_END, 1)
-	H.change_stat(STATKEY_CON, 1)
-	H.change_stat(STATKEY_INT, -1) // Muscle brains
-	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-
-	if(H.age == AGE_OLD)// old warriors get inmunity to see gibs
-		ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	backpack_contents = list(
-		/obj/item/storage/belt/pouch/coins/poor = 1,
-	)
-
-	H.adjust_blindness(-3)
-
-=======
->>>>>>> vanderlin/main
 
 /datum/outfit/adventurer/sfighter/post_equip(mob/living/carbon/human/H)
 	. = ..()

@@ -26,8 +26,7 @@
 	)
 
 
-<<<<<<< HEAD
-	H.grant_undead_eyes()
+	/*H.grant_undead_eyes()
 	H.ambushable = FALSE
 	//H.underwear = "Nude"
 	if(H.charflaw)
@@ -43,8 +42,8 @@
 	ADD_TRAIT(H, TRAIT_NOPAIN, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_TOXIMMUNE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOSLEEP, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_SHOCKIMMUNE, TRAIT_GENERIC)
-=======
+	ADD_TRAIT(H, TRAIT_SHOCKIMMUNE, TRAIT_GENERIC)*/
+
 /datum/job/skeleton/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
 
@@ -76,7 +75,6 @@
 	spawned.update_body()
 	spawned.mob_biotypes = MOB_UNDEAD
 	spawned.faction = list(FACTION_UNDEAD)
->>>>>>> vanderlin/main
 
 
 

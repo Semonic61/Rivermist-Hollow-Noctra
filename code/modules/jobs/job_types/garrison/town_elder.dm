@@ -132,6 +132,13 @@
 		spawned.adjust_stat_modifier(STATMOD_JOB, STATKEY_PER, 1)
 		spawned.adjust_stat_modifier(STATMOD_JOB, STATKEY_INT, 1)
 
+	spawned.add_spell(/datum/action/cooldown/spell/vicious_mockery)
+	spawned.add_spell(/datum/action/cooldown/spell/bardic_inspiration)
+
+	ADD_TRAIT(spawned, TRAIT_NOBLE, TRAIT_GENERIC)
+	ADD_TRAIT(spawned, TRAIT_SEEPRICES, TRAIT_GENERIC)
+	ADD_TRAIT(spawned, TRAIT_BARDIC_TRAINING, TRAIT_GENERIC)
+
 /datum/outfit/town_elder/mayor
 	name = "Mayor (Town Elder)"
 	head = /obj/item/clothing/head/tophat
@@ -149,37 +156,7 @@
 	backl = /obj/item/storage/backpack/satchel
 	r_hand = /obj/item/weapon/polearm/woodstaff/quarterstaff
 
-<<<<<<< HEAD
-	H.add_spell(/datum/action/cooldown/spell/vicious_mockery)
-	H.add_spell(/datum/action/cooldown/spell/bardic_inspiration)
-
-	H.change_stat(STATKEY_STR, -1)
-	H.change_stat(STATKEY_PER, 2)
-	H.change_stat(STATKEY_END, 1)
-	H.change_stat(STATKEY_INT, 2)
-
-	if(H.age == AGE_OLD)
-		H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/labor/mathematics, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
-		H.change_stat(STATKEY_STR, -1)
-		H.change_stat(STATKEY_PER, 1)
-		H.change_stat(STATKEY_INT, 1)
-	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_SEEPRICES, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_BARDIC_TRAINING, TRAIT_GENERIC)
-	var/datum/inspiration/I = new /datum/inspiration(H)
-	I.grant_inspiration(H, bard_tier = BARD_T3)
-
-
-
-
 /datum/job/advclass/town_elder/master_of_crafts_and_labor
-=======
-/datum/job/advclass/town_elder/master_of_crafts_and_labor //A Job meant to guide and help new players in multiple areas heavy RNG so it can range from Average to Master.
->>>>>>> vanderlin/main
 	title = "Master of Crafts and Labor"
 	tutorial = "You were one of the hardest-working individuals in the city, there isn't a single job you haven't done. From farming and butchery to alchemy, blacksmithing, cooking, and even medicine, your vast knowledge made you a guiding light for the people. Yet amid your labors, it was your songs that bound the workers together: rhythmic chants in the forge, lullabies in the sick wards, ballads hummed in the fields. Your voice became a beacon of focus and unity. Recognizing both your wisdom and your spirit, the townsfolk turned to you for guidance. Now, as the Master of Crafts and Labor, you oversee and uplift all who contribute to the city's survival. Lead them well."
 	outfit = /datum/outfit/town_elder/master_of_crafts_and_labor
@@ -264,11 +241,6 @@
 	tutorial = "As an Acolyte, you dedicated your life to faith and service, expecting nothing in return. When you saved a noble, they repaid you with a home and gold, but you accepted it as the will of the Ten. Though you stepped away from the Church, you found a new purpose, not in grand temples, but in the rhythm of the streets. Your voice, once raised in hymns and prayers, now carries through alleyways and taverns, offering solace in melody and verse. Whether through healing, wisdom, or song, your faith endures. Only now, your congregation is the town itself."
 	outfit = /datum/outfit/town_elder/hearth_acolyte
 	category_tags = list(CTAG_TOWN_ELDER)
-<<<<<<< HEAD
-
-=======
-	allowed_patrons = ALL_TEMPLE_PATRONS
->>>>>>> vanderlin/main
 
 	jobstats = list(
 		STATKEY_STR = 2,

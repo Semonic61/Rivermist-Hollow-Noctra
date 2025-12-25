@@ -12,12 +12,8 @@
 	bypass_lastclass = TRUE
 
 	allowed_races = RACES_TEMPLAR
-<<<<<<< HEAD
 
 
-=======
-	allowed_patrons = ALL_TEMPLAR_PATRONS
->>>>>>> vanderlin/main
 
 	outfit = /datum/outfit/templar
 	give_bank_account = 0

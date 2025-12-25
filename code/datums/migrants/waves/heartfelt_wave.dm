@@ -368,11 +368,8 @@
 	tutorial = "You are a Prior of Heartfelt, a spiritual leader whose faith was tested when your home fell into ruin. Now journeying to Vanderlin, you seek to rebuild not just structures, but the souls of those who follow you."
 	outfit = /datum/outfit/heartfelt_prior
 	allowed_races = RACES_PLAYER_NONDISCRIMINATED
-<<<<<<< HEAD
-=======
-	allowed_patrons = list(/datum/patron/divine/astrata)
+	//allowed_patrons = list(/datum/patron/divine/astrata)
 	exp_types_granted  = list(EXP_TYPE_CLERIC)
->>>>>>> vanderlin/main
 
 	jobstats = list(
 		STATKEY_STR = -1,

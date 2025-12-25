@@ -11,14 +11,11 @@
 	roll_chance = 30
 	is_recognized = TRUE
 
-<<<<<<< HEAD
-=======
 	jobstats = list(
 		STATKEY_END = 2,
 		STATKEY_CON = 2,
 		STATKEY_STR = 1
 	)
->>>>>>> vanderlin/main
 
 	skills = list(
 		/datum/skill/combat/crossbows = 2,
