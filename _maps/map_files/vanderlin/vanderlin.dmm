@@ -50572,9 +50572,6 @@
 /area/indoors/town/clinic_large/apothecary)
 "cra" = (
 /obj/structure/window/openclose,
-/obj/structure/bars/alt{
-	pixel_y = -3
-	},
 /turf/open/floor/greenstone,
 /area/indoors/town/magician)
 "crc" = (
@@ -85746,9 +85743,6 @@
 "utK" = (
 /obj/structure/window/openclose{
 	dir = 4
-	},
-/obj/structure/bars/alt{
-	pixel_y = -3
 	},
 /turf/open/floor/woodturned,
 /area/indoors/town/manor/halls/w)
@@ -216178,7 +216172,7 @@ mMy
 juM
 juM
 fbo
-wVs
+mfp
 koE
 btu
 nlt
@@ -216380,7 +216374,7 @@ mMy
 juM
 juM
 xnG
-wVs
+mfp
 kri
 btu
 nlt
